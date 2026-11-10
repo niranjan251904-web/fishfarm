@@ -1,0 +1,146 @@
+import Link from "next/link";
+import { BrandLogo } from "../common/BrandLogo";
+import { siteConfig, buildWhatsAppUrl } from "@/config/site";
+
+export function Footer() {
+  return (
+    <footer className="bg-[#020617] text-[#E2E8F0] pt-14 pb-12 border-t border-[#0F172A]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Logistics and Biosecurity Header Bar */}
+        <div className="pb-10 border-b border-[#0F172A] grid grid-cols-1 lg:grid-cols-12 gap-6 items-baseline">
+          <div className="lg:col-span-4">
+            <span className="text-[11px] uppercase tracking-[0.2em] text-[#0055FF] font-semibold block mb-1">
+              Aquaculture Protocol
+            </span>
+            <p className="text-lg font-bold text-white">
+              Fourteen-Day Prophylactic Quarantine
+            </p>
+          </div>
+          <div className="lg:col-span-8 text-xs text-[#64748B] leading-relaxed">
+            All livestock is held in segregated holding systems under therapeutic observation. Consignments are packed in high-density expanded polystyrene containers with pure industrial medical oxygen and transit climate buffers before train, bus, and flight cargo dispatch across India.
+          </div>
+        </div>
+
+        {/* Main Footer Content Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 py-12">
+          {/* Col 1 & 2: Brand Information */}
+          <div className="lg:col-span-2 space-y-4">
+            <BrandLogo variant="light" />
+            <p className="text-xs sm:text-sm text-[#64748B] max-w-sm leading-relaxed mt-2">
+              Quarantined freshwater ornamental species, pedigree strains, and specialist diatom algae grazers shipped across India with guaranteed live arrival.
+            </p>
+            <div className="pt-2">
+              <a
+                href={buildWhatsAppUrl(siteConfig.whatsapp.defaultMessage, {
+                  source: "footer",
+                })}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-4 py-2 bg-[#0F172A] text-white text-xs font-semibold rounded-[2px] border border-[#1E293B] hover:bg-[#0055FF] hover:border-[#0055FF] transition-colors"
+              >
+                WhatsApp Desk: {siteConfig.whatsapp.displayNumber}
+              </a>
+            </div>
+          </div>
+
+          {/* Col 3: Species Collections */}
+          <div>
+            <h5 className="text-sm font-bold text-white tracking-wider uppercase mb-4">
+              Fish Collections
+            </h5>
+            <ul className="space-y-2.5 text-xs text-[#64748B]">
+              <li>
+                <Link href="/fish?category=angelfish" className="hover:text-white transition-colors">
+                  Angelfish & Altums
+                </Link>
+              </li>
+              <li>
+                <Link href="/fish?category=algae-eaters" className="hover:text-white transition-colors">
+                  Algae Cleaners & Otos
+                </Link>
+              </li>
+              <li>
+                <Link href="/fish?category=betta-fish" className="hover:text-white transition-colors">
+                  Show Plakat Bettas
+                </Link>
+              </li>
+              <li>
+                <Link href="/fish?category=catfish" className="hover:text-white transition-colors">
+                  Plecos & Catfish
+                </Link>
+              </li>
+              <li>
+                <Link href="/fish?category=barbs" className="hover:text-white transition-colors">
+                  Schooling Fish & Barbs
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Col 4: Policies & Dispatch */}
+          <div>
+            <h5 className="text-sm font-bold text-white tracking-wider uppercase mb-4">
+              Policies & Dispatch
+            </h5>
+            <ul className="space-y-2.5 text-xs text-[#64748B]">
+              <li>
+                <Link href="/fish" className="hover:text-white transition-colors">
+                  Fish Catalogue
+                </Link>
+              </li>
+              <li>
+                <Link href="/terms" className="hover:text-white transition-colors">
+                  Terms of Service
+                </Link>
+              </li>
+              <li>
+                <Link href="/privacy" className="hover:text-white transition-colors">
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link href="/about" className="hover:text-white transition-colors">
+                  Quarantine Protocols
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="hover:text-white transition-colors">
+                  Train & Bus Dispatch
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Col 5: Facility & Hours */}
+          <div>
+            <h5 className="text-sm font-bold text-white tracking-wider uppercase mb-4">
+              Facility Location
+            </h5>
+            <div className="space-y-2.5 text-xs text-[#64748B]">
+              <p>Aquaculture Facility, Tamil Nadu, India</p>
+              <p>Operating Hours: Mon - Sat: 9:00 AM - 7:30 PM IST</p>
+              <p>Train & Bus Dispatches: Within 48 Hours</p>
+              <p className="text-[#0055FF] font-medium">{siteConfig.contact.email}</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Copyright & Legal Links */}
+        <div className="pt-8 mt-4 border-t border-[#0F172A] text-xs text-[#64748B] flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p>© {new Date().getFullYear()} {siteConfig.name}. All rights reserved.</p>
+          <div className="flex items-center space-x-6 text-xs text-[#64748B]">
+            <Link href="/terms" className="hover:text-white transition-colors">
+              Terms of Service
+            </Link>
+            <span>•</span>
+            <Link href="/privacy" className="hover:text-white transition-colors">
+              Privacy Policy
+            </Link>
+            <span>•</span>
+            <span>DOA Live Arrival Guarantee</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
