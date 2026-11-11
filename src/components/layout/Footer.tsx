@@ -137,6 +137,10 @@ export function Footer() {
               Privacy Policy
             </Link>
             <span>•</span>
+            <Link href="/admin" className="hover:text-white transition-colors">
+              Staff Portal
+            </Link>
+            <span>•</span>
             <span>DOA Live Arrival Guarantee</span>
           </div>
         </div>

@@ -477,6 +477,18 @@ export default function AdminPage() {
     return (
       <div className="min-h-screen flex items-center justify-center bg-[#F8FAFC] py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-md w-full bg-white border border-[#E2E8F0] p-8 sm:p-10 rounded-sm shadow-xs">
+          <div className="mb-6 flex items-center justify-between">
+            <Link
+              href="/"
+              className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#64748B] hover:text-[#0055FF] transition-colors"
+            >
+              <span>← Back to Storefront</span>
+            </Link>
+            <span className="px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-slate-100 text-slate-600 rounded-xs">
+              Staff Only
+            </span>
+          </div>
+
           <div className="text-center mb-8">
             <div className="inline-flex p-3 rounded-full bg-blue-50 text-[#0055FF] mb-4">
               <Lock className="w-6 h-6" />

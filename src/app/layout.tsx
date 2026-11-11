@@ -1,9 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
-import { FloatingWhatsApp } from "@/components/common/FloatingWhatsApp";
-import { CartDrawer } from "@/components/cart/CartDrawer";
+import { StoreLayoutShell } from "@/components/layout/StoreLayoutShell";
 import { CartProvider } from "@/context/CartContext";
 import { SettingsProvider } from "@/context/SettingsContext";
 import { siteConfig } from "@/config/site";
@@ -79,11 +76,7 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col bg-white text-[#020617] font-sans selection:bg-[#0055FF] selection:text-white">
         <SettingsProvider>
           <CartProvider>
-            <Navbar />
-            <main className="flex-grow">{children}</main>
-            <Footer />
-            <CartDrawer />
-            <FloatingWhatsApp />
+            <StoreLayoutShell>{children}</StoreLayoutShell>
           </CartProvider>
         </SettingsProvider>
       </body>
