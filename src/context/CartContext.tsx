@@ -1,9 +1,10 @@
 "use client";
 
 import React, { createContext, useContext, useState, useEffect } from "react";
-import { Product } from "@/types";
+import { Product, CustomerOrderAudit } from "@/types";
 import { siteConfig, buildWhatsAppUrl, formatCurrency } from "@/config/site";
 import { trackWhatsAppEnquiry } from "@/lib/analytics";
+import { saveOrderAudit } from "@/lib/db";
 
 export interface CartItem {
   product: Product;
@@ -184,6 +185,30 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
     billText += `━━━━━━━━━━━━━━━━━━━━━`;
 
     trackWhatsAppEnquiry("product_details", `Cart Order #${orderNumber}`, subtotal);
+
+    // Automatically audit this inquiry for the admin dashboard
+    const auditRecord: CustomerOrderAudit = {
+      id: "audit-" + Date.now(),
+      orderNumber,
+      customerName: customer.name || "Customer",
+      phone: customer.phone,
+      city: customer.city,
+      state: customer.state,
+      pinCode: customer.pinCode,
+      notes: customer.notes,
+      items: items.map((i) => ({
+        productId: i.product.productId,
+        name: i.product.name,
+        price: i.product.sellingPrice,
+        quantity: i.quantity,
+      })),
+      totalAmount: subtotal,
+      createdAt: new Date().toISOString(),
+      status: "Inquiry Sent",
+    };
+    saveOrderAudit(auditRecord).catch((err) =>
+      console.warn("Could not log order audit:", err)
+    );
 
     return buildWhatsAppUrl(billText, {
       source: "cart_checkout",

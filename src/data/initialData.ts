@@ -1,4 +1,4 @@
-import { Category, Product, Testimonial, GalleryItem } from "@/types";
+import { Category, Product, Testimonial, GalleryItem, StoreSettings, CustomerOrderAudit } from "@/types";
 
 export const initialCategories: Category[] = [
   {
@@ -1345,3 +1345,91 @@ export const initialGallery: GalleryItem[] = [
     caption: "Quarantined Macrotocinclus affinis grazing peacefully on Anubias leaves.",
   },
 ];
+
+export const initialStoreSettings: StoreSettings = {
+  siteName: "HS AQUATICS",
+  tagline: "Curated Aquatic Standard",
+  whatsappNumber: "918098147347",
+  whatsappDisplay: "+91 80981 47347",
+  supportEmail: "support@hsaquatics.in",
+  address: "HS Aquatics Aquaculture Facility, Tamil Nadu, India",
+  hours: "Monday - Saturday: 9:00 AM - 7:30 PM IST (WhatsApp active 7 days)",
+  doaGuaranteeText: "100% Live Arrival Guarantee on Train & Bus Shipments",
+  topBanner: {
+    enabled: false,
+    text: "SPECIAL OFFER: FREE OXYGEN PACKAGING ON ORDERS ABOVE INR 1,500",
+    bgColor: "#0055FF",
+    textColor: "#FFFFFF",
+    link: "/fish",
+    dismissible: true,
+  },
+  hero: {
+    title: "Curated\nAquatic Standard",
+    subtitle: "Quarantined ornamental freshwater species shipped across India with guaranteed live arrival.",
+    buttonText: "Explore",
+    buttonLink: "/fish",
+    videoUrl: "/videos/hero-aquarium.mp4",
+    posterImage: "/images/fish/angels-altum-angel.webp",
+  },
+  posters: [
+    {
+      id: "poster-1",
+      title: "Wild Orinoco Altum & Angelfish Pairs",
+      subtitle: "Fourteen-day biological conditioning complete. Ready for immediate train & bus dispatch.",
+      tag: "SPECIAL HARVEST",
+      imageUrl: "/images/fish/angels-altum-angel.webp",
+      link: "/fish?category=angelfish",
+      buttonText: "Shop Collection",
+      active: true,
+      displayOrder: 1,
+    },
+    {
+      id: "poster-2",
+      title: "Specialist Algae Cleaners & Otocinclus",
+      subtitle: "Authentic Otocinclus, Panda Garra, and specialized biofilm grazers for pristine nature aquariums.",
+      tag: "CLEANUP CREW SALE",
+      imageUrl: "/images/fish/algae-eaters-otocinclus.jpg",
+      link: "/fish?category=algae-eaters",
+      buttonText: "View Algae Eaters",
+      active: true,
+      displayOrder: 2,
+    },
+  ],
+};
+
+export const initialOrderAudits: CustomerOrderAudit[] = [
+  {
+    id: "audit-1001",
+    orderNumber: "HS-8921",
+    customerName: "Karthik Subramanian",
+    phone: "+91 98401 23456",
+    city: "Chennai",
+    state: "Tamil Nadu",
+    pinCode: "600028",
+    notes: "Please pack with extra thermal padding for evening train dispatch.",
+    items: [
+      { productId: "prod-garra-01", name: "Panda Garra", price: 190, quantity: 4 },
+      { productId: "prod-oto-01", name: "Otocinclus [Large]", price: 220, quantity: 6 },
+    ],
+    totalAmount: 2080,
+    createdAt: "2026-11-10T14:30:00Z",
+    status: "Confirmed",
+  },
+  {
+    id: "audit-1002",
+    orderNumber: "HS-8922",
+    customerName: "Aman Sharma",
+    phone: "+91 98765 43210",
+    city: "Bengaluru",
+    state: "Karnataka",
+    pinCode: "560034",
+    notes: "KSR Bengaluru railway station pickup.",
+    items: [
+      { productId: "prod-ang-altum", name: "Orinoco Altum Angelfish", price: 7000, quantity: 2 },
+    ],
+    totalAmount: 14000,
+    createdAt: "2026-11-11T09:15:00Z",
+    status: "Inquiry Sent",
+  },
+];
+

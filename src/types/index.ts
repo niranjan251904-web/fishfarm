@@ -70,3 +70,68 @@ export interface FilterState {
   minPrice?: number;
   maxPrice?: number;
 }
+
+// Admin Dynamic Customizer Types
+export interface SiteBanner {
+  enabled: boolean;
+  text: string;
+  bgColor: string;
+  textColor: string;
+  link?: string;
+  dismissible: boolean;
+}
+
+export interface PromoPoster {
+  id: string;
+  title: string;
+  subtitle: string;
+  tag: string;
+  imageUrl: string;
+  link: string;
+  buttonText: string;
+  active: boolean;
+  displayOrder: number;
+}
+
+export interface HeroSettings {
+  title: string;
+  subtitle: string;
+  buttonText: string;
+  buttonLink: string;
+  videoUrl: string;
+  posterImage: string;
+}
+
+export interface StoreSettings {
+  siteName: string;
+  tagline: string;
+  whatsappNumber: string;
+  whatsappDisplay: string;
+  supportEmail: string;
+  address: string;
+  hours: string;
+  doaGuaranteeText: string;
+  topBanner: SiteBanner;
+  hero: HeroSettings;
+  posters: PromoPoster[];
+}
+
+export interface CustomerOrderAudit {
+  id: string;
+  orderNumber: string;
+  customerName: string;
+  phone?: string;
+  city: string;
+  state: string;
+  pinCode: string;
+  notes?: string;
+  items: {
+    productId: string;
+    name: string;
+    price: number;
+    quantity: number;
+  }[];
+  totalAmount: number;
+  createdAt: string;
+  status: "Inquiry Sent" | "Confirmed" | "Dispatched" | "Delivered" | "Cancelled";
+}

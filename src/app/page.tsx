@@ -3,6 +3,7 @@ import { getProducts, getCategories } from "@/lib/db";
 import { siteConfig } from "@/config/site";
 import { HeroSection } from "@/components/home/HeroSection";
 import { CollectionsScrollSection } from "@/components/home/CollectionsScrollSection";
+import { SpecialOffersSection } from "@/components/home/SpecialOffersSection";
 import { BestSellersSection } from "@/components/home/BestSellersSection";
 import { WhatsAppBannerCTA } from "@/components/home/WhatsAppBannerCTA";
 
@@ -23,10 +24,13 @@ export default async function HomePage() {
       {/* 2. Collections Horizontal Smooth Scroll (Matching Image 3) */}
       <CollectionsScrollSection categories={categories} />
 
-      {/* 3. Best-Selling Fish with 2-Column Mobile Grid (Matching Image 4) */}
+      {/* 3. Special Offers & Featured Harvest Posters (Configured via Admin) */}
+      <SpecialOffersSection />
+
+      {/* 4. Best-Selling Fish with 2-Column Mobile Grid (Matching Image 4) */}
       <BestSellersSection products={products} />
 
-      {/* 4. WhatsApp Direct Concierge Desk */}
+      {/* 5. WhatsApp Direct Concierge Desk */}
       <WhatsAppBannerCTA />
     </div>
   );

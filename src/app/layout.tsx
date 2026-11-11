@@ -5,6 +5,7 @@ import { Footer } from "@/components/layout/Footer";
 import { FloatingWhatsApp } from "@/components/common/FloatingWhatsApp";
 import { CartDrawer } from "@/components/cart/CartDrawer";
 import { CartProvider } from "@/context/CartContext";
+import { SettingsProvider } from "@/context/SettingsContext";
 import { siteConfig } from "@/config/site";
 
 export const viewport: Viewport = {
@@ -76,13 +77,15 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen flex flex-col bg-white text-[#020617] font-sans selection:bg-[#0055FF] selection:text-white">
-        <CartProvider>
-          <Navbar />
-          <main className="flex-grow">{children}</main>
-          <Footer />
-          <CartDrawer />
-          <FloatingWhatsApp />
-        </CartProvider>
+        <SettingsProvider>
+          <CartProvider>
+            <Navbar />
+            <main className="flex-grow">{children}</main>
+            <Footer />
+            <CartDrawer />
+            <FloatingWhatsApp />
+          </CartProvider>
+        </SettingsProvider>
       </body>
     </html>
   );

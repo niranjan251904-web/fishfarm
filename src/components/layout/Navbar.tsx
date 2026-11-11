@@ -9,20 +9,57 @@ import { CartButton } from "../cart/CartButton";
 import { siteConfig } from "@/config/site";
 import { SearchModal } from "../common/SearchModal";
 import { initialProducts } from "@/data/initialData";
+import { useSettings } from "@/context/SettingsContext";
 
 export function Navbar() {
   const pathname = usePathname();
+  const { settings } = useSettings();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
+  const [bannerDismissed, setBannerDismissed] = useState(false);
 
   // Close mobile drawer on route change
   useEffect(() => {
     setMobileMenuOpen(false);
   }, [pathname]);
 
+  const showBanner = settings?.topBanner?.enabled && !bannerDismissed;
+
   return (
     <>
-      {/* Main Header (Top shipping banner completely removed as requested) */}
+      {/* Dynamic Top Announcement Bar (Configured via Admin) */}
+      {showBanner && (
+        <div
+          style={{
+            backgroundColor: settings.topBanner.bgColor || "#0055FF",
+            color: settings.topBanner.textColor || "#FFFFFF",
+          }}
+          className="relative text-center py-2 px-4 text-xs font-semibold tracking-wider uppercase transition-all z-50 flex items-center justify-center shadow-xs"
+        >
+          {settings.topBanner.link ? (
+            <Link
+              href={settings.topBanner.link}
+              className="hover:underline flex items-center gap-1.5"
+            >
+              <span>{settings.topBanner.text}</span>
+            </Link>
+          ) : (
+            <span>{settings.topBanner.text}</span>
+          )}
+
+          {settings.topBanner.dismissible && (
+            <button
+              onClick={() => setBannerDismissed(true)}
+              className="absolute right-3 p-1 opacity-80 hover:opacity-100 transition-opacity"
+              aria-label="Dismiss banner"
+            >
+              <X className="w-3.5 h-3.5" />
+            </button>
+          )}
+        </div>
+      )}
+
+      {/* Main Header */}
       <header className="sticky top-0 z-40 w-full bg-white border-b border-[#E2E8F0] py-3 text-[#020617] shadow-xs">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
