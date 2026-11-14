@@ -1,5 +1,9 @@
-import { redirect } from "next/navigation";
+import CollectionCampaignPage, { generateMetadata as getCollectionMetadata } from "@/app/collections/[slug]/page";
 
-export default function MerchandisePage() {
-  redirect("/collections/merchandise");
+export async function generateMetadata() {
+  return getCollectionMetadata({ params: { slug: "merchandise" } });
+}
+
+export default async function MerchandisePage() {
+  return CollectionCampaignPage({ params: { slug: "merchandise" } });
 }

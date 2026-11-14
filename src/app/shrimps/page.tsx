@@ -1,5 +1,9 @@
-import { redirect } from "next/navigation";
+import CollectionCampaignPage, { generateMetadata as getCollectionMetadata } from "@/app/collections/[slug]/page";
 
-export default function ShrimpsPage() {
-  redirect("/collections/shrimps");
+export async function generateMetadata() {
+  return getCollectionMetadata({ params: { slug: "shrimps" } });
+}
+
+export default async function ShrimpsPage() {
+  return CollectionCampaignPage({ params: { slug: "shrimps" } });
 }

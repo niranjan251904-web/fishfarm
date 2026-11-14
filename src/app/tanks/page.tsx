@@ -1,5 +1,9 @@
-import { redirect } from "next/navigation";
+import CollectionCampaignPage, { generateMetadata as getCollectionMetadata } from "@/app/collections/[slug]/page";
 
-export default function TanksPage() {
-  redirect("/collections/tanks");
+export async function generateMetadata() {
+  return getCollectionMetadata({ params: { slug: "tanks" } });
+}
+
+export default async function TanksPage() {
+  return CollectionCampaignPage({ params: { slug: "tanks" } });
 }

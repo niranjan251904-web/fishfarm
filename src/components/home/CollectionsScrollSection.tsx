@@ -132,12 +132,33 @@ export function CollectionsScrollSection({ categories: initialCategories }: Coll
           className="flex gap-3 sm:gap-4 overflow-x-auto no-scrollbar pb-3 -mx-4 px-4 sm:mx-0 sm:px-0 select-none cursor-grab active:cursor-grabbing"
           style={{ WebkitOverflowScrolling: "touch" }}
         >
-          {displayCollections.map((col, index) => (
-            <Link
-              key={`${col.categoryId}-${index}`}
-              href={`/fish?category=${col.slug}`}
-              className="group relative shrink-0 w-[240px] sm:w-[300px] aspect-[4/3] rounded-none sm:rounded-[2px] overflow-hidden bg-gray-100 border border-[#E2E8F0]"
-            >
+          {displayCollections.map((col, index) => {
+            const isDirectPage = [
+              "tanks",
+              "filters",
+              "accessories",
+              "fish-food",
+              "aquarium-plants",
+              "plants",
+              "aquascaping",
+              "aqua-scaping",
+            ].includes(col.slug);
+
+            const href =
+              col.slug === "fish"
+                ? "/fish"
+                : col.slug === "aquascaping"
+                ? "/aqua-scaping"
+                : isDirectPage
+                ? `/${col.slug}`
+                : `/fish?category=${col.slug}`;
+
+            return (
+              <Link
+                key={`${col.categoryId}-${index}`}
+                href={href}
+                className="group relative shrink-0 w-[240px] sm:w-[300px] aspect-[4/3] rounded-none sm:rounded-[2px] overflow-hidden bg-gray-100 border border-[#E2E8F0]"
+              >
               {/* Category Background Image */}
               <Image
                 src={col.image}
@@ -161,7 +182,8 @@ export function CollectionsScrollSection({ categories: initialCategories }: Coll
                 </span>
               </div>
             </Link>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

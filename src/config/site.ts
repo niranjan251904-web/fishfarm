@@ -48,12 +48,12 @@ export const siteConfig = {
   // Store navigation links: Fish, Aqua Scaping, Fish Food, Aquarium Plants, Tanks, Filters, Accessories
   navLinks: [
     { label: "Fish", href: "/fish" },
-    { label: "Aqua Scaping", href: "/collections/aquascaping" },
-    { label: "Fish Food", href: "/collections/fish-food" },
-    { label: "Aquarium Plants", href: "/collections/aquarium-plants" },
-    { label: "Tanks", href: "/collections/tanks" },
-    { label: "Filters", href: "/collections/filters" },
-    { label: "Accessories", href: "/collections/accessories" },
+    { label: "Aqua Scaping", href: "/aqua-scaping" },
+    { label: "Fish Food", href: "/fish-food" },
+    { label: "Aquarium Plants", href: "/aquarium-plants" },
+    { label: "Tanks", href: "/tanks" },
+    { label: "Filters", href: "/filters" },
+    { label: "Accessories", href: "/accessories" },
   ],
 
   campaignCollections: [

@@ -43,35 +43,45 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Col 3: Species Collections */}
+          {/* Col 3: Store Departments */}
           <div>
             <h5 className="text-sm font-bold text-white tracking-wider uppercase mb-4">
-              Fish Collections
+              Store Departments
             </h5>
-            <ul className="space-y-2.5 text-xs text-[#64748B]">
+            <ul className="space-y-2.5 text-xs text-slate-300">
               <li>
-                <Link href="/fish?category=angelfish" className="hover:text-white transition-colors">
-                  Angelfish & Altums
+                <Link href="/fish" className="hover:text-white transition-colors">
+                  Live Farm Fish
                 </Link>
               </li>
               <li>
-                <Link href="/fish?category=algae-eaters" className="hover:text-white transition-colors">
-                  Algae Cleaners & Otos
+                <Link href="/aqua-scaping" className="hover:text-white transition-colors">
+                  Aqua Scaping
                 </Link>
               </li>
               <li>
-                <Link href="/fish?category=betta-fish" className="hover:text-white transition-colors">
-                  Show Plakat Bettas
+                <Link href="/aquarium-plants" className="hover:text-white transition-colors">
+                  Aquarium Plants
                 </Link>
               </li>
               <li>
-                <Link href="/fish?category=catfish" className="hover:text-white transition-colors">
-                  Plecos & Catfish
+                <Link href="/fish-food" className="hover:text-white transition-colors">
+                  Fish Food & Nutrition
                 </Link>
               </li>
               <li>
-                <Link href="/fish?category=barbs" className="hover:text-white transition-colors">
-                  Schooling Fish & Barbs
+                <Link href="/tanks" className="hover:text-white transition-colors">
+                  Glass Aquarium Tanks
+                </Link>
+              </li>
+              <li>
+                <Link href="/filters" className="hover:text-white transition-colors">
+                  Canister & Sponge Filters
+                </Link>
+              </li>
+              <li>
+                <Link href="/accessories" className="hover:text-white transition-colors">
+                  Aquarium Accessories
                 </Link>
               </li>
             </ul>
