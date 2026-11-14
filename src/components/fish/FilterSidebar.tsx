@@ -1,9 +1,13 @@
 "use client";
 
+import { useState } from "react";
+import { ChevronDown, ChevronRight } from "lucide-react";
 import { Category, FilterState } from "@/types";
+import { fishCategories as defaultFishCategories } from "@/data/initialData";
 
 interface FilterSidebarProps {
   categories: Category[];
+  fishCategories?: Category[];
   filters: FilterState;
   onFilterChange: (updates: Partial<FilterState>) => void;
   onReset: () => void;
@@ -15,6 +19,7 @@ interface FilterSidebarProps {
 
 export function FilterSidebar({
   categories,
+  fishCategories: customFishCategories,
   filters,
   onFilterChange,
   onReset,
@@ -23,6 +28,13 @@ export function FilterSidebar({
   isMobileDrawer = false,
   onCloseMobileDrawer,
 }: FilterSidebarProps) {
+  const [fishExpanded, setFishExpanded] = useState(true);
+  const subCategories = customFishCategories || defaultFishCategories;
+
+  // Filter out redundant legacy categories to keep the catalog clean
+  const visibleCategories = categories.filter(
+    (c) => c.active !== false && c.slug !== "plants" && c.slug !== "equipment"
+  );
   return (
     <aside
       className={`flex flex-col gap-6 ${
@@ -82,24 +94,89 @@ export function FilterSidebar({
           </span>
         </div>
 
-        <div className="space-y-1 max-h-56 overflow-y-auto pr-1">
-          {categories.map((cat) => {
+        <div className="space-y-1 max-h-[30rem] overflow-y-auto pr-1">
+          {visibleCategories.map((cat) => {
             const isSelected =
               filters.categoryId.toLowerCase() === cat.slug.toLowerCase();
+            const isFishCategory = cat.slug === "fish";
+            const isAnyFishSubSelected = subCategories.some(
+              (fc) => fc.slug.toLowerCase() === filters.categoryId.toLowerCase()
+            );
+
             return (
-              <button
-                key={cat.categoryId}
-                type="button"
-                onClick={() => onFilterChange({ categoryId: cat.slug })}
-                className={`w-full text-left px-2.5 py-1.5 text-xs rounded-sm transition-colors flex items-center justify-between ${
-                  isSelected
-                    ? "bg-[#E6F4FF] text-[#2878A5] font-semibold border border-[#2878A5]/20"
-                    : "text-[#64748B] hover:text-[#171717] hover:bg-[#F5F3EE]"
-                }`}
-              >
-                <span>{cat.name}</span>
-                {isSelected && <span className="text-[10px]">&bull;</span>}
-              </button>
+              <div key={cat.categoryId} className="space-y-1">
+                <div className="flex items-center gap-1">
+                  <button
+                    type="button"
+                    onClick={() => onFilterChange({ categoryId: cat.slug })}
+                    className={`flex-1 text-left px-2.5 py-1.5 text-xs rounded-sm transition-colors flex items-center justify-between ${
+                      isSelected
+                        ? "bg-[#E6F4FF] text-[#2878A5] font-semibold border border-[#2878A5]/20"
+                        : isAnyFishSubSelected && isFishCategory
+                        ? "bg-[#F5F3EE] text-[#123B5D] font-medium"
+                        : "text-[#64748B] hover:text-[#171717] hover:bg-[#F5F3EE]"
+                    }`}
+                  >
+                    <span>{cat.name}</span>
+                    {isSelected && <span className="text-[10px]">&bull;</span>}
+                  </button>
+
+                  {isFishCategory && (
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setFishExpanded((prev) => !prev);
+                      }}
+                      title={fishExpanded ? "Collapse fish types" : "Expand fish types"}
+                      aria-label={fishExpanded ? "Collapse fish types" : "Expand fish types"}
+                      className="p-1.5 text-[#64748B] hover:text-[#2878A5] hover:bg-[#F5F3EE] rounded-sm transition-colors"
+                    >
+                      {fishExpanded ? (
+                        <ChevronDown className="w-3.5 h-3.5" />
+                      ) : (
+                        <ChevronRight className="w-3.5 h-3.5" />
+                      )}
+                    </button>
+                  )}
+                </div>
+
+                {/* Live Fish Sub-categories (Angelfish, Algae Eaters, Bettas, Catfish, Barbs, Badis) */}
+                {isFishCategory && fishExpanded && (
+                  <div className="pl-3 py-1 space-y-0.5 border-l-2 border-[#2878A5]/30 ml-3 my-1 bg-[#F8FAFC]/60 rounded-r-xs">
+                    {subCategories.map((fishCat) => {
+                      const isFishSubSelected =
+                        filters.categoryId.toLowerCase() === fishCat.slug.toLowerCase();
+                      return (
+                        <button
+                          key={fishCat.categoryId}
+                          type="button"
+                          onClick={() => onFilterChange({ categoryId: fishCat.slug })}
+                          className={`w-full text-left px-2 py-1 text-[11px] rounded-[2px] transition-colors flex items-center justify-between group ${
+                            isFishSubSelected
+                              ? "bg-[#E6F4FF] text-[#2878A5] font-semibold border-l-2 border-[#2878A5]"
+                              : "text-[#64748B] hover:text-[#171717] hover:bg-[#F1F5F9]"
+                          }`}
+                        >
+                          <span className="flex items-center gap-1.5 truncate">
+                            <span
+                              className={`w-1.5 h-1.5 rounded-full flex-shrink-0 transition-colors ${
+                                isFishSubSelected
+                                  ? "bg-[#2878A5]"
+                                  : "bg-[#CBD5E1] group-hover:bg-[#2878A5]/60"
+                              }`}
+                            />
+                            <span className="truncate">{fishCat.name}</span>
+                          </span>
+                          {isFishSubSelected && (
+                            <span className="text-[10px] text-[#2878A5] font-bold ml-1">&bull;</span>
+                          )}
+                        </button>
+                      );
+                    })}
+                  </div>
+                )}
+              </div>
             );
           })}
         </div>

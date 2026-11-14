@@ -145,14 +145,20 @@ export default function AdminPage() {
       }
     }
 
-    // Default credentials for local/sandbox demo
-    const validEmails = ["admin@srmfishfarm.in", "admin@hsaquatics.in", "admin"];
-    if (validEmails.includes(adminEmail.trim()) && adminPassword === "Aquarium2026!") {
+    // Authenticated admin credentials
+    const validEmails = [
+      "srmfishfarm2210@",
+      "srmfishfarm2210@gmail.com",
+      "srmfishfarm2210",
+      "srmfishfarm2210@srmfishfarm.in",
+    ];
+    const inputEmail = adminEmail.trim().toLowerCase();
+    if (validEmails.includes(inputEmail) && adminPassword === "Ramya@2210") {
       setIsAuthenticated(true);
       sessionStorage.setItem("hs_admin_logged_in", "true");
       loadAllAdminData();
     } else {
-      setAuthError("Invalid credentials. Try: admin@srmfishfarm.in / Aquarium2026!");
+      setAuthError("Invalid administrator credentials. Access restricted.");
     }
   };
 
@@ -517,7 +523,7 @@ export default function AdminPage() {
                 type="text"
                 value={adminEmail}
                 onChange={(e) => setAdminEmail(e.target.value)}
-                placeholder="admin@srmfishfarm.in"
+                placeholder="srmfishfarm2210@..."
                 required
                 className="w-full px-3.5 py-2.5 bg-white border border-[#E2E8F0] text-sm text-[#171717] focus:outline-none focus:border-[#2878A5] rounded-xs"
               />
@@ -544,15 +550,6 @@ export default function AdminPage() {
               Sign In to Management
             </button>
           </form>
-
-          <div className="mt-6 pt-6 border-t border-[#E2E8F0] text-center">
-            <span className="text-[11px] text-[#64748B] block">
-              Default Sandbox Credentials:
-            </span>
-            <code className="text-[11px] text-[#171717] font-mono mt-1 block">
-              admin@srmfishfarm.in / Aquarium2026!
-            </code>
-          </div>
         </div>
       </div>
     );
@@ -1373,7 +1370,7 @@ export default function AdminPage() {
                 </div>
               ) : (
                 <div className="p-10 border border-dashed border-[#E2E8F0] text-center rounded-xs text-[#64748B]">
-                  <p className="text-xs">No promotional posters configured. Click "Add Offer Poster" to create one.</p>
+                  <p className="text-xs">No promotional posters configured. Click &quot;Add Offer Poster&quot; to create one.</p>
                 </div>
               )}
             </div>

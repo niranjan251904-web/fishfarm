@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { getProducts, getCategories } from "@/lib/db";
+import { getProducts, getCategories, getFishCategories } from "@/lib/db";
 import { siteConfig } from "@/config/site";
 import { HeroSection } from "@/components/home/HeroSection";
 import { CollectionsScrollSection } from "@/components/home/CollectionsScrollSection";
@@ -14,15 +14,15 @@ export const metadata: Metadata = {
 
 export default async function HomePage() {
   const products = await getProducts();
-  const categories = await getCategories();
+  const fishCategories = await getFishCategories();
 
   return (
     <div className="flex flex-col bg-white">
       {/* 1. Aquarium Video Hero Section with Visible Video & Outlined Button */}
       <HeroSection />
 
-      {/* 2. Collections Horizontal Smooth Scroll (Matching Image 3) */}
-      <CollectionsScrollSection categories={categories} />
+      {/* 2. Collections Horizontal Smooth Scroll (FISH ONLY) */}
+      <CollectionsScrollSection categories={fishCategories} />
 
       {/* 3. Special Offers & Featured Harvest Posters (Configured via Admin) */}
       <SpecialOffersSection />

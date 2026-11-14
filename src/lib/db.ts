@@ -1,5 +1,11 @@
 import { Product, Category, StoreSettings, CustomerOrderAudit } from "@/types";
-import { initialProducts, initialCategories, initialStoreSettings, initialOrderAudits } from "@/data/initialData";
+import {
+  initialProducts,
+  initialCategories,
+  fishCategories,
+  initialStoreSettings,
+  initialOrderAudits,
+} from "@/data/initialData";
 import { db, isFirebaseConfigured } from "./firebase";
 import {
   collection,
@@ -68,6 +74,13 @@ export async function getCategories(): Promise<Category[]> {
     return local;
   }
   return memoryCategories;
+}
+
+/**
+ * Fetch fish-only categories (for homepage collections carousel)
+ */
+export async function getFishCategories(): Promise<Category[]> {
+  return fishCategories;
 }
 
 /**

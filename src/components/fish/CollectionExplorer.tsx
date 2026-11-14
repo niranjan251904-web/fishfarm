@@ -4,7 +4,9 @@ import { useState, useMemo, useEffect } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
+import { MessageCircle } from "lucide-react";
 import { Product, Category, FilterState } from "@/types";
+import { fishCategories } from "@/data/initialData";
 import { FishCard } from "./FishCard";
 import { FilterSidebar } from "./FilterSidebar";
 import { formatCurrency, siteConfig, buildWhatsAppUrl } from "@/config/site";
@@ -86,7 +88,32 @@ export function CollectionExplorer({
           filters.categoryId !== "all" &&
           product.categoryId.toLowerCase() !== filters.categoryId.toLowerCase()
         ) {
-          return false;
+          const cat = filters.categoryId.toLowerCase();
+          const prodCat = product.categoryId.toLowerCase();
+
+          const isFishCategoryFilter =
+            cat === "fish" &&
+            [
+              "angelfish",
+              "algae-eaters",
+              "betta-fish",
+              "catfish",
+              "barbs",
+              "badis",
+              "fish",
+            ].includes(prodCat);
+
+          const isPlantsFilter =
+            (cat === "plants" || cat === "aquarium-plants") &&
+            (prodCat === "plants" || prodCat === "aquarium-plants");
+
+          const isEquipmentFilter =
+            cat === "equipment" &&
+            ["equipment", "filters", "tanks", "accessories"].includes(prodCat);
+
+          if (!isFishCategoryFilter && !isPlantsFilter && !isEquipmentFilter) {
+            return false;
+          }
         }
 
         // Water habitat
@@ -126,7 +153,17 @@ export function CollectionExplorer({
       });
   }, [initialProducts, filters]);
 
-  const activeCategoryObj = categories.find(
+  const allCategories = useMemo(() => {
+    const combined = [...categories];
+    fishCategories.forEach((fc) => {
+      if (!combined.some((c) => c.slug.toLowerCase() === fc.slug.toLowerCase())) {
+        combined.push(fc);
+      }
+    });
+    return combined;
+  }, [categories]);
+
+  const activeCategoryObj = allCategories.find(
     (c) => c.slug.toLowerCase() === filters.categoryId.toLowerCase()
   );
 
@@ -236,6 +273,7 @@ export function CollectionExplorer({
         <div className="hidden lg:block lg:col-span-1">
           <FilterSidebar
             categories={categories}
+            fishCategories={fishCategories}
             filters={filters}
             onFilterChange={handleFilterChange}
             onReset={handleResetFilters}
@@ -247,24 +285,36 @@ export function CollectionExplorer({
         {/* Product Grid: 2 columns on mobile (matching Image 4), 3 cols on desktop */}
         <div className="lg:col-span-3">
           {filteredProducts.length === 0 ? (
-            <div className="p-12 sm:p-16 bg-white border border-[#E2E8F0] rounded-sm text-center space-y-4">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#2878A5]">
-                Zero Specimens Matching Criteria
-              </p>
+            <div className="p-8 sm:p-14 bg-white border border-[#E2E8F0] rounded-[2px] text-center space-y-4 shadow-xs">
+              <span className="inline-block px-3 py-1 rounded-[2px] bg-[#E6F4FF] text-[#2878A5] text-[10px] font-bold uppercase tracking-[0.2em]">
+                Scheduled for Future Upgrade
+              </span>
               <h3 className="font-sans text-2xl font-bold text-[#171717]">
-                No Species Found
+                Consignment Under Bio-Conditioning
               </h3>
               <p className="text-xs sm:text-sm text-[#64748B] max-w-md mx-auto leading-relaxed">
-                We did not find any current lots matching your exact filter combination. New consignments complete quarantine weekly.
+                Items matching this category are currently undergoing prophylactic quarantine and acclimation at our Madurai facility for the upcoming harvest release.
               </p>
-              <div className="pt-2">
+              <div className="pt-2 flex flex-wrap items-center justify-center gap-3">
                 <button
                   type="button"
                   onClick={handleResetFilters}
-                  className="px-5 py-2 text-xs font-semibold uppercase tracking-wider text-white bg-[#2878A5] hover:bg-[#123B5D] rounded-sm transition-colors"
+                  className="px-5 py-2.5 text-xs font-semibold uppercase tracking-wider text-white bg-[#2878A5] hover:bg-[#123B5D] rounded-[2px] transition-colors"
                 >
-                  Reset All Filters
+                  View All Live Stock
                 </button>
+                <a
+                  href={buildWhatsAppUrl(
+                    "Hello SRM Fish Farm! I am inquiring about upcoming lot releases and dispatch schedules.",
+                    { source: "empty_filter" }
+                  )}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 text-xs font-semibold uppercase tracking-wider text-[#171717] bg-[#F5F3EE] hover:bg-gray-200 border border-[#E2E8F0] rounded-[2px] transition-colors"
+                >
+                  <MessageCircle className="w-3.5 h-3.5" />
+                  <span>Notify via WhatsApp</span>
+                </a>
               </div>
             </div>
           ) : (
@@ -291,6 +341,7 @@ export function CollectionExplorer({
           <div className="relative ml-auto w-full max-w-xs h-full bg-white z-10 flex flex-col shadow-xl">
             <FilterSidebar
               categories={categories}
+              fishCategories={fishCategories}
               filters={filters}
               onFilterChange={handleFilterChange}
               onReset={handleResetFilters}

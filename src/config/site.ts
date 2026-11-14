@@ -45,25 +45,27 @@ export const siteConfig = {
     packaging: "Double-gauge medical oxygenated bags with insulated EPS foam containers",
   },
 
-  // Fish-first navigation links (Shrimps, Plants, Snails, Equipment, Merchandise removed)
+  // Store navigation links: Fish, Aqua Scaping, Fish Food, Aquarium Plants, Tanks, Filters, Accessories
   navLinks: [
-    { label: "Explore", href: "/" },
-    { label: "All Fish", href: "/fish" },
-    { label: "Angels", href: "/fish?category=angelfish" },
-    { label: "Algae Eaters", href: "/fish?category=algae-eaters" },
-    { label: "Catfish & Plecos", href: "/fish?category=catfish" },
-    { label: "Bettas", href: "/fish?category=betta-fish" },
-    { label: "Barbs & Tetras", href: "/fish?category=barbs" },
-    { label: "Terms", href: "/terms" },
+    { label: "Fish", href: "/fish" },
+    { label: "Aqua Scaping", href: "/collections/aquascaping" },
+    { label: "Fish Food", href: "/collections/fish-food" },
+    { label: "Aquarium Plants", href: "/collections/aquarium-plants" },
+    { label: "Tanks", href: "/collections/tanks" },
+    { label: "Filters", href: "/collections/filters" },
+    { label: "Accessories", href: "/collections/accessories" },
   ],
 
   campaignCollections: [
-    { name: "Angelfish Sanctuary", slug: "angelfish", categoryId: "angelfish" },
-    { name: "Algae Eaters & Cleaners", slug: "algae-eaters", categoryId: "algae-eaters" },
-    { name: "Show Betta Fish", slug: "betta-fish", categoryId: "betta-fish" },
-    { name: "Exotic Catfish & Plecos", slug: "catfish", categoryId: "catfish" },
-    { name: "Barbs & Tetras", slug: "barbs", categoryId: "barbs" },
-    { name: "Wild Nano & Badis", slug: "badis", categoryId: "badis" },
+    { name: "Live Ornamental Fish", slug: "fish", categoryId: "fish" },
+    { name: "Aqua Scaping Hardscape", slug: "aquascaping", categoryId: "aquascaping" },
+    { name: "Premium Fish Food", slug: "fish-food", categoryId: "fish-food" },
+    { name: "Aquarium Plants", slug: "aquarium-plants", categoryId: "aquarium-plants" },
+    { name: "Live Plants", slug: "plants", categoryId: "aquarium-plants" },
+    { name: "Ultra-Clear Glass Tanks", slug: "tanks", categoryId: "tanks" },
+    { name: "Canister & Bio Filters", slug: "filters", categoryId: "filters" },
+    { name: "Aquarium Equipment", slug: "equipment", categoryId: "equipment" },
+    { name: "Aquarium Accessories", slug: "accessories", categoryId: "accessories" },
   ],
 };
 

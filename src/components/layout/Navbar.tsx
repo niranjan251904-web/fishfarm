@@ -66,8 +66,8 @@ export function Navbar() {
             {/* Left: Brand Logo */}
             <BrandLogo />
 
-            {/* Center: Desktop Navigation (Fish Collections Only) */}
-            <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
+            {/* Center: Desktop Navigation */}
+            <nav className="hidden lg:flex items-center space-x-3.5 xl:space-x-5">
               {siteConfig.navLinks.map((link) => {
                 const isActive =
                   pathname === link.href ||
@@ -76,7 +76,7 @@ export function Navbar() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className={`text-xs font-semibold uppercase tracking-widest transition-colors py-1 ${
+                    className={`text-[11px] xl:text-xs font-semibold uppercase tracking-wider transition-colors py-1 whitespace-nowrap ${
                       isActive
                         ? "text-[#2878A5]"
                         : "text-[#64748B] hover:text-[#123B5D]"
@@ -125,7 +125,7 @@ export function Navbar() {
         <div className="fixed inset-0 top-[60px] z-50 lg:hidden bg-white border-t border-[#E2E8F0] flex flex-col justify-between p-6 overflow-y-auto">
           <div className="space-y-4">
             <p className="text-[10px] font-bold uppercase tracking-widest text-[#2878A5] mb-2">
-              Fish Collections & Menu
+              Aquarium Categories & Menu
             </p>
             <div className="flex flex-col space-y-3">
               {siteConfig.navLinks.map((link) => {
