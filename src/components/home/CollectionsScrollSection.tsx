@@ -10,9 +10,37 @@ interface CollectionsScrollSectionProps {
   categories: Category[];
 }
 
-export function CollectionsScrollSection({ categories }: CollectionsScrollSectionProps) {
+export function CollectionsScrollSection({ categories: initialCategories }: CollectionsScrollSectionProps) {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [isPaused, setIsPaused] = useState(false);
+  const [categories, setCategories] = useState<Category[]>(initialCategories);
+
+  useEffect(() => {
+    const saved = localStorage.getItem("srm_fishfarm_categories_v1");
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          // Keep fish-only / active collections
+          setCategories(parsed.filter((c) => c.active !== false));
+        }
+      } catch {}
+    }
+
+    const handleUpdate = (e: Event) => {
+      const customEvent = e as CustomEvent<Category[]>;
+      if (customEvent.detail && Array.isArray(customEvent.detail)) {
+        setCategories(customEvent.detail.filter((c) => c.active !== false));
+      }
+    };
+
+    window.addEventListener("srm_categories_updated", handleUpdate);
+    window.addEventListener("storage", handleUpdate);
+    return () => {
+      window.removeEventListener("srm_categories_updated", handleUpdate);
+      window.removeEventListener("storage", handleUpdate);
+    };
+  }, []);
 
   // Filter out 'all' category
   const baseCollections = categories.filter((c) => c.slug !== "all");

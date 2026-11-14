@@ -1,0 +1,2356 @@
+{
+  "products": [
+    {
+      "productId": "prod-oto-01",
+      "name": "Otocinclus [Large]",
+      "slug": "algae-eaters-otocinclus-large",
+      "categoryId": "algae-eaters",
+      "categoryName": "Algae Eaters",
+      "scientificName": "Macrotocinclus affinis",
+      "originalPrice": 280,
+      "sellingPrice": 220,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "1.2\" - 1.5\"",
+      "description": "The undisputed champion of soft green algae and diatom removal. Peaceful, social, and completely harmless to delicate aquascape flora and dwarf shrimp colonies. Acclimated and feeding voraciously on biofilm and blanched vegetables.",
+      "careInformation": {
+        "tankSize": "15+ Gallons",
+        "temperament": "Extremely Peaceful",
+        "temperature": "22°C - 26°C",
+        "phRange": "6.2 - 7.5",
+        "diet": "Herbivore (Diatoms, algae wafers, zucchini)",
+        "careLevel": "Moderate",
+        "swimmingLevel": "Bottom & Glass Surfaces",
+        "minimumGroupSize": 6
+      },
+      "images": [
+        "/images/fish/algae-eaters-otocinclus.jpg",
+        "/images/fish/algae-eaters-panda-garra.webp"
+      ],
+      "featured": true,
+      "badge": "Essential Cleaner",
+      "createdAt": "2026-01-15T08:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z"
+    },
+    {
+      "productId": "prod-garra-01",
+      "name": "Panda Garra",
+      "slug": "algae-eaters-panda-garra",
+      "categoryId": "algae-eaters",
+      "categoryName": "Algae Eaters",
+      "scientificName": "Garra flavatra",
+      "originalPrice": 250,
+      "sellingPrice": 190,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "2.0\" - 2.5\"",
+      "description": "A charismatic hillstream grazer with striking banded coloration. Renowned for its lively personality and indefatigable appetite for stubborn biofilm, black beard algae, and organic detritus.",
+      "careInformation": {
+        "tankSize": "20+ Gallons",
+        "temperament": "Peaceful & Curious",
+        "temperature": "22°C - 27°C",
+        "phRange": "6.5 - 7.5",
+        "diet": "Omnivorous Algae Grazer",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Hardscape & Substrate",
+        "minimumGroupSize": 3
+      },
+      "images": [
+        "/images/fish/algae-eaters-panda-garra.webp",
+        "/images/fish/algae-eaters-otocinclus.jpg"
+      ],
+      "featured": true,
+      "badge": "Top Grazer",
+      "createdAt": "2026-02-10T08:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z"
+    },
+    {
+      "productId": "prod-sae-01",
+      "name": "Siamese Algae Eater (SAE)",
+      "slug": "algae-eaters-siamese-algae-eater",
+      "categoryId": "algae-eaters",
+      "categoryName": "Algae Eaters",
+      "scientificName": "Crossocheilus oblongus",
+      "originalPrice": 70,
+      "sellingPrice": 50,
+      "availability": "out_of_stock",
+      "waterType": "freshwater",
+      "size": "2.0\" - 2.5\"",
+      "description": "True Crossocheilus specimen verified by continuous horizontal lateral black stripe extending through the caudal fin. World-famous for consuming nuisance Black Beard Algae (BBA).",
+      "careInformation": {
+        "tankSize": "30+ Gallons",
+        "temperament": "Peaceful / Active",
+        "temperature": "24°C - 26°C",
+        "phRange": "6.5 - 7.5",
+        "diet": "Omnivorous / Algae",
+        "careLevel": "Beginner",
+        "swimmingLevel": "All Levels",
+        "minimumGroupSize": 3
+      },
+      "images": [
+        "/images/fish/algae-eaters-siamese-algae-eater.webp"
+      ],
+      "featured": false,
+      "badge": "BBA Specialist",
+      "createdAt": "2026-01-20T08:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z"
+    },
+    {
+      "productId": "prod-gae-01",
+      "name": "Golden Algae Eater",
+      "slug": "algae-eaters-golden-algae-eater",
+      "categoryId": "algae-eaters",
+      "categoryName": "Algae Eaters",
+      "scientificName": "Gyrinocheilus aymonieri var. gold",
+      "originalPrice": 80,
+      "sellingPrice": 50,
+      "availability": "out_of_stock",
+      "waterType": "freshwater",
+      "size": "2.5\"",
+      "description": "Luminous golden-yellow body with energetic bottom-grazing habits. Highly efficient at scouring rocks and driftwood clean in high-flow setups.",
+      "careInformation": {
+        "tankSize": "30+ Gallons",
+        "temperament": "Semi-Aggressive with age",
+        "temperature": "24°C - 27°C",
+        "phRange": "6.8 - 7.8",
+        "diet": "Algae & Sinking pellets",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Bottom",
+        "minimumGroupSize": 1
+      },
+      "images": [
+        "/images/fish/images-2026-09-27T230159.759.jpg"
+      ],
+      "featured": false,
+      "createdAt": "2026-02-05T08:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z"
+    },
+    {
+      "productId": "prod-fox-01",
+      "name": "True Flying Fox",
+      "slug": "algae-eaters-true-flying-fox",
+      "categoryId": "algae-eaters",
+      "categoryName": "Algae Eaters",
+      "scientificName": "Epalzeorhynchos kalopterus",
+      "originalPrice": 120,
+      "sellingPrice": 80,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "2.0\" - 3.0\"",
+      "description": "A stunning torpedo-shaped fish boasting a bold black lateral stripe flanked by a vibrant gold band and striking fin coloration. Excellent scavenger for medium to large aquaria.",
+      "careInformation": {
+        "tankSize": "30+ Gallons",
+        "temperament": "Semi-territorial with conspecifics",
+        "temperature": "24°C - 27°C",
+        "phRange": "6.5 - 7.5",
+        "diet": "Algae, flakes, insect larvae",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Mid to Bottom",
+        "minimumGroupSize": 1
+      },
+      "images": [
+        "/images/fish/algae-eaters-true-flying-fox.webp"
+      ],
+      "featured": false,
+      "createdAt": "2026-02-15T08:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z"
+    },
+    {
+      "productId": "prod-anchor-01",
+      "name": "Asian Stone / Anchor Catfish",
+      "slug": "algae-eaters-anchor-catfish",
+      "categoryId": "algae-eaters",
+      "categoryName": "Algae Eaters",
+      "scientificName": "Hara jerdoni",
+      "originalPrice": 280,
+      "sellingPrice": 220,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "1.0\" - 1.2\"",
+      "description": "One of the world's smallest and most intriguing micro-catfishes. Shaped like a miniature nautical anchor with mottled camouflage patterns. Perfect for nano-planted biotopes.",
+      "careInformation": {
+        "tankSize": "10+ Gallons",
+        "temperament": "Ultra Peaceful / Shy",
+        "temperature": "18°C - 24°C",
+        "phRange": "6.0 - 7.2",
+        "diet": "Micro carnivore (Daphnia, baby brine)",
+        "careLevel": "Moderate",
+        "swimmingLevel": "Substrate & Leaf Litter",
+        "minimumGroupSize": 4
+      },
+      "images": [
+        "/images/fish/algae-eaters-anchor-catfish.webp"
+      ],
+      "featured": false,
+      "badge": "Rare Micro",
+      "createdAt": "2026-03-01T08:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z"
+    },
+    {
+      "productId": "prod-altum-01",
+      "name": "Wild Altum Angel (Orinoco River)",
+      "slug": "angels-altum-angel",
+      "categoryId": "angelfish",
+      "categoryName": "Angelfish",
+      "scientificName": "Pterophyllum altum",
+      "originalPrice": 7000,
+      "sellingPrice": 7000,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "4.0\" - 5.5\" Tall",
+      "description": "The pinnacle of freshwater elegance. True Pterophyllum altum imported from the Rio Orinoco basin. Fully acclimated through our 30-day biosecurity quarantine with towering vertical fin spans and unmistakable notched cranial profiles.",
+      "careInformation": {
+        "tankSize": "75+ Gallons (Tall Tank 24\"+)",
+        "temperament": "Regal & Peaceful",
+        "temperature": "27°C - 30°C",
+        "phRange": "4.8 - 6.5",
+        "diet": "Quality live & frozen fare, specialized cichlid pellets",
+        "careLevel": "Expert",
+        "swimmingLevel": "Mid-Water Column",
+        "minimumGroupSize": 5
+      },
+      "images": [
+        "/images/fish/angels-altum-angel.webp",
+        "/images/fish/angels-rio-nanay.jpg"
+      ],
+      "featured": true,
+      "badge": "Wild Sovereign",
+      "createdAt": "2026-01-01T08:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z"
+    },
+    {
+      "productId": "prod-dantum-01",
+      "name": "Albino Dantum Angel",
+      "slug": "angels-albino-dantum",
+      "categoryId": "angelfish",
+      "categoryName": "Angelfish",
+      "scientificName": "Pterophyllum scalare × altum hybrid",
+      "originalPrice": 4000,
+      "sellingPrice": 2999,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "3.0\" - 3.5\"",
+      "description": "Exquisite hybrid vigor marrying the towering silhouette of the Altum with the resilient grace and ethereal albino iridescence of Scalare. Features luminous ruby eyes and flowing finnage.",
+      "careInformation": {
+        "tankSize": "55+ Gallons",
+        "temperament": "Peaceful Community",
+        "temperature": "26°C - 29°C",
+        "phRange": "6.0 - 7.0",
+        "diet": "High-protein granules, bloodworms, krill",
+        "careLevel": "Advanced",
+        "swimmingLevel": "Mid to Upper",
+        "minimumGroupSize": 4
+      },
+      "images": [
+        "/images/fish/images-2026-10-16T212315.794.jpg",
+        "/images/fish/angels-altum-angel.webp"
+      ],
+      "featured": true,
+      "badge": "25% OFF",
+      "createdAt": "2026-02-12T08:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z"
+    },
+    {
+      "productId": "prod-black-paraiba-pair",
+      "name": "Black & Paraiba Blue Proven Breeding Pair",
+      "slug": "angels-black-and-paraiba-blue-pair",
+      "categoryId": "angelfish",
+      "categoryName": "Angelfish",
+      "scientificName": "Pterophyllum scalare var.",
+      "originalPrice": 4500,
+      "sellingPrice": 3000,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "Adult Pair (3.5\" - 4.5\")",
+      "description": "Bonded, confirmed fertile breeding pair featuring one pitch-black velvet specimen and one metallic Paraiba blue iridescent partner. Consistently lays clutches on vertical slate tiles.",
+      "careInformation": {
+        "tankSize": "40+ Gallon Breeder",
+        "temperament": "Pair-Bonded / Defensive during spawns",
+        "temperature": "27°C - 29°C",
+        "phRange": "6.5 - 7.0",
+        "diet": "Conditioning diet: brine shrimp, beefheart mix, spirulina",
+        "careLevel": "Moderate",
+        "swimmingLevel": "Mid-Water",
+        "minimumGroupSize": 2
+      },
+      "images": [
+        "/images/fish/images-2026-10-16T195450.945.jpg",
+        "/images/fish/images-2026-10-16T200054.698.jpg"
+      ],
+      "featured": true,
+      "badge": "Confirmed Pair",
+      "createdAt": "2026-02-28T08:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z"
+    },
+    {
+      "productId": "prod-black-angel-pair",
+      "name": "Black Angel Proven Pair",
+      "slug": "angels-black-angel-pair",
+      "categoryId": "angelfish",
+      "categoryName": "Angelfish",
+      "scientificName": "Pterophyllum scalare var. double dark",
+      "originalPrice": 4500,
+      "sellingPrice": 3000,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "Adult Pair (3.5\" - 4.5\")",
+      "description": "A statuesque matched pair of double-dark solid black angels. Free from silver banding or discoloration, displaying deep matte-velvet depth and magnificent sailfin symmetry.",
+      "careInformation": {
+        "tankSize": "40+ Gallon Breeder",
+        "temperament": "Pair-Bonded",
+        "temperature": "26°C - 29°C",
+        "phRange": "6.5 - 7.2",
+        "diet": "Rich varied cichlid menu",
+        "careLevel": "Moderate",
+        "swimmingLevel": "Mid-Water",
+        "minimumGroupSize": 2
+      },
+      "images": [
+        "/images/fish/images-2026-10-16T200054.698.jpg",
+        "/images/fish/angels-jet-black.webp"
+      ],
+      "featured": false,
+      "badge": "Proven Pair",
+      "createdAt": "2026-03-05T08:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z"
+    },
+    {
+      "productId": "prod-jet-blush-semi",
+      "name": "Jet Black & Blush Black Angel [Semi Adult]",
+      "slug": "angels-jet-black-blush-black-semi-adult",
+      "categoryId": "angelfish",
+      "categoryName": "Angelfish",
+      "scientificName": "Pterophyllum scalare var.",
+      "originalPrice": 1000,
+      "sellingPrice": 500,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "2.5\" - 3.2\"",
+      "description": "Semi-adult specimen possessing deep black body pigment with captivating blushing gill plates. Vigorous, hand-fed, and showing exceptional dorsal extension.",
+      "careInformation": {
+        "tankSize": "30+ Gallons",
+        "temperament": "Peaceful",
+        "temperature": "26°C - 28°C",
+        "phRange": "6.5 - 7.2",
+        "diet": "Pellets, mysis shrimp, flakes",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Mid-Water",
+        "minimumGroupSize": 3
+      },
+      "images": [
+        "/images/fish/images-2026-10-16T194855.057.jpg",
+        "/images/fish/angels-jet-black.webp"
+      ],
+      "featured": false,
+      "badge": "50% OFF",
+      "createdAt": "2026-03-10T08:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z"
+    },
+    {
+      "productId": "prod-bsp-01",
+      "name": "BSP Angel (Bulgarian Seal Point)",
+      "slug": "angels-bsp-angel",
+      "categoryId": "angelfish",
+      "categoryName": "Angelfish",
+      "scientificName": "Pterophyllum scalare var. Bulgarian",
+      "originalPrice": 250,
+      "sellingPrice": 200,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "2.0\" - 2.5\"",
+      "description": "A connoisseur's angel strain characterized by intense dark point coloration contrasting against a clean, pearlized body background. Bred from pure European lineage.",
+      "careInformation": {
+        "tankSize": "30+ Gallons",
+        "temperament": "Peaceful Community",
+        "temperature": "25°C - 28°C",
+        "phRange": "6.4 - 7.4",
+        "diet": "Omnivore",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Mid-Water Column",
+        "minimumGroupSize": 4
+      },
+      "images": [
+        "/images/fish/Bulgarian-Seal-Point-Angel-Fish-1000x1000_1.jpg",
+        "/images/fish/angels-jet-black.webp"
+      ],
+      "featured": true,
+      "badge": "Collector Pick",
+      "createdAt": "2026-02-18T08:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z"
+    },
+    {
+      "productId": "prod-veiltail-01",
+      "name": "High Cover Veiltail Angel",
+      "slug": "angels-high-cover-veiltail",
+      "categoryId": "angelfish",
+      "categoryName": "Angelfish",
+      "scientificName": "Pterophyllum scalare var. veil",
+      "originalPrice": 250,
+      "sellingPrice": 250,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "2.5\" Body (4.5\" with finnage)",
+      "description": "Features spectacular flowing drapery on dorsal, ventral, and caudal fins. The high-cover body pattern creates a majestic presence under soft planted tank lighting.",
+      "careInformation": {
+        "tankSize": "40+ Gallons (Tall)",
+        "temperament": "Gentle / Slow Moving",
+        "temperature": "25°C - 28°C",
+        "phRange": "6.5 - 7.2",
+        "diet": "Slow sinking pellets, frozen daphnia",
+        "careLevel": "Moderate",
+        "swimmingLevel": "Mid-Water",
+        "minimumGroupSize": 3
+      },
+      "images": [
+        "/images/fish/WhatsApp-Image-2025-09-10-at-8.25.01-PM.jpg",
+        "/images/fish/Bulgarian-Seal-Point-Angel-Fish-1000x1000_1.jpg"
+      ],
+      "featured": false,
+      "createdAt": "2026-02-22T08:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z"
+    },
+    {
+      "productId": "prod-pinoy-paraiba-01",
+      "name": "Pinoy Paraiba Angel [2 to 3 inches]",
+      "slug": "angels-pinoy-paraiba-angel",
+      "categoryId": "angelfish",
+      "categoryName": "Angelfish",
+      "scientificName": "Pterophyllum scalare var. Pinoy Paraiba",
+      "originalPrice": 150,
+      "sellingPrice": 90,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "2.0\" - 3.0\"",
+      "description": "Combines the dark undertone gene with Philippine Blue and pearlscale iridescence. Each individual reflects hues of metallic teal and cyan under full-spectrum LED lighting.",
+      "careInformation": {
+        "tankSize": "30+ Gallons",
+        "temperament": "Peaceful",
+        "temperature": "25°C - 28°C",
+        "phRange": "6.5 - 7.2",
+        "diet": "Varied cichlid diet",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Mid-Water",
+        "minimumGroupSize": 4
+      },
+      "images": [
+        "/images/fish/images-2026-09-27T233532.003.jpg",
+        "/images/fish/images-2026-09-27T234324.343.jpg"
+      ],
+      "featured": true,
+      "badge": "40% OFF",
+      "createdAt": "2026-01-25T08:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z"
+    },
+    {
+      "productId": "prod-paraiba-blue-01",
+      "name": "Paraiba Blue Angel",
+      "slug": "angels-paraiba-blue-angel",
+      "categoryId": "angelfish",
+      "categoryName": "Angelfish",
+      "scientificName": "Pterophyllum scalare var. Paraiba Blue",
+      "originalPrice": 110,
+      "sellingPrice": 95,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "2.0\" - 2.5\"",
+      "description": "Exquisite electric cobalt sheen overlaying a translucent ivory and silver frame. A peaceful, schooling centerpiece for lush green aquascapes.",
+      "careInformation": {
+        "tankSize": "30+ Gallons",
+        "temperament": "Peaceful",
+        "temperature": "25°C - 28°C",
+        "phRange": "6.5 - 7.2",
+        "diet": "Spirulina flakes, micro pellets",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Mid-Water",
+        "minimumGroupSize": 4
+      },
+      "images": [
+        "/images/fish/images-2026-09-27T234324.343.jpg",
+        "/images/fish/images-2026-09-27T235212.609.jpg"
+      ],
+      "featured": false,
+      "createdAt": "2026-02-01T08:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z"
+    },
+    {
+      "productId": "prod-phil-blue-01",
+      "name": "Philippine Blue Angel",
+      "slug": "angels-philippine-blue-angel",
+      "categoryId": "angelfish",
+      "categoryName": "Angelfish",
+      "scientificName": "Pterophyllum scalare var. Philippine Blue",
+      "originalPrice": 120,
+      "sellingPrice": 90,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "2.0\" - 2.5\"",
+      "description": "True homozygote Philippine Blue line (pb/pb). As they mature, an ethereal turquoise-blue luminescence blankets their crown, cheeks, and dorsal ridges.",
+      "careInformation": {
+        "tankSize": "30+ Gallons",
+        "temperament": "Peaceful",
+        "temperature": "25°C - 28°C",
+        "phRange": "6.4 - 7.2",
+        "diet": "Omnivore",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Mid-Water",
+        "minimumGroupSize": 4
+      },
+      "images": [
+        "/images/fish/images-2026-09-27T235212.609.jpg",
+        "/images/fish/images-2026-09-27T234324.343.jpg"
+      ],
+      "featured": false,
+      "badge": "25% OFF",
+      "createdAt": "2026-02-03T08:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z"
+    },
+    {
+      "productId": "prod-albino-plat-01",
+      "name": "Albino Platinum Angel",
+      "slug": "angels-albino-platinum",
+      "categoryId": "angelfish",
+      "categoryName": "Angelfish",
+      "scientificName": "Pterophyllum scalare var. Platinum Albino",
+      "originalPrice": 450,
+      "sellingPrice": 350,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "2.0\" - 2.5\"",
+      "description": "Glistening snow-white body devoid of any dark pigmentation, accented by unmistakable ruby-red albino pupils. Outstanding contrast fish in dark-substrate planted tanks.",
+      "careInformation": {
+        "tankSize": "30+ Gallons",
+        "temperament": "Gentle",
+        "temperature": "26°C - 28°C",
+        "phRange": "6.5 - 7.0",
+        "diet": "Balanced micro-pellets and enriched artemia",
+        "careLevel": "Moderate",
+        "swimmingLevel": "Mid-Water",
+        "minimumGroupSize": 3
+      },
+      "images": [
+        "/images/fish/images-2026-09-27T235652.602.jpg",
+        "/images/fish/images-2026-10-02T022640.708.jpg"
+      ],
+      "featured": false,
+      "createdAt": "2026-02-14T08:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z"
+    },
+    {
+      "productId": "prod-jet-black-01",
+      "name": "Jet Black Angel",
+      "slug": "angels-jet-black",
+      "categoryId": "angelfish",
+      "categoryName": "Angelfish",
+      "scientificName": "Pterophyllum scalare var. Jet Black",
+      "originalPrice": 110,
+      "sellingPrice": 95,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "2.0\" - 2.5\"",
+      "description": "Deep obsidian body coloration with uniform matte texture. Healthy fin edges without tearing, rigorously quarantined and eating standard sinking foods.",
+      "careInformation": {
+        "tankSize": "30+ Gallons",
+        "temperament": "Peaceful",
+        "temperature": "25°C - 28°C",
+        "phRange": "6.5 - 7.2",
+        "diet": "Pellets, flakes, frozen brine",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Mid-Water",
+        "minimumGroupSize": 4
+      },
+      "images": [
+        "/images/fish/angels-jet-black.webp",
+        "/images/fish/images-2026-10-16T200054.698.jpg"
+      ],
+      "featured": true,
+      "badge": "Popular Stunner",
+      "createdAt": "2026-01-18T08:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z"
+    },
+    {
+      "productId": "prod-albino-manacapuru-01",
+      "name": "Albino Manacapuru Angel",
+      "slug": "angels-albino-manacapuru",
+      "categoryId": "angelfish",
+      "categoryName": "Angelfish",
+      "scientificName": "Pterophyllum scalare var. Manacapuru Albino",
+      "originalPrice": 500,
+      "sellingPrice": 380,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "2.0\" - 2.8\"",
+      "description": "Bred from genuine Rio Manacapuru wild bloodlines carrying the prized intense scarlet/orange shoulder trait in an albino formulation. Ruby red eyes with soft peach-red nape blush.",
+      "careInformation": {
+        "tankSize": "40+ Gallons",
+        "temperament": "Peaceful",
+        "temperature": "26°C - 29°C",
+        "phRange": "6.2 - 7.0",
+        "diet": "Color-enhancing astaxanthin flakes & frozen mysis",
+        "careLevel": "Moderate",
+        "swimmingLevel": "Mid-Water",
+        "minimumGroupSize": 4
+      },
+      "images": [
+        "/images/fish/images-2026-10-02T022640.708.jpg",
+        "/images/fish/angels-red-cap-red-eyes.webp"
+      ],
+      "featured": true,
+      "badge": "Rare Strain",
+      "createdAt": "2026-02-19T08:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z"
+    },
+    {
+      "productId": "prod-redcap-01",
+      "name": "Red Cap Red Eyes Angel",
+      "slug": "angels-red-cap-red-eyes",
+      "categoryId": "angelfish",
+      "categoryName": "Angelfish",
+      "scientificName": "Pterophyllum scalare var. Koi Red Cap",
+      "originalPrice": 550,
+      "sellingPrice": 450,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "2.5\"",
+      "description": "Vivid crimson-orange cap covering the head and nape above a snow-white body, complemented by jewel-like red iris pigmentation. A showstopper in planted aquaria.",
+      "careInformation": {
+        "tankSize": "30+ Gallons",
+        "temperament": "Peaceful Community",
+        "temperature": "25°C - 28°C",
+        "phRange": "6.5 - 7.2",
+        "diet": "Astaxanthin rich foods, artemia",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Mid-Water",
+        "minimumGroupSize": 3
+      },
+      "images": [
+        "/images/fish/angels-red-cap-red-eyes.webp",
+        "/images/fish/images-2026-10-02T022640.708.jpg"
+      ],
+      "featured": false,
+      "createdAt": "2026-03-02T08:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z"
+    },
+    {
+      "productId": "prod-green-pinoy-01",
+      "name": "Green Pinoy Angel",
+      "slug": "angels-green-pinoy-angel",
+      "categoryId": "angelfish",
+      "categoryName": "Angelfish",
+      "scientificName": "Pterophyllum scalare var. Green Pinoy",
+      "originalPrice": 110,
+      "sellingPrice": 95,
+      "availability": "out_of_stock",
+      "waterType": "freshwater",
+      "size": "2.0\" - 2.5\"",
+      "description": "A scarce morph expressing emerald-tinted undertones on a darkened velvet flank. Produces a subtle forest-green luster under angled daylight spectrums.",
+      "careInformation": {
+        "tankSize": "30+ Gallons",
+        "temperament": "Peaceful",
+        "temperature": "25°C - 28°C",
+        "phRange": "6.5 - 7.2",
+        "diet": "Omnivore",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Mid-Water",
+        "minimumGroupSize": 4
+      },
+      "images": [
+        "/images/fish/images-2026-09-27T233426.173.jpg"
+      ],
+      "featured": false,
+      "createdAt": "2026-01-22T08:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z"
+    },
+    {
+      "productId": "prod-manacapuru-wild-01",
+      "name": "Rio Manacapuru Red Back Angel",
+      "slug": "angels-manacapuru-red-back",
+      "categoryId": "angelfish",
+      "categoryName": "Angelfish",
+      "scientificName": "Pterophyllum scalare 'Manacapuru'",
+      "originalPrice": 400,
+      "sellingPrice": 300,
+      "availability": "out_of_stock",
+      "waterType": "freshwater",
+      "size": "2.5\" - 3.0\"",
+      "description": "Legendary Amazonian geographic race renowned for its fiery burnt-orange to deep vermillion back cape and stark vertical black bars.",
+      "careInformation": {
+        "tankSize": "40+ Gallons",
+        "temperament": "Peaceful",
+        "temperature": "26°C - 29°C",
+        "phRange": "6.0 - 7.0",
+        "diet": "High quality flakes, granules, frozen mysis",
+        "careLevel": "Moderate",
+        "swimmingLevel": "Mid-Water",
+        "minimumGroupSize": 4
+      },
+      "images": [
+        "/images/fish/images-2026-10-02T022335.020.jpg"
+      ],
+      "featured": false,
+      "createdAt": "2026-02-04T08:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z"
+    },
+    {
+      "productId": "prod-scar-marble-01",
+      "name": "Scar Marble Angel",
+      "slug": "angels-scar-marble",
+      "categoryId": "angelfish",
+      "categoryName": "Angelfish",
+      "scientificName": "Pterophyllum scalare var. Marble",
+      "originalPrice": 65,
+      "sellingPrice": 65,
+      "availability": "out_of_stock",
+      "waterType": "freshwater",
+      "size": "1.8\" - 2.2\"",
+      "description": "Distinct mosaic marbling across flanks with patches of jet black and silver. Hardy, adaptable, and great for novice aquarists setting up their first cichlid aquarium.",
+      "careInformation": {
+        "tankSize": "30+ Gallons",
+        "temperament": "Peaceful",
+        "temperature": "24°C - 28°C",
+        "phRange": "6.5 - 7.5",
+        "diet": "Flakes, granules",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Mid-Water",
+        "minimumGroupSize": 3
+      },
+      "images": [
+        "/images/fish/angels-scar-marble.jpg"
+      ],
+      "featured": false,
+      "createdAt": "2026-01-30T08:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z"
+    },
+    {
+      "productId": "prod-marble-01",
+      "name": "Classic Marble Angel",
+      "slug": "angels-marble-angel",
+      "categoryId": "angelfish",
+      "categoryName": "Angelfish",
+      "scientificName": "Pterophyllum scalare var.",
+      "originalPrice": 65,
+      "sellingPrice": 65,
+      "availability": "out_of_stock",
+      "waterType": "freshwater",
+      "size": "2.0\"",
+      "description": "Time-tested classic variety featuring irregular painterly blotches of black and platinum. Active feeders and peaceful tank companions.",
+      "careInformation": {
+        "tankSize": "30+ Gallons",
+        "temperament": "Peaceful",
+        "temperature": "24°C - 28°C",
+        "phRange": "6.5 - 7.5",
+        "diet": "Omnivore",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Mid-Water",
+        "minimumGroupSize": 3
+      },
+      "images": [
+        "/images/fish/images-2026-10-02T023001.918.jpg"
+      ],
+      "featured": false,
+      "createdAt": "2026-02-08T08:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z"
+    },
+    {
+      "productId": "prod-smokey-xl-01",
+      "name": "Smokey XL Angel",
+      "slug": "angels-smokey-xl",
+      "categoryId": "angelfish",
+      "categoryName": "Angelfish",
+      "scientificName": "Pterophyllum scalare var. Smokey",
+      "originalPrice": 120,
+      "sellingPrice": 120,
+      "availability": "out_of_stock",
+      "waterType": "freshwater",
+      "size": "3.0\" - 3.5\"",
+      "description": "Charcoal-dusted back half transitioning smoothly into a crisp silvery anterior. Fully grown specimens exhibit striking fin extensions.",
+      "careInformation": {
+        "tankSize": "35+ Gallons",
+        "temperament": "Peaceful",
+        "temperature": "25°C - 28°C",
+        "phRange": "6.5 - 7.2",
+        "diet": "Varied cichlid diet",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Mid-Water",
+        "minimumGroupSize": 3
+      },
+      "images": [
+        "/images/fish/angels-smokey-xl.jpg"
+      ],
+      "featured": false,
+      "createdAt": "2026-02-17T08:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z"
+    },
+    {
+      "productId": "prod-rio-nanay-01",
+      "name": "Rio Nanay Wild Angel (F1)",
+      "slug": "angels-rio-nanay",
+      "categoryId": "angelfish",
+      "categoryName": "Angelfish",
+      "scientificName": "Pterophyllum scalare 'Rio Nanay'",
+      "originalPrice": 350,
+      "sellingPrice": 250,
+      "availability": "out_of_stock",
+      "waterType": "freshwater",
+      "size": "2.5\" - 3.0\"",
+      "description": "F1 generation offspring directly sourced from Peruvian wild Rio Nanay broodstock. Known for copper spots over the nape and intense metallic emerald gill plates.",
+      "careInformation": {
+        "tankSize": "40+ Gallons",
+        "temperament": "Peaceful Community",
+        "temperature": "26°C - 29°C",
+        "phRange": "5.5 - 6.8",
+        "diet": "Frozen bloodworms, artemia, granules",
+        "careLevel": "Moderate",
+        "swimmingLevel": "Mid-Water",
+        "minimumGroupSize": 4
+      },
+      "images": [
+        "/images/fish/angels-rio-nanay.jpg"
+      ],
+      "featured": false,
+      "createdAt": "2026-02-25T08:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z"
+    },
+    {
+      "productId": "prod-betta-nemo-01",
+      "name": "Nemo Candy Plakat Betta (Male)",
+      "slug": "betta-nemo-candy-plakat",
+      "categoryId": "betta-fish",
+      "categoryName": "Betta Fish",
+      "scientificName": "Betta splendens",
+      "originalPrice": 1100,
+      "sellingPrice": 850,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "1.8\" - 2.2\"",
+      "description": "A show-grade shortfin Plakat featuring vibrant bursts of orange, yellow, and red cell pigmentation speckled with holographic candy metallic scales. High activity level with crisp 180° caudal spread.",
+      "careInformation": {
+        "tankSize": "5+ Gallons (Heated & Filtered)",
+        "temperament": "Solitary (Aggressive to other Bettas)",
+        "temperature": "25°C - 28°C",
+        "phRange": "6.5 - 7.5",
+        "diet": "High-protein carnivore (Betta pellets, daphnia, bloodworms)",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Top & Mid-Water",
+        "minimumGroupSize": 1
+      },
+      "images": [
+        "/images/fish/betta-nemo-candy-500x500.webp",
+        "/images/fish/IMG_4363_90f9a005-0c5b-48cc-a033-01f5bd49fdf1.webp"
+      ],
+      "featured": true,
+      "badge": "Show Grade",
+      "createdAt": "2026-02-20T08:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z"
+    },
+    {
+      "productId": "prod-betta-koi-01",
+      "name": "Galaxy Koi Plakat Betta",
+      "slug": "betta-galaxy-koi-plakat",
+      "categoryId": "betta-fish",
+      "categoryName": "Betta Fish",
+      "scientificName": "Betta splendens",
+      "originalPrice": 1200,
+      "sellingPrice": 950,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "2.0\"",
+      "description": "Dazzling marbled Koi pattern layered with reflective metallic galaxy dots that shine under direct illumination. Exceptional fin symmetry and energetic temperament.",
+      "careInformation": {
+        "tankSize": "5+ Gallons",
+        "temperament": "Solitary",
+        "temperature": "25°C - 28°C",
+        "phRange": "6.5 - 7.2",
+        "diet": "Premium Betta pellets, frozen artemia",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Top & Mid-Water",
+        "minimumGroupSize": 1
+      },
+      "images": [
+        "/images/fish/IMG_4363_90f9a005-0c5b-48cc-a033-01f5bd49fdf1.webp",
+        "/images/fish/betta-nemo-candy-500x500.webp"
+      ],
+      "featured": false,
+      "badge": "New Arrival",
+      "createdAt": "2026-03-01T08:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z"
+    },
+    {
+      "productId": "prod-catfish-glass-01",
+      "name": "Thailand Glass Catfish",
+      "slug": "catfish-thailand-glass-catfish",
+      "categoryId": "catfish",
+      "categoryName": "Catfish & Plecos",
+      "scientificName": "Kryptopterus vitreolus",
+      "originalPrice": 240,
+      "sellingPrice": 180,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "2.0\" - 2.5\"",
+      "description": "Completely translucent 'ghost' catfish displaying visible spinal architecture and internal organs. When grouped in schools of 6 or more, they hover synchronously facing the current in planted scapes.",
+      "careInformation": {
+        "tankSize": "20+ Gallons",
+        "temperament": "Extremely Peaceful & Timid",
+        "temperature": "24°C - 27°C",
+        "phRange": "6.5 - 7.2",
+        "diet": "Live & frozen micro-crustaceans, small sinking granules",
+        "careLevel": "Moderate",
+        "swimmingLevel": "Mid-Water Schooler",
+        "minimumGroupSize": 6
+      },
+      "images": [
+        "/images/fish/catfish-thailand-glass-catfish.webp"
+      ],
+      "featured": true,
+      "badge": "Living Glass",
+      "createdAt": "2026-01-10T08:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z"
+    },
+    {
+      "productId": "prod-catfish-lizard-01",
+      "name": "Red Lizard Whiptail Catfish",
+      "slug": "catfish-red-lizard-whiptail",
+      "categoryId": "catfish",
+      "categoryName": "Catfish & Plecos",
+      "scientificName": "Rineloricaria sp. 'L010a'",
+      "originalPrice": 600,
+      "sellingPrice": 480,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "3.0\" - 3.5\"",
+      "description": "Striking brick-red to terracotta coloration with an elongated whip-like filament extending from the caudal fin. Peaceful nocturnal grazer safe with baby shrimp and soft mosses.",
+      "careInformation": {
+        "tankSize": "25+ Gallons",
+        "temperament": "Ultra Peaceful",
+        "temperature": "24°C - 28°C",
+        "phRange": "6.0 - 7.5",
+        "diet": "Spirulina disks, cucumber, repashy bottom scratcher",
+        "careLevel": "Moderate",
+        "swimmingLevel": "Substrate & Woodwork",
+        "minimumGroupSize": 2
+      },
+      "images": [
+        "/images/fish/catfish-red-lizard-whiptail.webp"
+      ],
+      "featured": true,
+      "badge": "Shrimp Safe",
+      "createdAt": "2026-02-16T08:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z"
+    },
+    {
+      "productId": "prod-catfish-petricola-01",
+      "name": "Synodontis Petricola (Dwarf Lake Tang)",
+      "slug": "catfish-synodontis-petricola",
+      "categoryId": "catfish",
+      "categoryName": "Catfish & Plecos",
+      "scientificName": "Synodontis petricola",
+      "originalPrice": 450,
+      "sellingPrice": 350,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "2.0\" - 2.5\"",
+      "description": "Dwarf spotted catfish from Lake Tanganyika boasting pristine white fin edging and leopard rosettes. Highly active scavengers that thrive in both African cichlid and hard-water community tanks.",
+      "careInformation": {
+        "tankSize": "30+ Gallons",
+        "temperament": "Peaceful & Social",
+        "temperature": "24°C - 27°C",
+        "phRange": "7.5 - 8.5",
+        "diet": "Sinking carnivore pellets, insect larvae",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Caves & Rocky Bottom",
+        "minimumGroupSize": 4
+      },
+      "images": [
+        "/images/fish/catfish-petricola-catfish.jpg"
+      ],
+      "featured": false,
+      "createdAt": "2026-02-27T08:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z"
+    },
+    {
+      "productId": "prod-barb-blackruby-01",
+      "name": "Black Ruby Barb",
+      "slug": "barbs-black-ruby-barb",
+      "categoryId": "barbs",
+      "categoryName": "Barbs & Schooling",
+      "scientificName": "Pethia nigrofasciata",
+      "originalPrice": 180,
+      "sellingPrice": 140,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "1.5\" - 2.0\"",
+      "description": "Endemic to Sri Lankan rainforest streams. Dominant males develop mesmerizing deep crimson heads and velvet-black flank bars when displaying. Exceptionally peaceful barb that does not nip fins.",
+      "careInformation": {
+        "tankSize": "20+ Gallons",
+        "temperament": "Peaceful Schooler",
+        "temperature": "22°C - 26°C",
+        "phRange": "6.0 - 7.0",
+        "diet": "Spirulina, micro pellets, cyclops",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Mid-Water Schooler",
+        "minimumGroupSize": 6
+      },
+      "images": [
+        "/images/fish/barbs-black-ruby-barb.jpg"
+      ],
+      "featured": true,
+      "badge": "Peaceful Barb",
+      "createdAt": "2026-01-28T08:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z"
+    },
+    {
+      "productId": "prod-barb-drapefin-01",
+      "name": "Drape Fin Barb",
+      "slug": "barbs-drape-fin-barb",
+      "categoryId": "barbs",
+      "categoryName": "Barbs & Schooling",
+      "scientificName": "Oreichthys crenuchoides",
+      "originalPrice": 210,
+      "sellingPrice": 160,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "1.2\" - 1.5\"",
+      "description": "A peaceful miniature barb where mature males sport a spectacular oversized high sail dorsal fin decorated in gold and black. A serene jewel for peaceful planted setups.",
+      "careInformation": {
+        "tankSize": "15+ Gallons",
+        "temperament": "Very Peaceful",
+        "temperature": "23°C - 26°C",
+        "phRange": "6.5 - 7.2",
+        "diet": "Small sinking granules, daphnia",
+        "careLevel": "Moderate",
+        "swimmingLevel": "Mid to Bottom",
+        "minimumGroupSize": 6
+      },
+      "images": [
+        "/images/fish/barbs-drape-fin-barb.webp"
+      ],
+      "featured": false,
+      "createdAt": "2026-02-09T08:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z"
+    },
+    {
+      "productId": "prod-barb-odessa-01",
+      "name": "Odessa Barb",
+      "slug": "barbs-odessa-barb",
+      "categoryId": "barbs",
+      "categoryName": "Barbs & Schooling",
+      "scientificName": "Pethia padamya",
+      "originalPrice": 170,
+      "sellingPrice": 130,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "1.8\" - 2.2\"",
+      "description": "Radiant scarlet horizontal stripe flanked by charcoal netted scales and ruby-spotted fins. Resilient, cold-tolerant, and active throughout the day.",
+      "careInformation": {
+        "tankSize": "20+ Gallons",
+        "temperament": "Active & Peaceful",
+        "temperature": "18°C - 25°C",
+        "phRange": "6.5 - 7.8",
+        "diet": "High quality flakes, granules",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Mid-Water Column",
+        "minimumGroupSize": 6
+      },
+      "images": [
+        "/images/fish/barbs-odessa-barb.jpg"
+      ],
+      "featured": false,
+      "badge": "Hardy",
+      "createdAt": "2026-02-11T08:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z"
+    },
+    {
+      "productId": "prod-barb-snakeskin-01",
+      "name": "Snakeskin Barb",
+      "slug": "barbs-snakeskin-barb",
+      "categoryId": "barbs",
+      "categoryName": "Barbs & Schooling",
+      "scientificName": "Desmopuntius rhomboocellatus",
+      "originalPrice": 150,
+      "sellingPrice": 120,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "1.8\" - 2.2\"",
+      "description": "Famous for its iridescent dark green rhomboid patterns that look identical to genuine reptile snakeskin over an amber body. Outstanding contrast in blackwater aquascapes.",
+      "careInformation": {
+        "tankSize": "20+ Gallons",
+        "temperament": "Peaceful",
+        "temperature": "23°C - 27°C",
+        "phRange": "5.5 - 7.0",
+        "diet": "Micro granules, artemia",
+        "careLevel": "Moderate",
+        "swimmingLevel": "Mid-Water Column",
+        "minimumGroupSize": 6
+      },
+      "images": [
+        "/images/fish/Snakeskin-Barb--23_1200x1200_2f945f2f-c857-4abd-a464-12cf2f6a857f.webp"
+      ],
+      "featured": false,
+      "createdAt": "2026-02-14T08:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z"
+    },
+    {
+      "productId": "prod-badis-scarlet-01",
+      "name": "Scarlet Badis (Dario dario)",
+      "slug": "badis-scarlet-badis",
+      "categoryId": "badis",
+      "categoryName": "Badis & Nano",
+      "scientificName": "Dario dario",
+      "originalPrice": 250,
+      "sellingPrice": 190,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "0.6\" - 0.8\"",
+      "description": "One of the smallest percoid fishes in existence. Males look like swimming gemstones with blazing red vertical stripes bordered by sky-blue iridescent margins. Perfect for nano moss sanctuaries.",
+      "careInformation": {
+        "tankSize": "5+ Gallons",
+        "temperament": "Peaceful / Micro-predator",
+        "temperature": "20°C - 26°C",
+        "phRange": "6.5 - 7.5",
+        "diet": "Live microworms, baby brine, frozen copepods",
+        "careLevel": "Moderate",
+        "swimmingLevel": "Dense Flora & Mosses",
+        "minimumGroupSize": 3
+      },
+      "images": [
+        "/images/fish/livebearers-scarlet-badis.jpg",
+        "/images/fish/livebearers-blue-badis.webp"
+      ],
+      "featured": true,
+      "badge": "Micro Jewel",
+      "createdAt": "2026-01-14T08:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z"
+    },
+    {
+      "productId": "prod-badis-blacktiger-01",
+      "name": "Black Tiger Dario / Badis",
+      "slug": "badis-black-tiger-badis",
+      "categoryId": "badis",
+      "categoryName": "Badis & Nano",
+      "scientificName": "Dario sp. 'Myanmar'",
+      "originalPrice": 360,
+      "sellingPrice": 290,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "0.8\" - 1.1\"",
+      "description": "A rare Dario species from Myanmar sporting bold black tiger stripes alternating with fiery red-orange bars and iridescent blue dorsal spikes. Highly sought-after biotope nano fish.",
+      "careInformation": {
+        "tankSize": "10+ Gallons",
+        "temperament": "Territorial with conspecifics",
+        "temperature": "21°C - 26°C",
+        "phRange": "6.5 - 7.5",
+        "diet": "Baby brine shrimp, vinegar eels, grindal worms",
+        "careLevel": "Moderate",
+        "swimmingLevel": "Lower Plant Tier",
+        "minimumGroupSize": 3
+      },
+      "images": [
+        "/images/fish/livebearers-black-tiger-badis.webp"
+      ],
+      "featured": false,
+      "badge": "Rare Wild Morph",
+      "createdAt": "2026-02-23T08:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z"
+    },
+    {
+      "productId": "prod-badis-blue-01",
+      "name": "Blue Badis (Chameleon Fish)",
+      "slug": "badis-blue-badis",
+      "categoryId": "badis",
+      "categoryName": "Badis & Nano",
+      "scientificName": "Badis badis",
+      "originalPrice": 280,
+      "sellingPrice": 220,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "1.5\" - 2.0\"",
+      "description": "Nicknamed the 'Chameleon Fish' for its dramatic ability to shift body colors instantly from cryptic slate-brown to glowing indigo and royal blue based on mood and courtship.",
+      "careInformation": {
+        "tankSize": "15+ Gallons",
+        "temperament": "Peaceful / Secretive",
+        "temperature": "22°C - 26°C",
+        "phRange": "6.5 - 7.5",
+        "diet": "Small snails, daphnia, frozen bloodworms",
+        "careLevel": "Moderate",
+        "swimmingLevel": "Caves & Flora",
+        "minimumGroupSize": 2
+      },
+      "images": [
+        "/images/fish/livebearers-blue-badis.webp"
+      ],
+      "featured": false,
+      "createdAt": "2026-02-24T08:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z"
+    },
+    {
+      "productId": "prod-aqua-driftwood-01",
+      "name": "Natural Malaysian Driftwood Root (Medium / 25-35cm)",
+      "slug": "malaysian-driftwood-root-medium",
+      "categoryId": "aquascaping",
+      "categoryName": "Aqua Scaping",
+      "scientificName": "Natural Sunk Hardscape Wood",
+      "originalPrice": 550,
+      "sellingPrice": 450,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "10\" - 14\"",
+      "description": "Dense, pre-cured natural Malaysian driftwood with intricate root branching. Naturally releases gentle beneficial humic acids and tannins, helping maintain optimal soft water conditions for tropical ornamental fish and biotope setups.",
+      "careInformation": {
+        "tankSize": "10+ Gallons",
+        "temperament": "Natural Habitat Hardscape",
+        "temperature": "All Temperatures",
+        "phRange": "Slightly Acidic to Neutral (6.0 - 7.4)",
+        "diet": "Epiphyte Anchor & Tannin Buffer",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Hardscape Structure"
+      },
+      "images": [
+        "/images/fish/catfish-red-lizard-whiptail.webp",
+        "/images/fish/c8e01374-3106_1.jpg"
+      ],
+      "featured": true,
+      "badge": "Natural Hardscape",
+      "createdAt": "2026-03-01T08:00:00Z",
+      "updatedAt": "2026-11-14T10:00:00Z"
+    },
+    {
+      "productId": "prod-aqua-dragonstone-01",
+      "name": "Ohko Dragon Stone (Premium Aquascaping Rock / 1 Kg)",
+      "slug": "ohko-dragon-stone-rock",
+      "categoryId": "aquascaping",
+      "categoryName": "Aqua Scaping",
+      "scientificName": "Argillaceous Clay Hardscape",
+      "originalPrice": 350,
+      "sellingPrice": 280,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "Hand-Selected Mixed Sizes (10-25cm)",
+      "description": "Authentic Ohko Dragon Stone featuring deeply pitted, crater-like natural crevices reminiscent of dragon scales. Completely inert clay stone that does not raise water hardness or alter pH, making it ideal for planted aquascapes.",
+      "careInformation": {
+        "tankSize": "All Tank Sizes",
+        "temperament": "Inert Aquascape Stone",
+        "temperature": "All Temperatures",
+        "phRange": "100% pH & kH Neutral (No Buffering)",
+        "diet": "Plant Anchor & Nano Cave Habitat",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Aquascape Substrate & Mound"
+      },
+      "images": [
+        "/images/fish/angels-rio-nanay.jpg",
+        "/images/fish/images-2026-09-27T230159.759.jpg"
+      ],
+      "featured": true,
+      "badge": "100% Inert Rock",
+      "createdAt": "2026-03-01T08:00:00Z",
+      "updatedAt": "2026-11-14T10:00:00Z"
+    },
+    {
+      "productId": "prod-aqua-seiryu-01",
+      "name": "Seiryu Aquascaping Rock (Textured Grey Hardscape / 1 Kg)",
+      "slug": "seiryu-aquascaping-rock",
+      "categoryId": "aquascaping",
+      "categoryName": "Aqua Scaping",
+      "scientificName": "Textured Calcareous Stone",
+      "originalPrice": 400,
+      "sellingPrice": 320,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "Curated 10cm - 20cm Pieces",
+      "description": "Iconic Iwagumi layout stone with jagged grey faces and sharp white calcite striations. Provides dramatic mountainous silhouettes, rugged cliff contours, and excellent contrast against lush green aquatic mosses.",
+      "careInformation": {
+        "tankSize": "15+ Gallons",
+        "temperament": "Classic Iwagumi Hardscape",
+        "temperature": "All Temperatures",
+        "phRange": "Slight kH Buffering (7.0 - 7.8)",
+        "diet": "Structural Mountain Hardscape",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Hardscape Baseline"
+      },
+      "images": [
+        "/images/fish/images-2026-09-27T233426.173.jpg",
+        "/images/fish/images-2026-09-27T233532.003.jpg"
+      ],
+      "featured": false,
+      "badge": "Iwagumi Choice",
+      "createdAt": "2026-03-05T08:00:00Z",
+      "updatedAt": "2026-11-14T10:00:00Z"
+    },
+    {
+      "productId": "prod-aqua-soil-01",
+      "name": "Volcanic Active Plant Soil Substrate (3L Bag)",
+      "slug": "volcanic-active-plant-soil-substrate-3l",
+      "categoryId": "aquascaping",
+      "categoryName": "Aqua Scaping",
+      "scientificName": "Rich Volcanic Nutrient Granules",
+      "originalPrice": 1100,
+      "sellingPrice": 850,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "3 Liters (Approx 2.8 Kg)",
+      "description": "Premium sintered black volcanic aquarium substrate enriched with organic trace minerals, iron, and humic matter. Softens water hardness, stabilizes acidic pH (6.2-6.8), and encourages rapid root anchoring for carpeting flora.",
+      "careInformation": {
+        "tankSize": "Nano to Large Display Aquariums",
+        "temperament": "Active Plant Growth Soil",
+        "temperature": "All Temperatures",
+        "phRange": "Active Soil Buffer (6.2 - 6.8)",
+        "diet": "High CEC Bio-Nutrients for Roots",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Substrate Layer (4-6cm Depth)"
+      },
+      "images": [
+        "/images/fish/rn-image_picker_lib_temp_29b2b69a-6837-4fbe-abf3-2e8f892d3673.jpg",
+        "/images/fish/images-2026-10-02T022335.020.jpg"
+      ],
+      "featured": true,
+      "badge": "High CEC Substrate",
+      "createdAt": "2026-03-10T08:00:00Z",
+      "updatedAt": "2026-11-14T10:00:00Z"
+    },
+    {
+      "productId": "prod-food-pellets-01",
+      "name": "SRM Farm High-Protein Micro Pellets (100g)",
+      "slug": "srm-farm-high-protein-micro-pellets-100g",
+      "categoryId": "fish-food",
+      "categoryName": "Fish Food",
+      "scientificName": "Slow-Sinking Micro Granules (0.5mm)",
+      "originalPrice": 280,
+      "sellingPrice": 220,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "100 Grams Resealable Tub",
+      "description": "Formulated by SRM Fish Farm specifically for Angels, Barbs, Tetras, and community juveniles. Packed with 48% marine fish meal protein, Antarctic krill meal, astaxanthin for vibrant pigment development, and stabilized vitamin C.",
+      "careInformation": {
+        "tankSize": "All Tanks",
+        "temperament": "Slow Sinking / All Layers",
+        "temperature": "Room Temperature Storage",
+        "phRange": "Non-Clouding Clean Formulation",
+        "diet": "Feed 2-3 Times Daily in Small Pinches",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Midwater & Surface Feeders"
+      },
+      "images": [
+        "/images/fish/algae-eaters-panda-garra.webp",
+        "/images/fish/images-2026-10-16T194855.057.jpg"
+      ],
+      "featured": true,
+      "badge": "Farm Formulated",
+      "createdAt": "2026-03-12T08:00:00Z",
+      "updatedAt": "2026-11-14T10:00:00Z"
+    },
+    {
+      "productId": "prod-food-bloodworms-01",
+      "name": "Freeze-Dried Bloodworms & Tubifex Cubes (50g)",
+      "slug": "freeze-dried-bloodworms-tubifex-cubes-50g",
+      "categoryId": "fish-food",
+      "categoryName": "Fish Food",
+      "scientificName": "Gamma-Sterilized Chironomidae & Tubifex",
+      "originalPrice": 420,
+      "sellingPrice": 340,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "50 Grams Cube Jar",
+      "description": "100% natural, multi-pathogen sterilized freeze-dried bloodworms and tubifex cubes. Retains natural flavor and biological fatty acids without any risk of bacterial parasites. Can be pressed directly against the inside glass for interactive feeding.",
+      "careInformation": {
+        "tankSize": "All Tanks",
+        "temperament": "Glass Pressing / Interactive",
+        "temperature": "Dry Storage",
+        "phRange": "Zero Water Quality Impact",
+        "diet": "High-Protein Conditioning Treat",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Glass Stick or Surface Float"
+      },
+      "images": [
+        "/images/fish/images-2026-10-16T195450.945.jpg",
+        "/images/fish/algae-eaters-siamese-algae-eater.webp"
+      ],
+      "featured": false,
+      "badge": "100% Pure Protein",
+      "createdAt": "2026-03-15T08:00:00Z",
+      "updatedAt": "2026-11-14T10:00:00Z"
+    },
+    {
+      "productId": "prod-food-wafers-01",
+      "name": "Spirulina Sinking Algae Wafers (100g)",
+      "slug": "spirulina-sinking-algae-wafers-100g",
+      "categoryId": "fish-food",
+      "categoryName": "Fish Food",
+      "scientificName": "Dense Herbivore Grazing Disc",
+      "originalPrice": 360,
+      "sellingPrice": 290,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "100 Grams Pack",
+      "description": "Dense, slowly softening sinking discs enriched with pure Spirulina platensis, spirulina meal, and rich vegetable fiber. Specially designed for Plecostomus, Otocinclus, Panda Garra, Corydoras, and freshwater shrimp.",
+      "careInformation": {
+        "tankSize": "All Tanks",
+        "temperament": "Bottom Sinking Discs",
+        "temperature": "Dry Storage",
+        "phRange": "Water-Stable (Will Not Dissolve into Dust)",
+        "diet": "Daily Evening Feeding for Benthic Grazers",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Bottom Grazers"
+      },
+      "images": [
+        "/images/fish/algae-eaters-otocinclus.jpg",
+        "/images/fish/images-2026-10-16T200054.698.jpg"
+      ],
+      "featured": true,
+      "badge": "High Spirulina",
+      "createdAt": "2026-03-18T08:00:00Z",
+      "updatedAt": "2026-11-14T10:00:00Z"
+    },
+    {
+      "productId": "prod-food-betta-01",
+      "name": "High-Form Betta Pro Granules (50g)",
+      "slug": "high-form-betta-pro-granules-50g",
+      "categoryId": "fish-food",
+      "categoryName": "Fish Food",
+      "scientificName": "Floating Carnivorous Micro-Pellets",
+      "originalPrice": 300,
+      "sellingPrice": 240,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "50 Grams Dispenser Bottle",
+      "description": "Floating micro-pellets enriched with krill, spirulina, and high taurine content tailored to the carnivorous digestive tracts of exhibition Bettas. Intensifies fin spread and red, blue, and metallic iridescence.",
+      "careInformation": {
+        "tankSize": "Bettas & Nano Species",
+        "temperament": "Floating Surface Pellet",
+        "temperature": "Dry Storage",
+        "phRange": "Neutral Formulation",
+        "diet": "4-6 Pellets Twice Daily",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Surface Feeders"
+      },
+      "images": [
+        "/images/fish/betta-nemo-candy-500x500.webp",
+        "/images/fish/images-2026-10-16T212315.794.jpg"
+      ],
+      "featured": false,
+      "badge": "Betta Specialist",
+      "createdAt": "2026-03-20T08:00:00Z",
+      "updatedAt": "2026-11-14T10:00:00Z"
+    },
+    {
+      "productId": "prod-plant-java-moss-pad",
+      "name": "Java Moss on Pad",
+      "slug": "java-moss-on-pad",
+      "categoryId": "aquarium-plants",
+      "categoryName": "Aquarium Plants",
+      "scientificName": "Taxiphyllum barbieri (Mounted on Stainless Mesh)",
+      "originalPrice": 400,
+      "sellingPrice": 299,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "3\" x 3\" Stainless Steel Mesh Pad",
+      "description": "Live lush green Java Moss securely anchored on a stainless steel mesh pad. Grown in optimal conditions for easy establishment in shrimp tanks, nano setups, and planted community aquariums. Provides prime grazing surface and micro-shelter for newborn fry.",
+      "careInformation": {
+        "tankSize": "5+ Gallons",
+        "temperament": "Shrimp & Fry Safe",
+        "temperature": "18°C - 28°C",
+        "phRange": "6.0 - 7.8",
+        "diet": "Water Column Nutrients / Low to Moderate Light",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Foreground / Carpet / Midground"
+      },
+      "images": [
+        "/images/plants/java-moss-on-pad.jpg"
+      ],
+      "featured": true,
+      "badge": "Best Seller",
+      "createdAt": "2026-03-22T08:00:00Z",
+      "updatedAt": "2026-11-14T10:00:00Z"
+    },
+    {
+      "productId": "prod-plant-anubias-dragon-claw",
+      "name": "Anubias Dragon Claw [ clump ]",
+      "slug": "anubias-dragon-claw",
+      "categoryId": "aquarium-plants",
+      "categoryName": "Aquarium Plants",
+      "scientificName": "Anubias barteri 'Dragon Claw'",
+      "originalPrice": 899,
+      "sellingPrice": 699,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "Established Multi-Leaf Mother Clump",
+      "description": "Striking ornamental Anubias variety featuring distinctive claw-curved deep green foliage. Grown in optimal conditions for easy establishment. Heavy, leathery leaves resist herbivorous grazing from larger fish and barbs. Tie to driftwood or rockwork.",
+      "careInformation": {
+        "tankSize": "10+ Gallons",
+        "temperament": "Robust Epiphyte",
+        "temperature": "22°C - 28°C",
+        "phRange": "6.0 - 7.8",
+        "diet": "Liquid Micronutrients & Shade",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Midground Hardscape Anchor"
+      },
+      "images": [
+        "/images/plants/anubias-dragon-claw.jpg"
+      ],
+      "featured": true,
+      "badge": "Collector Clump",
+      "createdAt": "2026-03-22T08:00:00Z",
+      "updatedAt": "2026-11-14T10:00:00Z"
+    },
+    {
+      "productId": "prod-plant-anubias-butterfly",
+      "name": "Anubias Brateri Butterfly [ clump ]",
+      "slug": "anubias-brateri-butterfly-clump",
+      "categoryId": "aquarium-plants",
+      "categoryName": "Aquarium Plants",
+      "scientificName": "Anubias barteri 'Butterfly'",
+      "originalPrice": 899,
+      "sellingPrice": 699,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "Dense Rhizome Clump",
+      "description": "Captivating Anubias cultivar showcasing uniquely spread butterfly-wing foliage contours. Exceptionally hardy in both soft and moderately hard water. Excellent anchor plant providing sheltered perches for exhibition Bettas and Angelfish.",
+      "careInformation": {
+        "tankSize": "10+ Gallons",
+        "temperament": "Hardy Shade Epiphyte",
+        "temperature": "22°C - 28°C",
+        "phRange": "6.2 - 7.6",
+        "diet": "Low Light / Liquid Fertilizer",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Midground Anchor"
+      },
+      "images": [
+        "/images/plants/anubias-brateri-butterfly.jpg"
+      ],
+      "featured": false,
+      "badge": "Rare Morph",
+      "createdAt": "2026-03-24T08:00:00Z",
+      "updatedAt": "2026-11-14T10:00:00Z"
+    },
+    {
+      "productId": "prod-plant-java-fern-narrow",
+      "name": "Java Fern Narrow Leaf [ clump ]",
+      "slug": "java-fern-narrow-leaf",
+      "categoryId": "aquarium-plants",
+      "categoryName": "Aquarium Plants",
+      "scientificName": "Microsorum pteropus 'Narrow Leaf'",
+      "originalPrice": 900,
+      "sellingPrice": 699,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "Heavy Clump (15-20cm Fronds)",
+      "description": "Classic aquascaping staple with slender, emerald-green lanceolate fronds that sway gently with current flow. Undemanding, low-maintenance aquatic fern that anchors seamlessly onto porous driftwood and dragon stone.",
+      "careInformation": {
+        "tankSize": "15+ Gallons",
+        "temperament": "Cichlid & Herbivore Proof",
+        "temperature": "20°C - 28°C",
+        "phRange": "6.0 - 8.0",
+        "diet": "Water Column Trace Minerals",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Midground to Background Flow"
+      },
+      "images": [
+        "/images/plants/java-fern-narrow-leaf.jpg"
+      ],
+      "featured": true,
+      "badge": "Aquascaper Favorite",
+      "createdAt": "2026-03-25T08:00:00Z",
+      "updatedAt": "2026-11-14T10:00:00Z"
+    },
+    {
+      "productId": "prod-plant-anubias-coin-leaf",
+      "name": "Anubias Coin Leaf [ clump ]",
+      "slug": "anubias-coin-leaf",
+      "categoryId": "aquarium-plants",
+      "categoryName": "Aquarium Plants",
+      "scientificName": "Anubias barteri 'Coin Leaf'",
+      "originalPrice": 900,
+      "sellingPrice": 699,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "Mature Clump (8-12 Round Leaves)",
+      "description": "Vibrant circular coin-shaped leaves with high-gloss dark forest green pigmentation. Compact growth rate makes it a stellar focal specimen for nano tanks and nature aquascapes.",
+      "careInformation": {
+        "tankSize": "5+ Gallons",
+        "temperament": "Compact Low-Light Flora",
+        "temperature": "22°C - 28°C",
+        "phRange": "6.2 - 7.5",
+        "diet": "Low Light / Do Not Bury Rhizome",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Foreground / Midground Accent"
+      },
+      "images": [
+        "/images/plants/anubias-coin-leaf.jpg"
+      ],
+      "featured": false,
+      "badge": "Round Coin Leaf",
+      "createdAt": "2026-03-26T08:00:00Z",
+      "updatedAt": "2026-11-14T10:00:00Z"
+    },
+    {
+      "productId": "prod-plant-anubias-congnesis",
+      "name": "Anubias Congnesis [ clump ]",
+      "slug": "anubias-congnesis",
+      "categoryId": "aquarium-plants",
+      "categoryName": "Aquarium Plants",
+      "scientificName": "Anubias congensis",
+      "originalPrice": 900,
+      "sellingPrice": 699,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "Large Bare Root Clump (20-30cm)",
+      "description": "Majestic elongated African lanceolate Anubias species. Thick leathery stems and upward-reaching arrow leaves provide dynamic vertical stature in larger biotope aquariums and planted displays.",
+      "careInformation": {
+        "tankSize": "20+ Gallons",
+        "temperament": "Architectural Epiphyte",
+        "temperature": "22°C - 28°C",
+        "phRange": "6.0 - 7.8",
+        "diet": "Water Column Nutrients",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Background Architectural Accent"
+      },
+      "images": [
+        "/images/plants/anubias-congnesis.webp"
+      ],
+      "featured": false,
+      "badge": "Tall Specimen",
+      "createdAt": "2026-03-28T08:00:00Z",
+      "updatedAt": "2026-11-14T10:00:00Z"
+    },
+    {
+      "productId": "prod-plant-anubias-nana-clump",
+      "name": "Anubias Nana [ clump ]",
+      "slug": "anubias-nana-clum-copy",
+      "categoryId": "aquarium-plants",
+      "categoryName": "Aquarium Plants",
+      "scientificName": "Anubias barteri var. nana",
+      "originalPrice": 900,
+      "sellingPrice": 699,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "Heavy Grower Clump (15+ Leaves)",
+      "description": "The gold standard dwarf aquatic epiphyte. Dense, bushy cluster with deep green tear-drop leaves and robust rooting rhizome. Unmatched durability in community and breeding tanks.",
+      "careInformation": {
+        "tankSize": "5+ Gallons",
+        "temperament": "100% Snail-Free Quarantined",
+        "temperature": "22°C - 28°C",
+        "phRange": "6.0 - 7.8",
+        "diet": "Low to Medium Light",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Foreground / Driftwood Perch"
+      },
+      "images": [
+        "/images/plants/anubias-nana-clump.jpg"
+      ],
+      "featured": true,
+      "badge": "Grower Clump",
+      "createdAt": "2026-03-30T08:00:00Z",
+      "updatedAt": "2026-11-14T10:00:00Z"
+    },
+    {
+      "productId": "prod-tank-rimless-60",
+      "name": "Ultra-Clear Low-Iron Rimless Glass Aquarium (60x30x36cm / 64L)",
+      "slug": "ultra-clear-low-iron-rimless-aquarium-60cm",
+      "categoryId": "tanks",
+      "categoryName": "Tanks",
+      "scientificName": "Opti-White 6mm Float Glass",
+      "originalPrice": 4990,
+      "sellingPrice": 4200,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "60cm x 30cm x 36cm (6mm Glass)",
+      "description": "Precision-crafted 6mm ultra-clear low-iron glass tank offering 91.5% optical transparency without green glass tinting. Features razor-straight 45-degree mitered edges and German high-tensile transparent silicone bonding.",
+      "careInformation": {
+        "tankSize": "64 Liters Capacity (17 Gallons)",
+        "temperament": "Professional Aquascape Display",
+        "temperature": "All Temperatures",
+        "phRange": "Inert High-Purity Glass",
+        "diet": "Place on Included High-Density Foam Leveling Mat",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Complete Living Room Centerpiece"
+      },
+      "images": [
+        "/images/fish/angels-rio-nanay.jpg",
+        "/images/fish/img_9852.jpg"
+      ],
+      "featured": true,
+      "badge": "Low-Iron 91.5% Clear",
+      "createdAt": "2026-04-01T08:00:00Z",
+      "updatedAt": "2026-11-14T10:00:00Z"
+    },
+    {
+      "productId": "prod-tank-cube-30",
+      "name": "Opti-White Desktop Nano Cube (30x30x30cm / 27L)",
+      "slug": "opti-white-desktop-nano-cube-30cm",
+      "categoryId": "tanks",
+      "categoryName": "Tanks",
+      "scientificName": "5mm Crystal Float Glass",
+      "originalPrice": 2200,
+      "sellingPrice": 1850,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "30cm x 30cm x 30cm (5mm Glass)",
+      "description": "Modern cubic aquarium optimized for desktop nature aquascaping, high-grade Betta displays, and Neocaridina dwarf shrimp breeding colonies. Includes transparent top glass lid and corner support clips.",
+      "careInformation": {
+        "tankSize": "27 Liters Capacity (7.1 Gallons)",
+        "temperament": "Compact Desktop Nano Setup",
+        "temperature": "All Temperatures",
+        "phRange": "Inert High-Purity Glass",
+        "diet": "Complete with Thermal Base Mat",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Desktop Display"
+      },
+      "images": [
+        "/images/fish/betta-nemo-candy-500x500.webp",
+        "/images/fish/117563.jpg"
+      ],
+      "featured": false,
+      "badge": "Compact Nano Cube",
+      "createdAt": "2026-04-05T08:00:00Z",
+      "updatedAt": "2026-11-14T10:00:00Z"
+    },
+    {
+      "productId": "prod-tank-shallow-45",
+      "name": "Panoramic Shallow Rimless Tank (45x28x30cm / 38L)",
+      "slug": "panoramic-shallow-rimless-aquarium-45cm",
+      "categoryId": "tanks",
+      "categoryName": "Tanks",
+      "scientificName": "5mm Ultra-Clear Float Glass",
+      "originalPrice": 3300,
+      "sellingPrice": 2750,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "45cm x 28cm x 30cm (5mm Glass)",
+      "description": "Wide panoramic perspective engineered for emersed pond-style hardscapes, emergent driftwood branches, and dynamic schooling nano tetras or wild rasboras.",
+      "careInformation": {
+        "tankSize": "38 Liters Capacity (10 Gallons)",
+        "temperament": "Panoramic Shallow Aquascape",
+        "temperature": "All Temperatures",
+        "phRange": "Inert High-Purity Glass",
+        "diet": "Includes Leveling EVA Cushion Mat",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Low Aspect Panoramic Viewing"
+      },
+      "images": [
+        "/images/fish/catfish-thailand-glass-catfish.webp",
+        "/images/fish/images-2026-10-02T023001.918.jpg"
+      ],
+      "featured": false,
+      "badge": "Shallow Horizon",
+      "createdAt": "2026-04-08T08:00:00Z",
+      "updatedAt": "2026-11-14T10:00:00Z"
+    },
+    {
+      "productId": "prod-equip-bluepet-xf280",
+      "name": "Bluepet XF-280 Sponge Filter",
+      "slug": "bluepet-xf-280-sponge-filter-copy",
+      "categoryId": "filters",
+      "categoryName": "Filters & Equipment",
+      "scientificName": "Biochemical Dual-Chamber Sponge Filter",
+      "originalPrice": 500,
+      "sellingPrice": 350,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "Model XF-280 (Tanks up to 120L)",
+      "description": "Multi-layered biochemical sponge filter equipped with dual media chambers containing bio-ceramic rings. Air-driven, whisper-silent operation ensures maximum dissolved oxygen and zero hazard for small fry, shrimp, and juvenile ornamental fish.",
+      "careInformation": {
+        "tankSize": "Up to 120 Liters",
+        "temperament": "Shrimp & Fry 100% Safe",
+        "temperature": "All Temperatures",
+        "phRange": "High Bio-Nitrification Capacity",
+        "diet": "Connect to Standard Aquarium Air Pump",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Glass Suction Mount"
+      },
+      "images": [
+        "/images/equipment/bluepet-xf-280.jpg"
+      ],
+      "featured": true,
+      "badge": "Dual Bio Sponge",
+      "createdAt": "2026-04-01T08:00:00Z",
+      "updatedAt": "2026-11-14T10:00:00Z"
+    },
+    {
+      "productId": "prod-equip-bluepet-xf180",
+      "name": "Bluepet XF-180 Sponge Filter",
+      "slug": "bluepet-xf-180-sponge-filter",
+      "categoryId": "filters",
+      "categoryName": "Filters & Equipment",
+      "scientificName": "Compact Biochemical Sponge Filter",
+      "originalPrice": 500,
+      "sellingPrice": 350,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "Model XF-180 (Nano Tanks up to 60L)",
+      "description": "Compact biochemical air filter engineered specifically for desktop nano setups, Betta isolation tanks, and shrimp breeding setups. Features ribbed high-density foam that traps physical debris while cultivating nitrifying bacteria.",
+      "careInformation": {
+        "tankSize": "Up to 60 Liters",
+        "temperament": "Ultra-Quiet / Fry Safe",
+        "temperature": "All Temperatures",
+        "phRange": "Pure Biological Nitrification",
+        "diet": "Connect to Aquarium Air Line",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Nano Glass Mount"
+      },
+      "images": [
+        "/images/equipment/bluepet-xf-180.jpg"
+      ],
+      "featured": false,
+      "badge": "Nano Bio Filter",
+      "createdAt": "2026-04-02T08:00:00Z",
+      "updatedAt": "2026-11-14T10:00:00Z"
+    },
+    {
+      "productId": "prod-equip-bluepet-blh401",
+      "name": "Blue Pet BLH-401 Aquarium Hang-On Filter",
+      "slug": "blue-pet-blh-401-aquarium-hang-on-filter",
+      "categoryId": "filters",
+      "categoryName": "Filters & Equipment",
+      "scientificName": "Slim Hang-On Waterfall Power Filter (3W)",
+      "originalPrice": 500,
+      "sellingPrice": 350,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "Flow Rate: 250 L/H (Tanks up to 30L)",
+      "description": "Ultra-compact hang-on-back waterfall filtration unit featuring an adjustable flow dial and surface skimmer. Provides crystal clear mechanical polishing and gentle surface agitation without crowding the tank interior.",
+      "careInformation": {
+        "tankSize": "10 - 30 Liters",
+        "temperament": "Slimline Space Saver",
+        "temperature": "All Temperatures",
+        "phRange": "Mechanical & Carbon Filtration",
+        "diet": "Rinse Filter Sponge Bi-Weekly",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Rim Hang-On Mount"
+      },
+      "images": [
+        "/images/equipment/bluepet-blh-401.jpg"
+      ],
+      "featured": false,
+      "badge": "Compact HOB",
+      "createdAt": "2026-04-04T08:00:00Z",
+      "updatedAt": "2026-11-14T10:00:00Z"
+    },
+    {
+      "productId": "prod-equip-bluepet-blh402",
+      "name": "Blue Pet BLH-402 Aquarium Hang-On Filter",
+      "slug": "blue-pet-blh-402-aquarium-hang-on-filter",
+      "categoryId": "filters",
+      "categoryName": "Filters & Equipment",
+      "scientificName": "Medium HOB Aquarium Power Filter (4W)",
+      "originalPrice": 800,
+      "sellingPrice": 550,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "Flow Rate: 350 L/H (Tanks up to 60L)",
+      "description": "Medium-capacity slim hang-on filter with dual filter chambers, mechanical foam pad, and active biological filtration. Waterfall spillway oxygenates the tank water continuously while running almost silently.",
+      "careInformation": {
+        "tankSize": "30 - 60 Liters",
+        "temperament": "Dual Chamber System",
+        "temperature": "All Temperatures",
+        "phRange": "Chemical & Biological Media",
+        "diet": "Replace Activated Carbon Monthly",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Rim Hang-On Mount"
+      },
+      "images": [
+        "/images/equipment/bluepet-blh-402.jpg"
+      ],
+      "featured": true,
+      "badge": "Waterfall Oxygenator",
+      "createdAt": "2026-04-05T08:00:00Z",
+      "updatedAt": "2026-11-14T10:00:00Z"
+    },
+    {
+      "productId": "prod-equip-bluepet-blh403",
+      "name": "Blue Pet BLH-403 Aquarium Hang-On Filter",
+      "slug": "blue-pet-blh-403-aquarium-hang-on-filter",
+      "categoryId": "filters",
+      "categoryName": "Filters & Equipment",
+      "scientificName": "High-Output HOB Aquarium Filter (5W)",
+      "originalPrice": 900,
+      "sellingPrice": 650,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "Flow Rate: 450 L/H (Tanks up to 100L)",
+      "description": "High-output external hang-on filter with 3 filtration stages and an integrated surface oil skimmer. Maintains a crystal-clear water surface, stripping away organic films and floating debris effortlessly.",
+      "careInformation": {
+        "tankSize": "50 - 100 Liters",
+        "temperament": "Surface Skimmer Included",
+        "temperature": "All Temperatures",
+        "phRange": "Multi-Stage Biological & Carbon",
+        "diet": "Quick Slide-Out Maintenance",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Rim Hang-On Mount"
+      },
+      "images": [
+        "/images/equipment/bluepet-blh-403.jpg"
+      ],
+      "featured": false,
+      "badge": "Integrated Skimmer",
+      "createdAt": "2026-04-06T08:00:00Z",
+      "updatedAt": "2026-11-14T10:00:00Z"
+    },
+    {
+      "productId": "prod-equip-rs4000",
+      "name": "RS Electricals - RS 4000 HANG ON BACK FILTER",
+      "slug": "rs-electricals-rs-4000-hang-on-back-filter",
+      "categoryId": "filters",
+      "categoryName": "Filters & Equipment",
+      "scientificName": "RS-4000 High-Capacity Waterfall Filter (6W)",
+      "originalPrice": 1000,
+      "sellingPrice": 800,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "Flow Rate: 600 L/H (Tanks up to 120L)",
+      "description": "Top-tier external hang-on back power filter from RS Electricals. Features a high water turnover of 600 L/H with an extra-large media cavity that accepts custom biological sintered ceramic rings and matrix media.",
+      "careInformation": {
+        "tankSize": "60 - 120 Liters",
+        "temperament": "High Flow 600 L/H",
+        "temperature": "All Temperatures",
+        "phRange": "Custom Media Ready",
+        "diet": "Low Energy Consumption (6W)",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Rim Hang-On Mount"
+      },
+      "images": [
+        "/images/equipment/rs-4000.jpg"
+      ],
+      "featured": true,
+      "badge": "High Turnover 600 L/H",
+      "createdAt": "2026-04-08T08:00:00Z",
+      "updatedAt": "2026-11-14T10:00:00Z"
+    },
+    {
+      "productId": "prod-equip-rs3000",
+      "name": "RS Electricals - RS 3000 HANG ON BACK FILTER",
+      "slug": "rs-electricals-rs-3000-hang-on-back-filter",
+      "categoryId": "filters",
+      "categoryName": "Filters & Equipment",
+      "scientificName": "RS-3000 Waterfall Bio-Filter (5W)",
+      "originalPrice": 750,
+      "sellingPrice": 599,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "Flow Rate: 500 L/H (Tanks up to 80L)",
+      "description": "Dependable workhorse external waterfall filter with multi-layer mechanical sponge, carbon bio-plate, and silent submerged pump motor. Aerates the tank as water returns over the spillway.",
+      "careInformation": {
+        "tankSize": "40 - 80 Liters",
+        "temperament": "Quiet Submerged Motor",
+        "temperature": "All Temperatures",
+        "phRange": "Mechanical & Biological",
+        "diet": "Energy Efficient 5W",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Rim Hang-On Mount"
+      },
+      "images": [
+        "/images/equipment/rs-3000.jpg"
+      ],
+      "featured": false,
+      "badge": "500 L/H Flow",
+      "createdAt": "2026-04-09T08:00:00Z",
+      "updatedAt": "2026-11-14T10:00:00Z"
+    },
+    {
+      "productId": "prod-equip-rs2000",
+      "name": "RS Electricals - RS 2000 HANG ON BACK FILTER",
+      "slug": "rs-electricals-rs-2000-hangon",
+      "categoryId": "filters",
+      "categoryName": "Filters & Equipment",
+      "scientificName": "RS-2000 Compact Waterfall Filter (3W)",
+      "originalPrice": 750,
+      "sellingPrice": 499,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "Flow Rate: 300 L/H (Tanks up to 50L)",
+      "description": "Compact hang-on power filter designed for planted aquascapes, community aquariums, and desktop displays. Features easy-to-replace filter cartridges and adjustable suction intake length.",
+      "careInformation": {
+        "tankSize": "20 - 50 Liters",
+        "temperament": "Slide-Out Cartridges",
+        "temperature": "All Temperatures",
+        "phRange": "Crystal Clear Water Polishing",
+        "diet": "Low Energy 3W",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Rim Hang-On Mount"
+      },
+      "images": [
+        "/images/equipment/rs-2000.jpg"
+      ],
+      "featured": false,
+      "badge": "Compact & Quiet",
+      "createdAt": "2026-04-10T08:00:00Z",
+      "updatedAt": "2026-11-14T10:00:00Z"
+    },
+    {
+      "productId": "prod-acc-tools-01",
+      "name": "Stainless Steel Aquascaping Tool Set (5-Piece Matte Black)",
+      "slug": "stainless-steel-aquascaping-tool-set-5pc",
+      "categoryId": "accessories",
+      "categoryName": "Accessories",
+      "scientificName": "Surgical-Grade 316 Stainless Steel",
+      "originalPrice": 1200,
+      "sellingPrice": 890,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "5 Instruments (Curved Scissor, Tweezers, Spatula) in Leather Case",
+      "description": "Professional 5-piece aquascaper toolkit finished in anti-corrosive matte black PVD coating. Includes curved precision trimming scissors, straight plant tweezers, wave scissors for carpeting plants, and sand flattener spatula.",
+      "careInformation": {
+        "tankSize": "All Tank Sizes",
+        "temperament": "Precision Flora Maintenance",
+        "temperature": "Corrosion Resistant",
+        "phRange": "Inert Medical-Grade Alloy",
+        "diet": "Wipe Dry After Each Maintenance Session",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Maintenance Toolkit"
+      },
+      "images": [
+        "/images/fish/catfish-thailand-glass-catfish.webp",
+        "/images/fish/rn-image_picker_lib_temp_fc734d89-9a74-4617-b85e-8fcf2509bb80.jpg"
+      ],
+      "featured": true,
+      "badge": "5-in-1 Tool Kit",
+      "createdAt": "2026-04-18T08:00:00Z",
+      "updatedAt": "2026-11-14T10:00:00Z"
+    },
+    {
+      "productId": "prod-acc-thermometer-01",
+      "name": "High-Accuracy Submersible Digital LCD Thermometer",
+      "slug": "submersible-digital-lcd-aquarium-thermometer",
+      "categoryId": "accessories",
+      "categoryName": "Accessories",
+      "scientificName": "Precision NTC Electronic Sensor",
+      "originalPrice": 290,
+      "sellingPrice": 220,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "Compact Submersible Display with Suction Cap",
+      "description": "Fully submersible digital aquarium thermometer with clear, large high-contrast LCD readout. Accurate to ±0.1°C, providing real-time temperature tracking crucial for delicate juvenile fish and breeding holding tanks.",
+      "careInformation": {
+        "tankSize": "All Tank Sizes",
+        "temperament": "Continuous Temperature Monitoring",
+        "temperature": "Range: 0°C to 50°C",
+        "phRange": "Safe Hermetic Seal",
+        "diet": "Includes Long-Life AG13 Button Battery",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Internal Glass Suction"
+      },
+      "images": [
+        "/images/fish/angels-jet-black.webp",
+        "/images/fish/c8e01374-3106_1.jpg"
+      ],
+      "featured": false,
+      "badge": "±0.1°C Precision",
+      "createdAt": "2026-04-20T08:00:00Z",
+      "updatedAt": "2026-11-14T10:00:00Z"
+    },
+    {
+      "productId": "prod-acc-cleaner-01",
+      "name": "Floating Magnetic Glass Cleaner (Strong Neodymium)",
+      "slug": "floating-magnetic-aquarium-glass-cleaner",
+      "categoryId": "accessories",
+      "categoryName": "Accessories",
+      "scientificName": "Rare-Earth Neodymium Scrubber",
+      "originalPrice": 480,
+      "sellingPrice": 380,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "For Glass Thickness up to 10mm",
+      "description": "Heavy-duty magnetic glass scraper that floats to the top if separated, preventing it from sinking into bottom gravel and scratching glass. Soft external felt pad cleans outer glass while internal coarse pad strips stubborn algae effortlessly.",
+      "careInformation": {
+        "tankSize": "For 4mm - 10mm Glass Thickness",
+        "temperament": "Floating Non-Scratch Design",
+        "temperature": "All Temperatures",
+        "phRange": "Durable Sealed Plastic Casing",
+        "diet": "Keep Clear of Gravel Particles",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Glass Surface Scrubber"
+      },
+      "images": [
+        "/images/fish/algae-eaters-anchor-catfish.webp",
+        "/images/fish/rn-image_picker_lib_temp_0f780ff0-9f74-4abb-a0d4-2f410d55f05b.jpg"
+      ],
+      "featured": false,
+      "badge": "Floating Scraper",
+      "createdAt": "2026-04-22T08:00:00Z",
+      "updatedAt": "2026-11-14T10:00:00Z"
+    },
+    {
+      "productId": "prod-acc-conditioner-01",
+      "name": "Complete Water Conditioner & Dechlorinator (250ml)",
+      "slug": "complete-water-conditioner-dechlorinator-250ml",
+      "categoryId": "accessories",
+      "categoryName": "Accessories",
+      "scientificName": "Advanced Bio-Colloid Water Purifier",
+      "originalPrice": 350,
+      "sellingPrice": 280,
+      "availability": "in_stock",
+      "waterType": "freshwater",
+      "size": "250ml Bottle (Treats 2,500 Liters)",
+      "description": "Instantly neutralizes chlorine, chloramines, and heavy metals found in tap water. Formulated with soothing aloe vera and protective slime-coat bio-colloids to minimize acclimation stress during water changes and new tank additions.",
+      "careInformation": {
+        "tankSize": "Concentrated (5ml treats 50L)",
+        "temperament": "Instant Water Detoxification",
+        "temperature": "Room Temperature Storage",
+        "phRange": "Safe for Fish, Plants & Shrimp",
+        "diet": "Add With Every Tap Water Top-Up or Change",
+        "careLevel": "Beginner",
+        "swimmingLevel": "Water Chemistry Conditioner"
+      },
+      "images": [
+        "/images/fish/angels-altum-angel.webp",
+        "/images/fish/images-2026-10-16T194855.057.jpg"
+      ],
+      "featured": true,
+      "badge": "Instant Dechlorinator",
+      "createdAt": "2026-04-25T08:00:00Z",
+      "updatedAt": "2026-11-14T10:00:00Z"
+    }
+  ],
+  "categories": [
+    {
+      "categoryId": "all",
+      "name": "All Products",
+      "slug": "all",
+      "description": "Browse the complete biological sanctuary of quarantined ornamental fish, aquascaping materials, and aquarium supplies.",
+      "image": "/images/fish/angels-altum-angel.webp",
+      "displayOrder": 1,
+      "active": true
+    },
+    {
+      "categoryId": "fish",
+      "name": "Live Fish",
+      "slug": "fish",
+      "description": "Farm-bred ornamental fish conditioned for vitality: Angels, Bettas, Algae Eaters, Catfish, and Nano varieties.",
+      "image": "/images/fish/angels-altum-angel.webp",
+      "displayOrder": 2,
+      "active": true
+    },
+    {
+      "categoryId": "aquascaping",
+      "name": "Aqua Scaping",
+      "slug": "aquascaping",
+      "description": "Natural Malaysian driftwood, Ohko Dragon Stone, Seiryu Rock, and active volcanic plant substrates.",
+      "image": "/images/fish/catfish-red-lizard-whiptail.webp",
+      "displayOrder": 3,
+      "active": true
+    },
+    {
+      "categoryId": "fish-food",
+      "name": "Fish Food",
+      "slug": "fish-food",
+      "description": "Nutrient-rich spirulina micro-pellets, freeze-dried bloodworms, sinking algae wafers, and fry starter diets.",
+      "image": "/images/fish/algae-eaters-panda-garra.webp",
+      "displayOrder": 4,
+      "active": true
+    },
+    {
+      "categoryId": "aquarium-plants",
+      "name": "Aquarium Plants",
+      "slug": "aquarium-plants",
+      "description": "Live aquatic plants to create stunning aquascapes: Anubias, Java Ferns, Moss Pads, and stem plants.",
+      "image": "/images/plants/anubias-dragon-claw.jpg",
+      "displayOrder": 5,
+      "active": true
+    },
+    {
+      "categoryId": "tanks",
+      "name": "Tanks",
+      "slug": "tanks",
+      "description": "Ultra-clear low-iron rimless glass aquariums, opti-white desktop cubes, and panoramic planted display aquariums.",
+      "image": "/images/fish/angels-rio-nanay.jpg",
+      "displayOrder": 6,
+      "active": true
+    },
+    {
+      "categoryId": "filters",
+      "name": "Filters",
+      "slug": "filters",
+      "description": "Biochemical dual sponge filters, silent slim waterfall hang-on back systems, and canister filtration.",
+      "image": "/images/equipment/bluepet-xf-280.jpg",
+      "displayOrder": 7,
+      "active": true
+    },
+    {
+      "categoryId": "accessories",
+      "name": "Accessories",
+      "slug": "accessories",
+      "description": "Stainless steel aquascaping toolsets, digital LCD thermometers, magnetic glass cleaners, and water care conditioners.",
+      "image": "/images/fish/catfish-thailand-glass-catfish.webp",
+      "displayOrder": 8,
+      "active": true
+    },
+    {
+      "categoryId": "plants",
+      "name": "Plants",
+      "slug": "plants",
+      "description": "Live aquatic plants to create stunning aquascapes. Grown in optimal conditions for easy establishment.",
+      "image": "/images/plants/anubias-dragon-claw.jpg",
+      "displayOrder": 9,
+      "active": true
+    },
+    {
+      "categoryId": "equipment",
+      "name": "Equipment",
+      "slug": "equipment",
+      "description": "High-performance filtration, air-driven bio-sponges, tanks, and maintenance equipment.",
+      "image": "/images/equipment/bluepet-xf-280.jpg",
+      "displayOrder": 10,
+      "active": true
+    }
+  ],
+  "fishCategories": [
+    {
+      "categoryId": "angelfish",
+      "name": "Angelfish Sanctuary",
+      "slug": "angelfish",
+      "description": "Majestic Pterophyllum strains, rare wild morphs, and proven breeding pairs.",
+      "image": "/images/fish/angels-altum-angel.webp",
+      "displayOrder": 1,
+      "active": true
+    },
+    {
+      "categoryId": "algae-eaters",
+      "name": "Algae Eaters & Cleaners",
+      "slug": "algae-eaters",
+      "description": "Specialist aquatic cleaners, dwarf sucker mouths, and bottom cleanup crew.",
+      "image": "/images/fish/algae-eaters-otocinclus.jpg",
+      "displayOrder": 2,
+      "active": true
+    },
+    {
+      "categoryId": "betta-fish",
+      "name": "Show Betta Fish",
+      "slug": "betta-fish",
+      "description": "Premium exhibition-grade Bettas with vivid coloration and pristine finnage.",
+      "image": "/images/fish/betta-nemo-candy-500x500.webp",
+      "displayOrder": 3,
+      "active": true
+    },
+    {
+      "categoryId": "catfish",
+      "name": "Exotic Catfish & Plecos",
+      "slug": "catfish",
+      "description": "Unique benthic species, glass catfish, dwarf synodontis, and loricariids.",
+      "image": "/images/fish/catfish-thailand-glass-catfish.webp",
+      "displayOrder": 4,
+      "active": true
+    },
+    {
+      "categoryId": "barbs",
+      "name": "Barbs & Tetras",
+      "slug": "barbs",
+      "description": "Vibrant mid-water schooling fishes for dynamic planted displays.",
+      "image": "/images/fish/barbs-black-ruby-barb.jpg",
+      "displayOrder": 5,
+      "active": true
+    },
+    {
+      "categoryId": "badis",
+      "name": "Wild Nano & Badis",
+      "slug": "badis",
+      "description": "Intricately patterned micro-predators ideal for refined aquascapes.",
+      "image": "/images/fish/livebearers-scarlet-badis.jpg",
+      "displayOrder": 6,
+      "active": true
+    }
+  ],
+  "settings": {
+    "siteName": "SRM FISH FARM",
+    "tagline": "Wholesale · Fish Breeding · Aquascaping & Maintenance",
+    "ownerName": "R. Sankar",
+    "operatingYears": "2 years",
+    "services": [
+      "Wholesale",
+      "Fish Breeding",
+      "Aquascaping",
+      "Aquarium Maintenance"
+    ],
+    "whatsappNumber": "918300738588",
+    "whatsappDisplay": "+91 83007 38588",
+    "supportEmail": "srmfishfarm@gmail.com",
+    "address": "17, Sellaji Amman (Kovil) Street, Palamedu, Madurai – 625503",
+    "hours": "All Days: 9:00 AM – 4:00 PM (WhatsApp active all days)",
+    "doaGuaranteeText": "100% Live Arrival Guarantee on Train & Bus Shipments",
+    "topBanner": {
+      "enabled": false,
+      "text": "SPECIAL OFFER: WHOLESALE RATES ON BULK LIVESTOCK & DIRECT FARM DISPATCH",
+      "bgColor": "#2878A5",
+      "textColor": "#FFFFFF",
+      "link": "/fish",
+      "dismissible": true
+    },
+    "hero": {
+      "title": "Curated\nAquatic Standard",
+      "subtitle": "Farm-bred ornamental varieties, wholesale supply, and dedicated aquascaping & maintenance by R. Sankar, Madurai.",
+      "buttonText": "Explore",
+      "buttonLink": "/fish",
+      "videoUrl": "/videos/hero-aquarium.mp4",
+      "posterImage": "/images/fish/angels-altum-angel.webp"
+    },
+    "posters": [
+      {
+        "id": "poster-1",
+        "title": "Wild Orinoco Altum & Angelfish Pairs",
+        "subtitle": "Direct farm-bred specimens conditioned in Palamedu, Madurai. Ready for immediate train & bus dispatch.",
+        "tag": "FARM HARVEST",
+        "imageUrl": "/images/fish/angels-altum-angel.webp",
+        "link": "/fish?category=angelfish",
+        "buttonText": "Shop Collection",
+        "active": true,
+        "displayOrder": 1
+      },
+      {
+        "id": "poster-2",
+        "title": "Specialist Algae Cleaners & Otocinclus",
+        "subtitle": "Authentic Otocinclus, Panda Garra, and specialized biofilm grazers for pristine nature aquariums.",
+        "tag": "WHOLESALE AVAILABLE",
+        "imageUrl": "/images/fish/algae-eaters-otocinclus.jpg",
+        "link": "/fish?category=algae-eaters",
+        "buttonText": "View Algae Eaters",
+        "active": true,
+        "displayOrder": 2
+      }
+    ]
+  },
+  "orderAudits": [
+    {
+      "id": "audit-1001",
+      "orderNumber": "SRM-8921",
+      "customerName": "Karthik Subramanian",
+      "phone": "+91 98401 23456",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "pinCode": "600028",
+      "notes": "Please pack with extra thermal padding for evening train dispatch.",
+      "items": [
+        {
+          "productId": "prod-garra-01",
+          "name": "Panda Garra",
+          "price": 190,
+          "quantity": 4
+        },
+        {
+          "productId": "prod-oto-01",
+          "name": "Otocinclus [Large]",
+          "price": 220,
+          "quantity": 6
+        }
+      ],
+      "totalAmount": 2080,
+      "createdAt": "2026-11-10T14:30:00Z",
+      "status": "Confirmed"
+    },
+    {
+      "id": "audit-1002",
+      "orderNumber": "SRM-8922",
+      "customerName": "Aman Sharma",
+      "phone": "+91 98765 43210",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "pinCode": "560034",
+      "notes": "KSR Bengaluru railway station pickup.",
+      "items": [
+        {
+          "productId": "prod-ang-altum",
+          "name": "Orinoco Altum Angelfish",
+          "price": 7000,
+          "quantity": 2
+        }
+      ],
+      "totalAmount": 14000,
+      "createdAt": "2026-11-11T09:15:00Z",
+      "status": "Inquiry Sent"
+    }
+  ]
+}

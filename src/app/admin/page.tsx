@@ -41,6 +41,7 @@ import {
 import {
   getProducts,
   getCategories,
+  getFishCategories,
   saveProduct,
   deleteProduct,
   saveCategory,
@@ -107,14 +108,22 @@ export default function AdminPage() {
   const loadAllAdminData = async () => {
     setLoading(true);
     try {
-      const [p, c, s, a] = await Promise.all([
+      const [p, c, s, a, fc] = await Promise.all([
         getProducts(),
         getCategories(),
         getStoreSettings(),
         getOrderAudits(),
+        getFishCategories(),
       ]);
+      // Combine categories so admin can select both high-level departments and live fish types
+      const allCats = [...c];
+      fc.forEach((item) => {
+        if (!allCats.some((x) => x.slug === item.slug)) {
+          allCats.push(item);
+        }
+      });
       setProducts(p);
-      setCategories(c);
+      setCategories(allCats);
       setStoreSettings(s);
       setOrderAudits(a);
     } catch (err) {

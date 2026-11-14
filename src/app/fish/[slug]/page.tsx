@@ -1,8 +1,10 @@
 import { Metadata } from "next";
-import { notFound } from "next/navigation";
 import { getProductBySlug, getProducts, getProductsByCategory } from "@/lib/db";
 import { ProductDetailView } from "@/components/fish/ProductDetailView";
+import { ProductDetailFallback } from "@/components/fish/ProductDetailFallback";
 import { siteConfig } from "@/config/site";
+
+export const dynamicParams = true;
 
 interface PageProps {
   params: {
@@ -51,7 +53,7 @@ export default async function ProductDetailPage({ params }: PageProps) {
   const product = await getProductBySlug(params.slug);
 
   if (!product) {
-    notFound();
+    return <ProductDetailFallback slug={params.slug} />;
   }
 
   // Get related species in same category (excluding current)

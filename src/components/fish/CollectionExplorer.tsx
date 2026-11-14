@@ -41,6 +41,56 @@ export function CollectionExplorer({
 
   const [mobileFilterOpen, setMobileFilterOpen] = useState(false);
   const [inspectingProduct, setInspectingProduct] = useState<Product | null>(null);
+  const [productsList, setProductsList] = useState<Product[]>(initialProducts);
+
+  // Sync products from localStorage and real-time admin updates
+  useEffect(() => {
+    // 1. Sync from localStorage on mount
+    const saved = localStorage.getItem("srm_fishfarm_products_v1");
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          setProductsList(parsed);
+        }
+      } catch (err) {
+        console.error("Failed to parse cached products", err);
+      }
+    }
+
+    // 2. Fetch latest from API (source code)
+    fetch("/api/admin/save-data")
+      .then((res) => (res.ok ? res.json() : null))
+      .then((json) => {
+        if (json?.data?.products && Array.isArray(json.data.products) && json.data.products.length > 0) {
+          setProductsList(json.data.products);
+          localStorage.setItem("srm_fishfarm_products_v1", JSON.stringify(json.data.products));
+        }
+      })
+      .catch(() => {});
+
+    // 3. Listen to real-time events when admin adds/edits products
+    const handleUpdate = (e: Event) => {
+      const customEvent = e as CustomEvent<Product[]>;
+      if (customEvent.detail && Array.isArray(customEvent.detail)) {
+        setProductsList(customEvent.detail);
+      } else {
+        const refreshed = localStorage.getItem("srm_fishfarm_products_v1");
+        if (refreshed) {
+          try {
+            setProductsList(JSON.parse(refreshed));
+          } catch {}
+        }
+      }
+    };
+
+    window.addEventListener("srm_products_updated", handleUpdate);
+    window.addEventListener("storage", handleUpdate);
+    return () => {
+      window.removeEventListener("srm_products_updated", handleUpdate);
+      window.removeEventListener("storage", handleUpdate);
+    };
+  }, []);
 
   // Sync state if URL query changes
   useEffect(() => {
@@ -81,7 +131,7 @@ export function CollectionExplorer({
 
   // Filter & Sort Logic
   const filteredProducts = useMemo(() => {
-    return initialProducts
+    return productsList
       .filter((product) => {
         // Category filter
         if (
@@ -151,7 +201,7 @@ export function CollectionExplorer({
         }
         return 0; // Default newest
       });
-  }, [initialProducts, filters]);
+  }, [productsList, filters]);
 
   const allCategories = useMemo(() => {
     const combined = [...categories];
@@ -195,7 +245,7 @@ export function CollectionExplorer({
         <div className="flex items-center justify-between md:justify-end gap-4 text-xs">
           <div className="text-[#64748B]">
             Showing <span className="font-semibold text-[#171717]">{filteredProducts.length}</span> of{" "}
-            <span>{initialProducts.length}</span> live species
+            <span>{productsList.length}</span> live species
           </div>
 
           <button
@@ -278,7 +328,7 @@ export function CollectionExplorer({
             onFilterChange={handleFilterChange}
             onReset={handleResetFilters}
             totalFilteredCount={filteredProducts.length}
-            totalCatalogueCount={initialProducts.length}
+            totalCatalogueCount={productsList.length}
           />
         </div>
 
@@ -346,7 +396,7 @@ export function CollectionExplorer({
               onFilterChange={handleFilterChange}
               onReset={handleResetFilters}
               totalFilteredCount={filteredProducts.length}
-              totalCatalogueCount={initialProducts.length}
+              totalCatalogueCount={productsList.length}
               isMobileDrawer
               onCloseMobileDrawer={() => setMobileFilterOpen(false)}
             />

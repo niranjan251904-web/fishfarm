@@ -1,4 +1,5 @@
 import { Product, Category, StoreSettings, CustomerOrderAudit } from "@/types";
+import storeData from "@/data/storeData.json";
 import {
   initialProducts,
   initialCategories,
@@ -24,11 +25,31 @@ const STORAGE_KEY_CATEGORIES = "srm_fishfarm_categories_v1";
 const STORAGE_KEY_SETTINGS = "srm_fishfarm_settings_v1";
 const STORAGE_KEY_AUDITS = "srm_fishfarm_audits_v1";
 
-// In-memory fallback for SSR and dev when Firebase isn't configured
-let memoryProducts: Product[] = [...initialProducts];
-let memoryCategories: Category[] = [...initialCategories];
-let memorySettings: StoreSettings = { ...initialStoreSettings };
-let memoryAudits: CustomerOrderAudit[] = [...initialOrderAudits];
+// In-memory fallback for SSR and dev: prefer source storeData.json, fallback to initialData
+const initialLoadedProducts: Product[] =
+  storeData && Array.isArray(storeData.products) && storeData.products.length > 0
+    ? (storeData.products as Product[])
+    : [...initialProducts];
+
+const initialLoadedCategories: Category[] =
+  storeData && Array.isArray(storeData.categories) && storeData.categories.length > 0
+    ? (storeData.categories as Category[])
+    : [...initialCategories];
+
+const initialLoadedSettings: StoreSettings =
+  storeData && storeData.settings
+    ? (storeData.settings as StoreSettings)
+    : { ...initialStoreSettings };
+
+const initialLoadedAudits: CustomerOrderAudit[] =
+  storeData && Array.isArray(storeData.orderAudits)
+    ? (storeData.orderAudits as CustomerOrderAudit[])
+    : [...initialOrderAudits];
+
+let memoryProducts: Product[] = [...initialLoadedProducts];
+let memoryCategories: Category[] = [...initialLoadedCategories];
+let memorySettings: StoreSettings = { ...initialLoadedSettings };
+let memoryAudits: CustomerOrderAudit[] = [...initialLoadedAudits];
 
 function getClientStorage<T>(key: string, fallback: T): T {
   if (typeof window === "undefined") return fallback;
@@ -80,6 +101,9 @@ export async function getCategories(): Promise<Category[]> {
  * Fetch fish-only categories (for homepage collections carousel)
  */
 export async function getFishCategories(): Promise<Category[]> {
+  if (storeData && Array.isArray(storeData.fishCategories) && storeData.fishCategories.length > 0) {
+    return storeData.fishCategories as Category[];
+  }
   return fishCategories;
 }
 
@@ -144,13 +168,12 @@ export async function getFeaturedProducts(): Promise<Product[]> {
 }
 
 /**
- * Create or save new product
+ * Create or save new product (persists to Firestore if present, localStorage, and source code API)
  */
 export async function saveProduct(product: Product): Promise<Product> {
   if (isFirebaseConfigured() && db) {
     try {
       await setDoc(doc(db, "products", product.productId), product);
-      return product;
     } catch (err) {
       console.error("Firestore saveProduct error:", err);
     }
@@ -167,6 +190,22 @@ export async function saveProduct(product: Product): Promise<Product> {
   }
   memoryProducts = updated;
   setClientStorage(STORAGE_KEY_PRODUCTS, updated);
+
+  // Sync to source code via API & broadcast update
+  if (typeof window !== "undefined") {
+    try {
+      fetch("/api/admin/save-data", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ action: "save_product", payload: product }),
+      }).catch((e) => console.warn("API sync error:", e));
+
+      window.dispatchEvent(new CustomEvent("srm_products_updated", { detail: updated }));
+    } catch (e) {
+      console.warn("Broadcast error:", e);
+    }
+  }
+
   return product;
 }
 
@@ -177,7 +216,6 @@ export async function deleteProduct(productId: string): Promise<boolean> {
   if (isFirebaseConfigured() && db) {
     try {
       await deleteDoc(doc(db, "products", productId));
-      return true;
     } catch (err) {
       console.error("Firestore deleteProduct error:", err);
     }
@@ -187,6 +225,22 @@ export async function deleteProduct(productId: string): Promise<boolean> {
   const filtered = all.filter((p) => p.productId !== productId);
   memoryProducts = filtered;
   setClientStorage(STORAGE_KEY_PRODUCTS, filtered);
+
+  // Sync to source code via API & broadcast update
+  if (typeof window !== "undefined") {
+    try {
+      fetch("/api/admin/save-data", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ action: "delete_product", payload: { productId } }),
+      }).catch((e) => console.warn("API deletion sync error:", e));
+
+      window.dispatchEvent(new CustomEvent("srm_products_updated", { detail: filtered }));
+    } catch (e) {
+      console.warn("Broadcast error:", e);
+    }
+  }
+
   return true;
 }
 
@@ -236,7 +290,6 @@ export async function saveCategory(category: Category): Promise<Category> {
   if (isFirebaseConfigured() && db) {
     try {
       await setDoc(doc(db, "categories", category.categoryId), category);
-      return category;
     } catch (err) {
       console.error("Firestore saveCategory error:", err);
     }
@@ -253,6 +306,21 @@ export async function saveCategory(category: Category): Promise<Category> {
   }
   memoryCategories = updated;
   setClientStorage(STORAGE_KEY_CATEGORIES, updated);
+
+  if (typeof window !== "undefined") {
+    try {
+      fetch("/api/admin/save-data", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ action: "save_category", payload: category }),
+      }).catch((e) => console.warn("API category sync error:", e));
+
+      window.dispatchEvent(new CustomEvent("srm_categories_updated", { detail: updated }));
+    } catch (e) {
+      console.warn("Category broadcast error:", e);
+    }
+  }
+
   return category;
 }
 
@@ -263,7 +331,6 @@ export async function deleteCategory(categoryId: string): Promise<boolean> {
   if (isFirebaseConfigured() && db) {
     try {
       await deleteDoc(doc(db, "categories", categoryId));
-      return true;
     } catch (err) {
       console.error("Firestore deleteCategory error:", err);
     }
@@ -273,6 +340,21 @@ export async function deleteCategory(categoryId: string): Promise<boolean> {
   const filtered = all.filter((c) => c.categoryId !== categoryId);
   memoryCategories = filtered;
   setClientStorage(STORAGE_KEY_CATEGORIES, filtered);
+
+  if (typeof window !== "undefined") {
+    try {
+      fetch("/api/admin/save-data", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ action: "delete_category", payload: { categoryId } }),
+      }).catch((e) => console.warn("API category deletion error:", e));
+
+      window.dispatchEvent(new CustomEvent("srm_categories_updated", { detail: filtered }));
+    } catch (e) {
+      console.warn("Category delete broadcast error:", e);
+    }
+  }
+
   return true;
 }
 
@@ -306,7 +388,6 @@ export async function saveStoreSettings(settings: StoreSettings): Promise<StoreS
   if (isFirebaseConfigured() && db) {
     try {
       await setDoc(doc(db, "settings", "global_store_settings"), settings);
-      return settings;
     } catch (err) {
       console.error("Firestore saveStoreSettings error:", err);
     }
@@ -314,6 +395,21 @@ export async function saveStoreSettings(settings: StoreSettings): Promise<StoreS
 
   memorySettings = { ...settings };
   setClientStorage(STORAGE_KEY_SETTINGS, settings);
+
+  if (typeof window !== "undefined") {
+    try {
+      fetch("/api/admin/save-data", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ action: "save_settings", payload: settings }),
+      }).catch((e) => console.warn("API settings sync error:", e));
+
+      window.dispatchEvent(new CustomEvent("srm_settings_updated", { detail: settings }));
+    } catch (e) {
+      console.warn("Settings broadcast error:", e);
+    }
+  }
+
   return settings;
 }
 

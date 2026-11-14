@@ -1,3 +1,6 @@
+"use client";
+
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Product } from "@/types";
 import { FishCard } from "../fish/FishCard";
@@ -6,7 +9,55 @@ interface BestSellersSectionProps {
   products: Product[];
 }
 
-export function BestSellersSection({ products }: BestSellersSectionProps) {
+export function BestSellersSection({ products: initialProducts }: BestSellersSectionProps) {
+  const [products, setProducts] = useState<Product[]>(initialProducts);
+
+  useEffect(() => {
+    // 1. Sync from localStorage on mount
+    const saved = localStorage.getItem("srm_fishfarm_products_v1");
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          setProducts(parsed);
+        }
+      } catch {}
+    }
+
+    // 2. Fetch latest from API (source code)
+    fetch("/api/admin/save-data")
+      .then((res) => (res.ok ? res.json() : null))
+      .then((json) => {
+        if (json?.data?.products && Array.isArray(json.data.products) && json.data.products.length > 0) {
+          setProducts(json.data.products);
+          localStorage.setItem("srm_fishfarm_products_v1", JSON.stringify(json.data.products));
+        }
+      })
+      .catch(() => {});
+
+    // 3. Listen for real-time updates when admin adds or toggles featured status
+    const handleUpdate = (e: Event) => {
+      const customEvent = e as CustomEvent<Product[]>;
+      if (customEvent.detail && Array.isArray(customEvent.detail)) {
+        setProducts(customEvent.detail);
+      } else {
+        const refreshed = localStorage.getItem("srm_fishfarm_products_v1");
+        if (refreshed) {
+          try {
+            setProducts(JSON.parse(refreshed));
+          } catch {}
+        }
+      }
+    };
+
+    window.addEventListener("srm_products_updated", handleUpdate);
+    window.addEventListener("storage", handleUpdate);
+    return () => {
+      window.removeEventListener("srm_products_updated", handleUpdate);
+      window.removeEventListener("storage", handleUpdate);
+    };
+  }, []);
+
   // Select top featured or popular species
   const bestSellers = products
     .filter((p) => p.featured)
