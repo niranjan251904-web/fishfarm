@@ -27,7 +27,7 @@ export function Footer() {
           <div className="lg:col-span-2 space-y-4">
             <BrandLogo variant="light" />
             <p className="text-xs sm:text-sm text-[#64748B] max-w-sm leading-relaxed mt-2">
-              Quarantined freshwater ornamental species, pedigree strains, and specialist diatom algae grazers shipped across India with guaranteed live arrival.
+              SRM Fish Farm, managed by R. Sankar in Palamedu, Madurai. 2 years of farm fish breeding excellence, wholesale supply, specialized aquascaping, and nature aquarium maintenance.
             </p>
             <div className="pt-2">
               <a
@@ -38,7 +38,7 @@ export function Footer() {
                 rel="noopener noreferrer"
                 className="inline-block px-4 py-2 bg-[#0F172A] text-white text-xs font-semibold rounded-[2px] border border-[#1E293B] hover:bg-[#0055FF] hover:border-[#0055FF] transition-colors"
               >
-                WhatsApp Desk: {siteConfig.whatsapp.displayNumber}
+                WhatsApp: {siteConfig.whatsapp.displayNumber}
               </a>
             </div>
           </div>
@@ -114,13 +114,14 @@ export function Footer() {
           {/* Col 5: Facility & Hours */}
           <div>
             <h5 className="text-sm font-bold text-white tracking-wider uppercase mb-4">
-              Facility Location
+              Farm Location & Hours
             </h5>
             <div className="space-y-2.5 text-xs text-[#64748B]">
-              <p>Aquaculture Facility, Tamil Nadu, India</p>
-              <p>Operating Hours: Mon - Sat: 9:00 AM - 7:30 PM IST</p>
-              <p>Train & Bus Dispatches: Within 48 Hours</p>
-              <p className="text-[#0055FF] font-medium">{siteConfig.contact.email}</p>
+              <p className="text-white font-medium">17, Sellaji Amman (Kovil) Street, Palamedu, Madurai – 625503</p>
+              <p>Proprietor: R. Sankar</p>
+              <p>Operating Hours: All Days: 9:00 AM – 4:00 PM</p>
+              <p>Services: Wholesale · Fish Breeding · Aquascaping & Maintenance</p>
+              <p className="text-[#0055FF] font-medium">+91 83007 38588</p>
             </div>
           </div>
         </div>

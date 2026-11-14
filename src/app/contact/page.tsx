@@ -17,7 +17,7 @@ export default function ContactPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const formattedMessage = `Hello HS Aquatics! My name is ${formData.name || "Aquarist"} from ${formData.city || "India"} (PIN: ${formData.pinCode || "N/A"}). Tank: ${formData.tankVolume || "Planted Aquarium"}. Inquiry: ${formData.message || "I would like to inquire about current stock and dispatch."}`;
+    const formattedMessage = `Hello SRM Fish Farm! My name is ${formData.name || "Aquarist"} from ${formData.city || "India"} (PIN: ${formData.pinCode || "N/A"}). Tank / Setup: ${formData.tankVolume || "Planted Aquarium"}. Inquiry: ${formData.message || "I would like to inquire about current fish stock, wholesale supply, or maintenance services."}`;
     
     trackWhatsAppEnquiry("hero_cta", "Contact Form");
     window.open(buildWhatsAppUrl(formattedMessage, { source: "contact_form" }), "_blank");
@@ -51,18 +51,59 @@ export default function ContactPage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           {/* Left Column: Quick Information & WhatsApp Direct (5 Cols) */}
           <div className="lg:col-span-5 space-y-6">
+            {/* Official Farm Profile Card */}
+            <div className="p-6 bg-white rounded-none sm:rounded-[2px] border border-[#E2E8F0] space-y-4 text-xs text-[#020617] shadow-xs">
+              <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#0055FF] block">
+                BUSINESS & FARM PROFILE
+              </span>
+              <h2 className="text-2xl font-bold text-[#020617]">
+                SRM Fish Farm
+              </h2>
+              <div className="space-y-3 pt-1 text-xs">
+                <div className="flex items-start gap-2.5">
+                  <MapPin className="w-4 h-4 text-[#0055FF] flex-shrink-0 mt-0.5" />
+                  <div>
+                    <strong className="block text-[#020617]">Farm & Facility Address</strong>
+                    <span className="text-[#64748B] leading-relaxed">
+                      17, Sellaji Amman (Kovil) Street, Palamedu, Madurai – 625503
+                    </span>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-2.5">
+                  <Clock className="w-4 h-4 text-[#0055FF] flex-shrink-0 mt-0.5" />
+                  <div>
+                    <strong className="block text-[#020617]">Working Days & Hours</strong>
+                    <span className="text-[#64748B]">All Days: 9:00 AM – 4:00 PM</span>
+                  </div>
+                </div>
+
+                <div className="p-3 bg-slate-50 border border-[#E2E8F0] rounded-xs space-y-1">
+                  <p className="text-[11px] font-semibold text-[#020617]">
+                    Proprietor: <span className="font-normal text-[#64748B]">R. Sankar</span>
+                  </p>
+                  <p className="text-[11px] font-semibold text-[#020617]">
+                    Operating History: <span className="font-normal text-[#64748B]">2 Years of Breeding Excellence</span>
+                  </p>
+                  <p className="text-[11px] font-semibold text-[#020617]">
+                    Main Services: <span className="font-normal text-[#64748B]">Wholesale, Fish Breeding, Aquascaping & Maintenance</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
             {/* WhatsApp Priority Card */}
             <div className="bg-[#020617] text-white p-6 sm:p-8 rounded-none sm:rounded-[2px] border border-[#0F172A] space-y-4 shadow-sm">
               <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#0055FF] block">
-                PRIMARY COMMUNICATION CHANNEL
+                DIRECT OWNER & SALES HELPLINE
               </span>
 
-              <h2 className="text-2xl font-bold text-white">
-                Direct WhatsApp Helpline
-              </h2>
+              <h3 className="text-xl font-bold text-white">
+                Connect With R. Sankar
+              </h3>
 
               <p className="text-xs sm:text-sm text-[#E2E8F0] leading-relaxed">
-                Connect directly with our facility biologists for uncompressed specimen videos, tank volume sizing, and water chemistry audits.
+                Call or WhatsApp directly for bulk wholesale queries, farm visits, fish variety availability, and customized aquarium maintenance quotes.
               </p>
 
               <div className="pt-2">
@@ -75,12 +116,12 @@ export default function ContactPage() {
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-[2px] bg-[#25D366] hover:bg-[#20bd5a] text-white text-xs font-semibold uppercase tracking-wider transition-colors shadow-sm"
                 >
                   <MessageCircle className="w-4 h-4 fill-current" />
-                  <span>Chat on WhatsApp: {siteConfig.whatsapp.displayNumber}</span>
+                  <span>Chat on WhatsApp: +91 83007 38588</span>
                 </a>
               </div>
 
               <div className="pt-4 border-t border-[#0F172A] text-xs text-[#64748B]">
-                Active 7 days a week: 9:00 AM – 7:30 PM IST
+                Primary Contact: R. Sankar (83007 38588) · All Days 9:00 AM – 4:00 PM
               </div>
             </div>
 
@@ -89,14 +130,14 @@ export default function ContactPage() {
               <div className="flex items-center gap-2">
                 <ShieldCheck className="w-4 h-4 text-[#0055FF]" />
                 <h4 className="font-semibold text-xs uppercase tracking-wider text-[#020617]">
-                  Transit Assurance Standards
+                  Farm Assurance Standards
                 </h4>
               </div>
               <ul className="space-y-2 text-[#64748B]">
-                <li>• 100% Live Arrival Guarantee (DOA) on train and bus consignments.</li>
-                <li>• Pure medical oxygen injected double-gauge poly-bags.</li>
-                <li>• High-density expanded polystyrene thermal containers.</li>
-                <li>• Parcel tracking & waybill photos shared via WhatsApp.</li>
+                <li>• 100% Live Arrival Guarantee (DOA) on bus and train consignments.</li>
+                <li>• Farm-direct pricing with genuine wholesale volume discounts.</li>
+                <li>• Quarantined and biologically conditioned healthy livestock.</li>
+                <li>• Complete on-site aquascaping and biotope maintenance support.</li>
               </ul>
             </div>
           </div>

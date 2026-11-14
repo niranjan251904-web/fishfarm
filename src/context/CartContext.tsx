@@ -122,7 +122,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
    * Formats the entire cart into a luxury, structured WhatsApp invoice/bill
    */
   const generateWhatsAppBillUrl = (customer: CustomerDetails): string => {
-    const orderNumber = `AA-${Date.now().toString().slice(-6)}`;
+    const orderNumber = `SRM-${Date.now().toString().slice(-6)}`;
     const dateFormatted = new Date().toLocaleDateString("en-IN", {
       day: "2-digit",
       month: "short",
@@ -132,7 +132,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
     });
 
     let billText = `━━━━━━━━━━━━━━━━━━━━━\n`;
-    billText += `*HS AQUATICS · ORDER BILL*\n`;
+    billText += `*SRM FISH FARM · ORDER BILL*\n`;
     billText += `━━━━━━━━━━━━━━━━━━━━━\n`;
     billText += `*Invoice No:* #${orderNumber}\n`;
     billText += `*Date:* ${dateFormatted}\n\n`;

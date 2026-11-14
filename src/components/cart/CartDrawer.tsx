@@ -349,7 +349,7 @@ export function CartDrawer() {
             </button>
 
             <p className="text-[10px] text-[#64748B] text-center leading-normal">
-              Direct checkout manifest sent to HS Aquatics live desk (+91 80981 47347).
+              Direct checkout manifest sent to SRM Fish Farm live desk (+91 83007 38588).
             </p>
           </div>
         )}

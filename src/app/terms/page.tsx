@@ -78,7 +78,7 @@ export default function TermsOfServicePage() {
                 Requirement B: 2-Hour Timeframe
               </p>
               <p className="text-xs text-[#64748B]">
-                Notification and unboxing documentation must be submitted via our official WhatsApp line (+91 80981 47347) within exactly 2 hours of arrival.
+                Notification and unboxing documentation must be submitted via our official WhatsApp line (+91 83007 38588) within exactly 2 hours of arrival.
               </p>
             </div>
             <p className="text-[#64748B]">

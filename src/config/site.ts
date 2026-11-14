@@ -1,32 +1,42 @@
 export const siteConfig = {
-  name: "HS AQUATICS",
-  legalName: "HS Aquatics",
-  tagline: "Curated Aquatic Standard",
+  name: "SRM FISH FARM",
+  legalName: "SRM Fish Farm",
+  owner: "R. Sankar",
+  tagline: "Wholesale · Fish Breeding · Aquascaping & Maintenance",
   description:
-    "Curated collection of quarantined, high-pedigree ornamental fish. Shipped across India in climate-controlled temperature-stabilized oxygenated packaging with guaranteed live arrival.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://hsaquatics.in",
+    "Direct farm-bred ornamental fish, wholesale supply, pedigree breeding varieties, and custom aquascaping and biotope maintenance by R. Sankar, Madurai. 2 years of quality breeding and guaranteed live arrival.",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://srmfishfarm.in",
+  operatingYears: "2 years",
+  services: [
+    "Wholesale",
+    "Fish Breeding",
+    "Aquascaping",
+    "Aquarium Maintenance",
+  ],
   
   // WhatsApp Configuration (Centralized)
   whatsapp: {
-    // 80981 47347
-    number: "918098147347",
-    displayNumber: "+91 80981 47347",
+    // 83007 38588 (R. Sankar)
+    number: "918300738588",
+    displayNumber: "+91 83007 38588",
     defaultMessage:
-      "Hello HS Aquatics! I would like to inquire about current ornamental fish availability and dispatch schedule.",
+      "Hello SRM Fish Farm! I would like to inquire about current ornamental fish availability, wholesale rates, and dispatch schedule.",
     productInquiryMessage: (productName: string, sku?: string) =>
-      `Hello HS Aquatics! I am interested in ${productName}${sku ? ` (SKU: ${sku})` : ""}. Please share availability and delivery details to my pin code.`,
+      `Hello SRM Fish Farm! I am interested in ${productName}${sku ? ` (SKU: ${sku})` : ""}. Please share availability and delivery details to my pin code.`,
     outOfStockMessage: (productName: string) =>
-      `Hello HS Aquatics! I noticed ${productName} is currently out of stock. Please notify me via WhatsApp when the next quarantined batch is ready for dispatch.`,
+      `Hello SRM Fish Farm! I noticed ${productName} is currently out of stock. Please notify me via WhatsApp when the next farm batch is ready for dispatch.`,
     campaignInquiryMessage: (campaignName: string, utmSource?: string) =>
-      `Hello HS Aquatics! I'm browsing your ${campaignName} collection${utmSource ? ` from ${utmSource}` : ""}. Could you help me with species selection and tank compatibility?`,
+      `Hello SRM Fish Farm! I'm browsing your ${campaignName} collection${utmSource ? ` from ${utmSource}` : ""}. Could you help me with species selection and tank compatibility?`,
   },
 
   contact: {
-    email: "support@hsaquatics.in",
-    supportEmail: "support@hsaquatics.in",
-    address: "HS Aquatics Aquaculture Facility, Tamil Nadu, India",
-    hours: "Monday - Saturday: 9:00 AM - 7:30 PM IST (WhatsApp active 7 days)",
-    emergencySupport: "24/7 Acclimation Emergency WhatsApp Helpline",
+    owner: "R. Sankar",
+    phone: "83007 38588",
+    email: "srmfishfarm@gmail.com",
+    supportEmail: "srmfishfarm@gmail.com",
+    address: "17, Sellaji Amman (Kovil) Street, Palamedu, Madurai – 625503",
+    hours: "All Days: 9:00 AM – 4:00 PM (WhatsApp active for inquiries)",
+    emergencySupport: "Direct Farm Concierge & WhatsApp Helpline (+91 83007 38588)",
   },
 
   guarantee: {

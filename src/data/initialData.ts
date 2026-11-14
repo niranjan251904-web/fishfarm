@@ -1347,17 +1347,25 @@ export const initialGallery: GalleryItem[] = [
 ];
 
 export const initialStoreSettings: StoreSettings = {
-  siteName: "HS AQUATICS",
-  tagline: "Curated Aquatic Standard",
-  whatsappNumber: "918098147347",
-  whatsappDisplay: "+91 80981 47347",
-  supportEmail: "support@hsaquatics.in",
-  address: "HS Aquatics Aquaculture Facility, Tamil Nadu, India",
-  hours: "Monday - Saturday: 9:00 AM - 7:30 PM IST (WhatsApp active 7 days)",
+  siteName: "SRM FISH FARM",
+  tagline: "Wholesale · Fish Breeding · Aquascaping & Maintenance",
+  ownerName: "R. Sankar",
+  operatingYears: "2 years",
+  services: [
+    "Wholesale",
+    "Fish Breeding",
+    "Aquascaping",
+    "Aquarium Maintenance",
+  ],
+  whatsappNumber: "918300738588",
+  whatsappDisplay: "+91 83007 38588",
+  supportEmail: "srmfishfarm@gmail.com",
+  address: "17, Sellaji Amman (Kovil) Street, Palamedu, Madurai – 625503",
+  hours: "All Days: 9:00 AM – 4:00 PM (WhatsApp active all days)",
   doaGuaranteeText: "100% Live Arrival Guarantee on Train & Bus Shipments",
   topBanner: {
     enabled: false,
-    text: "SPECIAL OFFER: FREE OXYGEN PACKAGING ON ORDERS ABOVE INR 1,500",
+    text: "SPECIAL OFFER: WHOLESALE RATES ON BULK LIVESTOCK & DIRECT FARM DISPATCH",
     bgColor: "#0055FF",
     textColor: "#FFFFFF",
     link: "/fish",
@@ -1365,7 +1373,7 @@ export const initialStoreSettings: StoreSettings = {
   },
   hero: {
     title: "Curated\nAquatic Standard",
-    subtitle: "Quarantined ornamental freshwater species shipped across India with guaranteed live arrival.",
+    subtitle: "Farm-bred ornamental varieties, wholesale supply, and dedicated aquascaping & maintenance by R. Sankar, Madurai.",
     buttonText: "Explore",
     buttonLink: "/fish",
     videoUrl: "/videos/hero-aquarium.mp4",
@@ -1375,8 +1383,8 @@ export const initialStoreSettings: StoreSettings = {
     {
       id: "poster-1",
       title: "Wild Orinoco Altum & Angelfish Pairs",
-      subtitle: "Fourteen-day biological conditioning complete. Ready for immediate train & bus dispatch.",
-      tag: "SPECIAL HARVEST",
+      subtitle: "Direct farm-bred specimens conditioned in Palamedu, Madurai. Ready for immediate train & bus dispatch.",
+      tag: "FARM HARVEST",
       imageUrl: "/images/fish/angels-altum-angel.webp",
       link: "/fish?category=angelfish",
       buttonText: "Shop Collection",
@@ -1387,7 +1395,7 @@ export const initialStoreSettings: StoreSettings = {
       id: "poster-2",
       title: "Specialist Algae Cleaners & Otocinclus",
       subtitle: "Authentic Otocinclus, Panda Garra, and specialized biofilm grazers for pristine nature aquariums.",
-      tag: "CLEANUP CREW SALE",
+      tag: "WHOLESALE AVAILABLE",
       imageUrl: "/images/fish/algae-eaters-otocinclus.jpg",
       link: "/fish?category=algae-eaters",
       buttonText: "View Algae Eaters",
@@ -1400,7 +1408,7 @@ export const initialStoreSettings: StoreSettings = {
 export const initialOrderAudits: CustomerOrderAudit[] = [
   {
     id: "audit-1001",
-    orderNumber: "HS-8921",
+    orderNumber: "SRM-8921",
     customerName: "Karthik Subramanian",
     phone: "+91 98401 23456",
     city: "Chennai",
@@ -1417,7 +1425,7 @@ export const initialOrderAudits: CustomerOrderAudit[] = [
   },
   {
     id: "audit-1002",
-    orderNumber: "HS-8922",
+    orderNumber: "SRM-8922",
     customerName: "Aman Sharma",
     phone: "+91 98765 43210",
     city: "Bengaluru",

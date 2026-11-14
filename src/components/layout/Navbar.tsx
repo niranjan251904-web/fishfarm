@@ -149,7 +149,7 @@ export function Navbar() {
 
           <div className="pt-6 border-t border-[#E2E8F0] space-y-3">
             <div className="text-xs text-[#64748B]">
-              <p className="font-semibold text-[#020617]">HS Aquatics Live Desk</p>
+              <p className="font-semibold text-[#020617]">SRM Fish Farm Live Desk</p>
               <p>WhatsApp: {siteConfig.whatsapp.displayNumber}</p>
             </div>
           </div>

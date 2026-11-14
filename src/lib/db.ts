@@ -13,10 +13,10 @@ import {
   writeBatch,
 } from "firebase/firestore";
 
-const STORAGE_KEY_PRODUCTS = "hs_aquatics_products_v2";
-const STORAGE_KEY_CATEGORIES = "hs_aquatics_categories_v2";
-const STORAGE_KEY_SETTINGS = "hs_aquatics_settings_v2";
-const STORAGE_KEY_AUDITS = "hs_aquatics_audits_v2";
+const STORAGE_KEY_PRODUCTS = "srm_fishfarm_products_v1";
+const STORAGE_KEY_CATEGORIES = "srm_fishfarm_categories_v1";
+const STORAGE_KEY_SETTINGS = "srm_fishfarm_settings_v1";
+const STORAGE_KEY_AUDITS = "srm_fishfarm_audits_v1";
 
 // In-memory fallback for SSR and dev when Firebase isn't configured
 let memoryProducts: Product[] = [...initialProducts];

@@ -321,7 +321,7 @@ export default function CartPage() {
                   </div>
 
                   <p className="text-[10px] text-center text-[#64748B] leading-relaxed">
-                    Direct checkout manifest sent to HS Aquatics live desk (+91 80981 47347).
+                    Direct checkout manifest sent to SRM Fish Farm live desk (+91 83007 38588).
                   </p>
                 </form>
               </div>

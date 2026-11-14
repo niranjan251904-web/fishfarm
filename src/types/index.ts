@@ -105,6 +105,9 @@ export interface HeroSettings {
 export interface StoreSettings {
   siteName: string;
   tagline: string;
+  ownerName?: string;
+  operatingYears?: string;
+  services?: string[];
   whatsappNumber: string;
   whatsappDisplay: string;
   supportEmail: string;

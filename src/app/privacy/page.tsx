@@ -78,7 +78,7 @@ export default function PrivacyPolicyPage() {
               3. WhatsApp Communications
             </h2>
             <p className="text-[#64748B]">
-              When you initiate an inquiry through our verified WhatsApp concierge (+91 80981 47347), your phone number and chat transcripts are retained securely to maintain continuity of care for your aquatic livestock, facilitate quarantine health reports, and preserve DOA proof documentation.
+              When you initiate an inquiry through our verified WhatsApp concierge (+91 83007 38588), your phone number and chat transcripts are retained securely to maintain continuity of care for your aquatic livestock, facilitate quarantine health reports, and preserve DOA proof documentation.
             </p>
           </section>
         </article>

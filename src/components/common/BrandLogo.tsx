@@ -16,14 +16,14 @@ export function BrandLogo({ variant = "dark", className = "" }: BrandLogoProps) 
             isLight ? "text-white" : "text-[#0A1A2F]"
           }`}
         >
-          HS
+          SRM
         </span>
         <span
           className={`text-[8px] font-bold tracking-[0.25em] uppercase -mt-0.5 ${
             isLight ? "text-gray-300" : "text-[#0A1A2F]"
           }`}
         >
-          Aquatics
+          Fish Farm
         </span>
         {/* Blue wave accent */}
         <svg

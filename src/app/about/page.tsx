@@ -26,13 +26,13 @@ export default function AboutPage() {
         {/* Header Hero */}
         <div className="max-w-3xl mb-12">
           <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#0055FF] block mb-1">
-            FACILITY ETHOS
+            ABOUT SRM FISH FARM
           </span>
           <h1 className="text-3xl sm:text-5xl font-bold text-[#020617] leading-[1.15]">
-            Clinical Biosecurity in Ornamental Aquaculture.
+            2 Years of Farm-Direct Breeding Excellence in Madurai.
           </h1>
           <p className="mt-4 text-sm sm:text-base text-[#64748B] leading-relaxed">
-            Operating dedicated quarantine holding systems on the Tamil Nadu coastal belt, we eliminate parasite introductions and stress mortality through structured 14-day observation and acclimatization protocols.
+            Founded and managed by R. Sankar at Palamedu, Madurai, SRM Fish Farm specializes in ethical fish breeding, direct wholesale supply, bespoke aquascaping, and nature aquarium maintenance. Operating 7 days a week, we deliver healthy, acclimated livestock directly from our breeding facility to hobbyists and aquarium stores across India.
           </p>
         </div>
 
@@ -41,7 +41,7 @@ export default function AboutPage() {
           <div className="relative aspect-[4/3] rounded-[2px] overflow-hidden bg-gray-100 border border-[#E2E8F0]">
             <Image
               src="/images/fish/angels-altum-angel.webp"
-              alt="Quarantine Tank at HS Aquatics"
+              alt="Breeding and Holding Systems at SRM Fish Farm"
               fill
               className="object-cover"
             />
@@ -49,35 +49,35 @@ export default function AboutPage() {
 
           <div className="space-y-4">
             <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#0055FF] block">
-              QUARANTINE REGIMEN
+              OUR CORE ADVANTAGE
             </span>
 
             <h2 className="text-2xl sm:text-3xl font-bold text-[#020617]">
-              The Fourteen-Day Clinical Standard
+              Why Choose SRM Fish Farm?
             </h2>
 
             <p className="text-xs sm:text-sm text-[#64748B] leading-relaxed">
-              Unlike commercial clearinghouses that re-box livestock within hours of arrival, every batch entering our facility undergoes a systematic prophylactic holding sequence:
+              Unlike third-party traders who resell unconditioned imports, SRM Fish Farm operates direct breeding tanks and comprehensive on-site maintenance services:
             </p>
 
             <div className="space-y-2.5 pt-2 text-xs text-[#020617]">
               <div className="p-3 bg-gray-50 rounded-sm border border-[#E2E8F0]">
                 <strong className="block text-[#020617] font-semibold mb-0.5">
-                  1. Parasitic Prophylaxis
+                  1. Direct Farm Breeding & Wholesale Rates
                 </strong>
-                <span className="text-[#64748B]">Targeted immersion baths for monogenean gill flukes, protozoan ciliates, and internal flagellates.</span>
+                <span className="text-[#64748B]">Healthy, captive-bred strains conditioned in natural Madurai water parameters. True wholesale rates for hobbyists and bulk commercial orders with zero middleman markup.</span>
               </div>
               <div className="p-3 bg-gray-50 rounded-sm border border-[#E2E8F0]">
                 <strong className="block text-[#020617] font-semibold mb-0.5">
-                  2. Nutritional Conditioning
+                  2. Professional Aquascaping & Maintenance
                 </strong>
-                <span className="text-[#64748B]">Gradual transition onto live decapsulated artemia, blackworms, and fortified micro-granules to restore vitality.</span>
+                <span className="text-[#64748B]">Personalized planted aquarium design, rockwork hardscape setup, and periodic biotope cleaning and health maintenance.</span>
               </div>
               <div className="p-3 bg-gray-50 rounded-sm border border-[#E2E8F0]">
                 <strong className="block text-[#020617] font-semibold mb-0.5">
-                  3. Water Parameter Hardening
+                  3. Rigorous Conditioning & 100% Live Arrival Guarantee
                 </strong>
-                <span className="text-[#64748B]">Acclimation to standard domestic aquarium parameters (TDS 140 to 220 ppm, pH 6.6 to 7.4).</span>
+                <span className="text-[#64748B]">Every dispatch is fasted, double-oxygenated in heavy gauge poly-bags, and insulated in EPS thermal boxing for train and bus transport.</span>
               </div>
             </div>
           </div>

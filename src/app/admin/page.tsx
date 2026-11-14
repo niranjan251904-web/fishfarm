@@ -146,13 +146,13 @@ export default function AdminPage() {
     }
 
     // Default credentials for local/sandbox demo
-    const validEmails = ["admin@hsaquatics.in", "admin@aura-aquatics.in", "admin"];
+    const validEmails = ["admin@srmfishfarm.in", "admin@hsaquatics.in", "admin"];
     if (validEmails.includes(adminEmail.trim()) && adminPassword === "Aquarium2026!") {
       setIsAuthenticated(true);
       sessionStorage.setItem("hs_admin_logged_in", "true");
       loadAllAdminData();
     } else {
-      setAuthError("Invalid credentials. Try: admin@hsaquatics.in / Aquarium2026!");
+      setAuthError("Invalid credentials. Try: admin@srmfishfarm.in / Aquarium2026!");
     }
   };
 
@@ -517,7 +517,7 @@ export default function AdminPage() {
                 type="text"
                 value={adminEmail}
                 onChange={(e) => setAdminEmail(e.target.value)}
-                placeholder="admin@hsaquatics.in"
+                placeholder="admin@srmfishfarm.in"
                 required
                 className="w-full px-3.5 py-2.5 bg-white border border-[#E2E8F0] text-sm text-[#020617] focus:outline-none focus:border-[#0055FF] rounded-xs"
               />
@@ -550,7 +550,7 @@ export default function AdminPage() {
               Default Sandbox Credentials:
             </span>
             <code className="text-[11px] text-[#020617] font-mono mt-1 block">
-              admin@hsaquatics.in / Aquarium2026!
+              admin@srmfishfarm.in / Aquarium2026!
             </code>
           </div>
         </div>
@@ -591,7 +591,7 @@ export default function AdminPage() {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center space-x-3">
               <span className="font-bold text-sm sm:text-base tracking-widest uppercase text-[#020617]">
-                HS Aquatics
+                SRM Fish Farm
               </span>
               <span className="px-2 py-0.5 text-[10px] font-bold tracking-wider uppercase bg-blue-50 text-[#0055FF] rounded-xs border border-blue-200">
                 Master Control
@@ -1425,7 +1425,7 @@ export default function AdminPage() {
                   const cleanedPhone = (audit.phone || "").replace(/[^0-9]/g, "");
                   const directWhatsAppUrl = cleanedPhone
                     ? `https://wa.me/${cleanedPhone}?text=${encodeURIComponent(
-                        `Hello ${audit.customerName}, regarding your HS Aquatics Order #${audit.orderNumber}:`
+                        `Hello ${audit.customerName}, regarding your SRM Fish Farm Order #${audit.orderNumber}:`
                       )}`
                     : null;
 
@@ -1603,7 +1603,7 @@ export default function AdminPage() {
 
                     <div>
                       <label className="block text-[11px] font-bold uppercase tracking-wider text-[#64748B] mb-1">
-                        Store Tagline
+                        Store Tagline / Services Summary
                       </label>
                       <input
                         type="text"
@@ -1619,7 +1619,39 @@ export default function AdminPage() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-[11px] font-bold uppercase tracking-wider text-[#64748B] mb-1">
-                        WhatsApp Number for Receiving Orders (No spaces or plus, e.g. 918098147347)
+                        Owner / Proprietor Name
+                      </label>
+                      <input
+                        type="text"
+                        value={storeSettings.ownerName || "R. Sankar"}
+                        onChange={(e) =>
+                          setStoreSettings({ ...storeSettings, ownerName: e.target.value })
+                        }
+                        placeholder="R. Sankar"
+                        className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#0055FF]"
+                      />
+                    </div>
+
+                    <div>
+                      <label className="block text-[11px] font-bold uppercase tracking-wider text-[#64748B] mb-1">
+                        Operating Experience
+                      </label>
+                      <input
+                        type="text"
+                        value={storeSettings.operatingYears || "2 years"}
+                        onChange={(e) =>
+                          setStoreSettings({ ...storeSettings, operatingYears: e.target.value })
+                        }
+                        placeholder="2 years"
+                        className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#0055FF]"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                      <label className="block text-[11px] font-bold uppercase tracking-wider text-[#64748B] mb-1">
+                        WhatsApp Number for Receiving Orders (No spaces or plus, e.g. 918300738588)
                       </label>
                       <input
                         type="text"
@@ -1628,7 +1660,7 @@ export default function AdminPage() {
                           setStoreSettings({ ...storeSettings, whatsappNumber: e.target.value })
                         }
                         className="w-full px-3 py-2 text-xs font-mono bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#0055FF]"
-                        placeholder="918098147347"
+                        placeholder="918300738588"
                       />
                     </div>
 
@@ -1643,7 +1675,7 @@ export default function AdminPage() {
                           setStoreSettings({ ...storeSettings, whatsappDisplay: e.target.value })
                         }
                         className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#0055FF]"
-                        placeholder="+91 80981 47347"
+                        placeholder="+91 83007 38588"
                       />
                     </div>
                   </div>
