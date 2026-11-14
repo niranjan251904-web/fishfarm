@@ -65,9 +65,9 @@ export function SearchModal({ isOpen, onClose, products }: SearchModalProps) {
       <div className="fixed inset-0" onClick={onClose} />
 
       {/* Modal Card */}
-      <div className="relative w-full max-w-2xl bg-white rounded-none sm:rounded-[2px] border border-[#E2E8F0] shadow-2xl overflow-hidden z-10 text-[#020617]">
+      <div className="relative w-full max-w-2xl bg-white rounded-none sm:rounded-[2px] border border-[#E2E8F0] shadow-2xl overflow-hidden z-10 text-[#171717]">
         {/* Search Input Bar */}
-        <div className="flex items-center gap-3 px-5 py-3.5 border-b border-[#E2E8F0] bg-gray-50">
+        <div className="flex items-center gap-3 px-5 py-3.5 border-b border-[#E2E8F0] bg-[#F5F3EE]">
           <Search className="w-4 h-4 text-[#64748B] shrink-0" />
           <input
             ref={inputRef}
@@ -75,13 +75,13 @@ export function SearchModal({ isOpen, onClose, products }: SearchModalProps) {
             value={query}
             onChange={(e) => handleQueryChange(e.target.value)}
             placeholder="Search fish by species name (e.g. Angel, Otocinclus, Betta)..."
-            className="w-full bg-transparent text-[#020617] placeholder-[#64748B] focus:outline-none text-sm"
+            className="w-full bg-transparent text-[#171717] placeholder-[#64748B] focus:outline-none text-sm"
           />
           {query ? (
             <button
               type="button"
               onClick={() => setQuery("")}
-              className="p-1 text-[#64748B] hover:text-[#020617] transition-colors"
+              className="p-1 text-[#64748B] hover:text-[#171717] transition-colors"
             >
               <X className="w-3.5 h-3.5" />
             </button>
@@ -93,7 +93,7 @@ export function SearchModal({ isOpen, onClose, products }: SearchModalProps) {
           <button
             type="button"
             onClick={onClose}
-            className="p-1 text-[#64748B] hover:text-[#020617] transition-colors ml-1 font-bold text-sm"
+            className="p-1 text-[#64748B] hover:text-[#171717] transition-colors ml-1 font-bold text-sm"
           >
             ×
           </button>
@@ -103,7 +103,7 @@ export function SearchModal({ isOpen, onClose, products }: SearchModalProps) {
         <div className="max-h-[60vh] overflow-y-auto p-4 divide-y divide-[#E2E8F0]">
           {query.trim() === "" ? (
             <div className="py-10 text-center space-y-1.5">
-              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#0055FF]">
+              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#2878A5]">
                 Live Fish Search
               </p>
               <p className="text-xs text-[#64748B]">
@@ -112,7 +112,7 @@ export function SearchModal({ isOpen, onClose, products }: SearchModalProps) {
             </div>
           ) : filtered.length === 0 ? (
             <div className="py-10 text-center space-y-1">
-              <p className="text-sm font-bold text-[#020617]">
+              <p className="text-sm font-bold text-[#171717]">
                 No specimens matching &ldquo;{query}&rdquo;
               </p>
               <p className="text-xs text-[#64748B]">
@@ -125,7 +125,7 @@ export function SearchModal({ isOpen, onClose, products }: SearchModalProps) {
                 key={item.productId}
                 href={`/fish/${item.slug}`}
                 onClick={onClose}
-                className="py-3 px-2 flex items-center gap-3.5 hover:bg-gray-50 transition-colors group rounded-sm"
+                className="py-3 px-2 flex items-center gap-3.5 hover:bg-[#F5F3EE] transition-colors group rounded-sm"
               >
                 <div className="relative w-12 h-12 rounded-[2px] overflow-hidden bg-gray-100 shrink-0 border border-[#E2E8F0]">
                   <Image
@@ -139,7 +139,7 @@ export function SearchModal({ isOpen, onClose, products }: SearchModalProps) {
 
                 <div className="flex-grow min-w-0">
                   <div className="flex items-center gap-2">
-                    <span className="text-[10px] font-semibold uppercase tracking-wider text-[#0055FF]">
+                    <span className="text-[10px] font-semibold uppercase tracking-wider text-[#2878A5]">
                       {item.categoryName}
                     </span>
                     {item.availability === "out_of_stock" && (
@@ -148,7 +148,7 @@ export function SearchModal({ isOpen, onClose, products }: SearchModalProps) {
                       </span>
                     )}
                   </div>
-                  <h4 className="font-semibold text-xs text-[#020617] group-hover:text-[#0055FF] truncate">
+                  <h4 className="font-semibold text-xs text-[#171717] group-hover:text-[#2878A5] truncate">
                     {item.name}
                   </h4>
                   <p className="text-[11px] text-[#64748B] italic truncate">
@@ -157,7 +157,7 @@ export function SearchModal({ isOpen, onClose, products }: SearchModalProps) {
                 </div>
 
                 <div className="text-right shrink-0">
-                  <span className="font-bold text-xs text-[#020617] block">
+                  <span className="font-bold text-xs text-[#171717] block">
                     {formatCurrencyDecimals(item.sellingPrice)}
                   </span>
                   {item.originalPrice > item.sellingPrice && (

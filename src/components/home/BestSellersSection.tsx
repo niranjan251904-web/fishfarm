@@ -13,15 +13,15 @@ export function BestSellersSection({ products }: BestSellersSectionProps) {
     .slice(0, 8);
 
   return (
-    <section className="py-12 sm:py-16 bg-white text-[#020617] border-b border-[#E2E8F0]">
+    <section className="py-12 sm:py-16 bg-white text-[#171717] border-b border-[#E2E8F0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-6 pb-4 border-b border-[#E2E8F0]">
           <div>
-            <span className="text-[11px] sm:text-xs font-semibold uppercase tracking-[0.2em] text-[#0055FF] block mb-1">
+            <span className="text-[11px] sm:text-xs font-semibold uppercase tracking-[0.2em] text-[#2878A5] block mb-1">
               POPULAR STOCK
             </span>
-            <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#020617] tracking-tight">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#171717] tracking-tight">
               Best-Selling Ornamental Fish
             </h2>
             <p className="text-xs sm:text-sm text-[#64748B] mt-1 max-w-xl">
@@ -31,7 +31,7 @@ export function BestSellersSection({ products }: BestSellersSectionProps) {
 
           <Link
             href="/fish"
-            className="mt-3 sm:mt-0 text-xs font-semibold uppercase tracking-wider text-[#0055FF] hover:underline"
+            className="mt-3 sm:mt-0 text-xs font-semibold uppercase tracking-wider text-[#2878A5] hover:underline"
           >
             View All Fish &rarr;
           </Link>

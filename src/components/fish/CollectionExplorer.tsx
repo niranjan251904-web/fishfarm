@@ -141,13 +141,13 @@ export function CollectionExplorer({
             value={filters.searchQuery}
             onChange={(e) => handleFilterChange({ searchQuery: e.target.value })}
             placeholder="Search by species name (e.g. Angel, Otocinclus, Betta, Pleco)..."
-            className="w-full text-xs sm:text-sm bg-gray-50 border border-[#E2E8F0] rounded-sm py-2 px-3 text-[#020617] placeholder-[#64748B] focus:outline-none focus:border-[#0055FF]"
+            className="w-full text-xs sm:text-sm bg-[#F5F3EE] border border-[#E2E8F0] rounded-sm py-2 px-3 text-[#171717] placeholder-[#64748B] focus:outline-none focus:border-[#2878A5]"
           />
           {filters.searchQuery && (
             <button
               type="button"
               onClick={() => handleFilterChange({ searchQuery: "" })}
-              className="absolute right-3 top-1/2 -translate-y-1/2 text-xs font-semibold text-[#64748B] hover:text-[#020617]"
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-xs font-semibold text-[#64748B] hover:text-[#171717]"
             >
               Clear
             </button>
@@ -157,14 +157,14 @@ export function CollectionExplorer({
         {/* Counter and Mobile Filter Button */}
         <div className="flex items-center justify-between md:justify-end gap-4 text-xs">
           <div className="text-[#64748B]">
-            Showing <span className="font-semibold text-[#020617]">{filteredProducts.length}</span> of{" "}
+            Showing <span className="font-semibold text-[#171717]">{filteredProducts.length}</span> of{" "}
             <span>{initialProducts.length}</span> live species
           </div>
 
           <button
             type="button"
             onClick={() => setMobileFilterOpen(true)}
-            className="lg:hidden px-3 py-1.5 bg-[#EFF6FF] text-[#0055FF] border border-[#0055FF]/30 rounded-sm font-semibold"
+            className="lg:hidden px-3 py-1.5 bg-[#E6F4FF] text-[#2878A5] border border-[#2878A5]/30 rounded-sm font-semibold"
           >
             Filters
           </button>
@@ -182,7 +182,7 @@ export function CollectionExplorer({
           </span>
 
           {filters.categoryId !== "all" && activeCategoryObj && (
-            <span className="inline-flex items-center gap-1.5 px-2.5 py-1 bg-[#EFF6FF] border border-[#0055FF]/20 text-[11px] rounded-[2px] text-[#0055FF] font-medium">
+            <span className="inline-flex items-center gap-1.5 px-2.5 py-1 bg-[#E6F4FF] border border-[#2878A5]/20 text-[11px] rounded-[2px] text-[#2878A5] font-medium">
               <span>Category: {activeCategoryObj.name}</span>
               <button
                 type="button"
@@ -195,7 +195,7 @@ export function CollectionExplorer({
           )}
 
           {filters.availability !== "all" && (
-            <span className="inline-flex items-center gap-1.5 px-2.5 py-1 bg-[#EFF6FF] border border-[#0055FF]/20 text-[11px] rounded-[2px] text-[#0055FF] font-medium">
+            <span className="inline-flex items-center gap-1.5 px-2.5 py-1 bg-[#E6F4FF] border border-[#2878A5]/20 text-[11px] rounded-[2px] text-[#2878A5] font-medium">
               <span>Status: {filters.availability === "in_stock" ? "In Stock" : "Out of Stock"}</span>
               <button
                 type="button"
@@ -208,12 +208,12 @@ export function CollectionExplorer({
           )}
 
           {filters.searchQuery && (
-            <span className="inline-flex items-center gap-1.5 px-2.5 py-1 bg-gray-100 border border-[#E2E8F0] text-[11px] rounded-[2px] text-[#020617]">
+            <span className="inline-flex items-center gap-1.5 px-2.5 py-1 bg-white border border-[#E2E8F0] text-[11px] rounded-[2px] text-[#171717]">
               <span>Search: &ldquo;{filters.searchQuery}&rdquo;</span>
               <button
                 type="button"
                 onClick={() => handleFilterChange({ searchQuery: "" })}
-                className="font-bold hover:text-[#0055FF]"
+                className="font-bold hover:text-[#2878A5]"
               >
                 ×
               </button>
@@ -223,7 +223,7 @@ export function CollectionExplorer({
           <button
             type="button"
             onClick={handleResetFilters}
-            className="text-[11px] text-[#0055FF] font-semibold hover:underline ml-2"
+            className="text-[11px] text-[#2878A5] font-semibold hover:underline ml-2"
           >
             Clear all
           </button>
@@ -248,10 +248,10 @@ export function CollectionExplorer({
         <div className="lg:col-span-3">
           {filteredProducts.length === 0 ? (
             <div className="p-12 sm:p-16 bg-white border border-[#E2E8F0] rounded-sm text-center space-y-4">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0055FF]">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#2878A5]">
                 Zero Specimens Matching Criteria
               </p>
-              <h3 className="font-sans text-2xl font-bold text-[#020617]">
+              <h3 className="font-sans text-2xl font-bold text-[#171717]">
                 No Species Found
               </h3>
               <p className="text-xs sm:text-sm text-[#64748B] max-w-md mx-auto leading-relaxed">
@@ -261,7 +261,7 @@ export function CollectionExplorer({
                 <button
                   type="button"
                   onClick={handleResetFilters}
-                  className="px-5 py-2 text-xs font-semibold uppercase tracking-wider text-white bg-[#0055FF] hover:bg-[#0041CC] rounded-sm transition-colors"
+                  className="px-5 py-2 text-xs font-semibold uppercase tracking-wider text-white bg-[#2878A5] hover:bg-[#123B5D] rounded-sm transition-colors"
                 >
                   Reset All Filters
                 </button>

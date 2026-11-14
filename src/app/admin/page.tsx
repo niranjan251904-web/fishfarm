@@ -475,12 +475,12 @@ export default function AdminPage() {
   // -------------------------------------------------------------
   if (!isAuthenticated) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-[#F8FAFC] py-12 px-4 sm:px-6 lg:px-8">
+      <div className="min-h-screen flex items-center justify-center bg-[#F5F3EE] py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-md w-full bg-white border border-[#E2E8F0] p-8 sm:p-10 rounded-sm shadow-xs">
           <div className="mb-6 flex items-center justify-between">
             <Link
               href="/"
-              className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#64748B] hover:text-[#0055FF] transition-colors"
+              className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#64748B] hover:text-[#2878A5] transition-colors"
             >
               <span>← Back to Storefront</span>
             </Link>
@@ -490,10 +490,10 @@ export default function AdminPage() {
           </div>
 
           <div className="text-center mb-8">
-            <div className="inline-flex p-3 rounded-full bg-blue-50 text-[#0055FF] mb-4">
+            <div className="inline-flex p-3 rounded-full bg-[#E6F4FF] text-[#2878A5] mb-4">
               <Lock className="w-6 h-6" />
             </div>
-            <h2 className="text-2xl font-bold tracking-tight text-[#020617]">
+            <h2 className="text-2xl font-bold tracking-tight text-[#171717]">
               Administrative Console
             </h2>
             <p className="mt-2 text-xs text-[#64748B]">
@@ -519,7 +519,7 @@ export default function AdminPage() {
                 onChange={(e) => setAdminEmail(e.target.value)}
                 placeholder="admin@srmfishfarm.in"
                 required
-                className="w-full px-3.5 py-2.5 bg-white border border-[#E2E8F0] text-sm text-[#020617] focus:outline-none focus:border-[#0055FF] rounded-xs"
+                className="w-full px-3.5 py-2.5 bg-white border border-[#E2E8F0] text-sm text-[#171717] focus:outline-none focus:border-[#2878A5] rounded-xs"
               />
             </div>
 
@@ -533,13 +533,13 @@ export default function AdminPage() {
                 onChange={(e) => setAdminPassword(e.target.value)}
                 placeholder="••••••••••••"
                 required
-                className="w-full px-3.5 py-2.5 bg-white border border-[#E2E8F0] text-sm text-[#020617] focus:outline-none focus:border-[#0055FF] rounded-xs"
+                className="w-full px-3.5 py-2.5 bg-white border border-[#E2E8F0] text-sm text-[#171717] focus:outline-none focus:border-[#2878A5] rounded-xs"
               />
             </div>
 
             <button
               type="submit"
-              className="w-full mt-2 py-3 px-4 bg-[#0055FF] hover:bg-blue-700 text-white font-semibold text-xs uppercase tracking-widest rounded-xs transition-colors shadow-xs"
+              className="w-full mt-2 py-3 px-4 bg-[#2878A5] hover:bg-[#123B5D] text-white font-semibold text-xs uppercase tracking-widest rounded-xs transition-colors shadow-xs"
             >
               Sign In to Management
             </button>
@@ -549,7 +549,7 @@ export default function AdminPage() {
             <span className="text-[11px] text-[#64748B] block">
               Default Sandbox Credentials:
             </span>
-            <code className="text-[11px] text-[#020617] font-mono mt-1 block">
+            <code className="text-[11px] text-[#171717] font-mono mt-1 block">
               admin@srmfishfarm.in / Aquarium2026!
             </code>
           </div>
@@ -576,10 +576,10 @@ export default function AdminPage() {
   });
 
   return (
-    <div className="min-h-screen bg-[#F8FAFC] text-[#020617]">
+    <div className="min-h-screen bg-[#F5F3EE] text-[#171717]">
       {/* Top Notification Toast */}
       {feedbackMsg && (
-        <div className="fixed top-4 right-4 z-50 bg-[#020617] text-white text-xs font-medium px-4 py-3 rounded-xs shadow-lg border border-slate-700 flex items-center gap-2 animate-in fade-in slide-in-from-top-2">
+        <div className="fixed top-4 right-4 z-50 bg-[#171717] text-white text-xs font-medium px-4 py-3 rounded-xs shadow-lg border border-slate-700 flex items-center gap-2 animate-in fade-in slide-in-from-top-2">
           <CheckCircle2 className="w-4 h-4 text-emerald-400" />
           <span>{feedbackMsg}</span>
         </div>
@@ -590,10 +590,10 @@ export default function AdminPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center space-x-3">
-              <span className="font-bold text-sm sm:text-base tracking-widest uppercase text-[#020617]">
+              <span className="font-bold text-sm sm:text-base tracking-widest uppercase text-[#171717]">
                 SRM Fish Farm
               </span>
-              <span className="px-2 py-0.5 text-[10px] font-bold tracking-wider uppercase bg-blue-50 text-[#0055FF] rounded-xs border border-blue-200">
+              <span className="px-2 py-0.5 text-[10px] font-bold tracking-wider uppercase bg-[#E6F4FF] text-[#2878A5] rounded-xs border border-blue-200">
                 Master Control
               </span>
             </div>
@@ -602,7 +602,7 @@ export default function AdminPage() {
               <Link
                 href="/"
                 target="_blank"
-                className="inline-flex items-center gap-1.5 text-xs text-[#64748B] hover:text-[#0055FF] font-medium transition-colors"
+                className="inline-flex items-center gap-1.5 text-xs text-[#64748B] hover:text-[#2878A5] font-medium transition-colors"
               >
                 <span>Live Storefront</span>
                 <ExternalLink className="w-3.5 h-3.5" />
@@ -623,8 +623,8 @@ export default function AdminPage() {
               onClick={() => setActiveTab("products")}
               className={`flex items-center gap-2 px-3.5 py-2 text-xs font-semibold uppercase tracking-wider rounded-xs whitespace-nowrap transition-colors ${
                 activeTab === "products"
-                  ? "bg-[#0055FF] text-white"
-                  : "text-[#64748B] hover:text-[#020617] hover:bg-slate-100"
+                  ? "bg-[#2878A5] text-white"
+                  : "text-[#64748B] hover:text-[#171717] hover:bg-slate-100"
               }`}
             >
               <Package className="w-3.5 h-3.5" />
@@ -638,8 +638,8 @@ export default function AdminPage() {
               onClick={() => setActiveTab("collections")}
               className={`flex items-center gap-2 px-3.5 py-2 text-xs font-semibold uppercase tracking-wider rounded-xs whitespace-nowrap transition-colors ${
                 activeTab === "collections"
-                  ? "bg-[#0055FF] text-white"
-                  : "text-[#64748B] hover:text-[#020617] hover:bg-slate-100"
+                  ? "bg-[#2878A5] text-white"
+                  : "text-[#64748B] hover:text-[#171717] hover:bg-slate-100"
               }`}
             >
               <Layers className="w-3.5 h-3.5" />
@@ -653,8 +653,8 @@ export default function AdminPage() {
               onClick={() => setActiveTab("offers")}
               className={`flex items-center gap-2 px-3.5 py-2 text-xs font-semibold uppercase tracking-wider rounded-xs whitespace-nowrap transition-colors ${
                 activeTab === "offers"
-                  ? "bg-[#0055FF] text-white"
-                  : "text-[#64748B] hover:text-[#020617] hover:bg-slate-100"
+                  ? "bg-[#2878A5] text-white"
+                  : "text-[#64748B] hover:text-[#171717] hover:bg-slate-100"
               }`}
             >
               <Tag className="w-3.5 h-3.5" />
@@ -668,8 +668,8 @@ export default function AdminPage() {
               onClick={() => setActiveTab("audits")}
               className={`flex items-center gap-2 px-3.5 py-2 text-xs font-semibold uppercase tracking-wider rounded-xs whitespace-nowrap transition-colors ${
                 activeTab === "audits"
-                  ? "bg-[#0055FF] text-white"
-                  : "text-[#64748B] hover:text-[#020617] hover:bg-slate-100"
+                  ? "bg-[#2878A5] text-white"
+                  : "text-[#64748B] hover:text-[#171717] hover:bg-slate-100"
               }`}
             >
               <ClipboardList className="w-3.5 h-3.5" />
@@ -683,8 +683,8 @@ export default function AdminPage() {
               onClick={() => setActiveTab("store")}
               className={`flex items-center gap-2 px-3.5 py-2 text-xs font-semibold uppercase tracking-wider rounded-xs whitespace-nowrap transition-colors ${
                 activeTab === "store"
-                  ? "bg-[#0055FF] text-white"
-                  : "text-[#64748B] hover:text-[#020617] hover:bg-slate-100"
+                  ? "bg-[#2878A5] text-white"
+                  : "text-[#64748B] hover:text-[#171717] hover:bg-slate-100"
               }`}
             >
               <Settings className="w-3.5 h-3.5" />
@@ -707,7 +707,7 @@ export default function AdminPage() {
                 <span className="text-[10px] uppercase font-bold text-[#64748B] tracking-wider block">
                   Total Specimens
                 </span>
-                <span className="text-2xl font-bold text-[#020617] mt-1 block">
+                <span className="text-2xl font-bold text-[#171717] mt-1 block">
                   {products.length}
                 </span>
               </div>
@@ -728,10 +728,10 @@ export default function AdminPage() {
                 </span>
               </div>
               <div className="bg-white p-4 border border-[#E2E8F0] rounded-xs shadow-xs">
-                <span className="text-[10px] uppercase font-bold text-[#0055FF] tracking-wider block">
+                <span className="text-[10px] uppercase font-bold text-[#2878A5] tracking-wider block">
                   Featured Strains
                 </span>
-                <span className="text-2xl font-bold text-[#0055FF] mt-1 block">
+                <span className="text-2xl font-bold text-[#2878A5] mt-1 block">
                   {products.filter((p) => p.featured).length}
                 </span>
               </div>
@@ -747,14 +747,14 @@ export default function AdminPage() {
                     value={productSearch}
                     onChange={(e) => setProductSearch(e.target.value)}
                     placeholder="Search by fish name or scientific taxon..."
-                    className="w-full pl-9 pr-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#0055FF]"
+                    className="w-full pl-9 pr-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#2878A5]"
                   />
                 </div>
 
                 <select
                   value={productCategoryFilter}
                   onChange={(e) => setProductCategoryFilter(e.target.value)}
-                  className="px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#0055FF]"
+                  className="px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#2878A5]"
                 >
                   <option value="all">All Categories ({products.length})</option>
                   {categories.map((c) => (
@@ -768,7 +768,7 @@ export default function AdminPage() {
               <div className="flex items-center gap-2">
                 <button
                   onClick={handleOpenProductCreate}
-                  className="inline-flex items-center gap-2 px-4 py-2 bg-[#0055FF] hover:bg-blue-700 text-white text-xs font-semibold uppercase tracking-wider rounded-xs transition-colors shadow-xs"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-[#2878A5] hover:bg-[#123B5D] text-white text-xs font-semibold uppercase tracking-wider rounded-xs transition-colors shadow-xs"
                 >
                   <Plus className="w-4 h-4" />
                   <span>Add Specimen</span>
@@ -809,7 +809,7 @@ export default function AdminPage() {
                                 className="w-12 h-12 object-cover rounded-xs border border-[#E2E8F0]"
                               />
                               <div>
-                                <span className="font-bold text-[#020617] block">
+                                <span className="font-bold text-[#171717] block">
                                   {p.name}
                                 </span>
                                 <span className="text-[11px] text-[#64748B] italic block">
@@ -832,7 +832,7 @@ export default function AdminPage() {
                                 onBlur={(e) =>
                                   handleQuickPriceChange(p, Number(e.target.value))
                                 }
-                                className="w-20 px-2 py-1 text-xs font-bold bg-white border border-[#E2E8F0] rounded-xs focus:outline-none focus:border-[#0055FF]"
+                                className="w-20 px-2 py-1 text-xs font-bold bg-white border border-[#E2E8F0] rounded-xs focus:outline-none focus:border-[#2878A5]"
                               />
                             </div>
                           </td>
@@ -856,7 +856,7 @@ export default function AdminPage() {
                               onClick={() => handleToggleFeatured(p)}
                               className={`p-1.5 rounded-xs transition-colors ${
                                 p.featured
-                                  ? "text-[#0055FF] bg-blue-50"
+                                  ? "text-[#2878A5] bg-[#E6F4FF]"
                                   : "text-slate-300 hover:text-slate-400"
                               }`}
                               title={p.featured ? "Featured on Home" : "Not Featured"}
@@ -868,7 +868,7 @@ export default function AdminPage() {
                             <div className="inline-flex items-center gap-2">
                               <button
                                 onClick={() => handleOpenProductEdit(p)}
-                                className="p-1.5 text-slate-600 hover:text-[#0055FF] hover:bg-blue-50 rounded-xs transition-colors"
+                                className="p-1.5 text-slate-600 hover:text-[#2878A5] hover:bg-[#E6F4FF] rounded-xs transition-colors"
                                 title="Edit Specimen"
                               >
                                 <Edit2 className="w-3.5 h-3.5" />
@@ -901,14 +901,14 @@ export default function AdminPage() {
             <div className="bg-white border border-[#E2E8F0] p-6 rounded-xs shadow-xs">
               <div className="flex items-center justify-between mb-4 pb-3 border-b border-[#E2E8F0]">
                 <div>
-                  <h3 className="font-bold text-sm uppercase tracking-wider text-[#020617]">
+                  <h3 className="font-bold text-sm uppercase tracking-wider text-[#171717]">
                     Homepage Hero Visual & Copy
                   </h3>
                   <p className="text-xs text-[#64748B]">
                     Modify the video background, bold headline, and primary call-to-action button.
                   </p>
                 </div>
-                <span className="px-2.5 py-1 text-[10px] font-bold uppercase bg-blue-50 text-[#0055FF] rounded-xs border border-blue-200">
+                <span className="px-2.5 py-1 text-[10px] font-bold uppercase bg-[#E6F4FF] text-[#2878A5] rounded-xs border border-blue-200">
                   Live on Storefront
                 </span>
               </div>
@@ -929,7 +929,7 @@ export default function AdminPage() {
                             hero: { ...storeSettings.hero, title: e.target.value },
                           })
                         }
-                        className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#0055FF] font-sans"
+                        className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#2878A5] font-sans"
                         placeholder="Curated&#10;Aquatic Standard"
                       />
                     </div>
@@ -948,7 +948,7 @@ export default function AdminPage() {
                               hero: { ...storeSettings.hero, buttonText: e.target.value },
                             })
                           }
-                          className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#0055FF]"
+                          className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#2878A5]"
                         />
                       </div>
                       <div>
@@ -964,7 +964,7 @@ export default function AdminPage() {
                               hero: { ...storeSettings.hero, buttonLink: e.target.value },
                             })
                           }
-                          className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#0055FF]"
+                          className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#2878A5]"
                         />
                       </div>
                     </div>
@@ -984,7 +984,7 @@ export default function AdminPage() {
                             hero: { ...storeSettings.hero, videoUrl: e.target.value },
                           })
                         }
-                        className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#0055FF]"
+                        className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#2878A5]"
                         placeholder="/videos/hero-aquarium.mp4"
                       />
                     </div>
@@ -1002,7 +1002,7 @@ export default function AdminPage() {
                             hero: { ...storeSettings.hero, posterImage: e.target.value },
                           })
                         }
-                        className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#0055FF]"
+                        className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#2878A5]"
                         placeholder="/images/fish/angels-altum-angel.webp"
                       />
                     </div>
@@ -1011,7 +1011,7 @@ export default function AdminPage() {
                   <div className="pt-3 flex justify-end">
                     <button
                       type="submit"
-                      className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#0055FF] hover:bg-blue-700 text-white text-xs font-semibold uppercase tracking-wider rounded-xs transition-colors shadow-xs"
+                      className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#2878A5] hover:bg-[#123B5D] text-white text-xs font-semibold uppercase tracking-wider rounded-xs transition-colors shadow-xs"
                     >
                       <Save className="w-3.5 h-3.5" />
                       <span>Save & Publish Hero</span>
@@ -1025,7 +1025,7 @@ export default function AdminPage() {
             <div className="bg-white border border-[#E2E8F0] p-6 rounded-xs shadow-xs">
               <div className="flex items-center justify-between mb-6 pb-3 border-b border-[#E2E8F0]">
                 <div>
-                  <h3 className="font-bold text-sm uppercase tracking-wider text-[#020617]">
+                  <h3 className="font-bold text-sm uppercase tracking-wider text-[#171717]">
                     Homepage Collections (Auto-Scrolling Showcase)
                   </h3>
                   <p className="text-xs text-[#64748B]">
@@ -1034,7 +1034,7 @@ export default function AdminPage() {
                 </div>
                 <button
                   onClick={handleOpenCategoryCreate}
-                  className="inline-flex items-center gap-2 px-4 py-2 bg-[#0055FF] hover:bg-blue-700 text-white text-xs font-semibold uppercase tracking-wider rounded-xs transition-colors shadow-xs"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-[#2878A5] hover:bg-[#123B5D] text-white text-xs font-semibold uppercase tracking-wider rounded-xs transition-colors shadow-xs"
                 >
                   <Plus className="w-4 h-4" />
                   <span>Add Collection</span>
@@ -1045,7 +1045,7 @@ export default function AdminPage() {
                 {categories.map((cat) => (
                   <div
                     key={cat.categoryId}
-                    className="border border-[#E2E8F0] rounded-xs overflow-hidden bg-slate-50 flex flex-col justify-between group hover:border-[#0055FF] transition-all"
+                    className="border border-[#E2E8F0] rounded-xs overflow-hidden bg-slate-50 flex flex-col justify-between group hover:border-[#2878A5] transition-all"
                   >
                     <div className="relative h-36 w-full bg-slate-200">
                       <img
@@ -1071,7 +1071,7 @@ export default function AdminPage() {
 
                     <div className="p-3 bg-white flex-1 flex flex-col justify-between">
                       <div>
-                        <h4 className="font-bold text-xs text-[#020617]">{cat.name}</h4>
+                        <h4 className="font-bold text-xs text-[#171717]">{cat.name}</h4>
                         <span className="text-[10px] text-[#64748B] block mt-0.5">
                           Slug: /{cat.slug}
                         </span>
@@ -1080,7 +1080,7 @@ export default function AdminPage() {
                       <div className="flex items-center justify-end gap-2 mt-3 pt-2 border-t border-[#E2E8F0]">
                         <button
                           onClick={() => handleOpenCategoryEdit(cat)}
-                          className="p-1.5 text-slate-600 hover:text-[#0055FF] hover:bg-blue-50 rounded-xs"
+                          className="p-1.5 text-slate-600 hover:text-[#2878A5] hover:bg-[#E6F4FF] rounded-xs"
                           title="Edit Collection"
                         >
                           <Edit2 className="w-3 h-3" />
@@ -1112,7 +1112,7 @@ export default function AdminPage() {
             <div className="bg-white border border-[#E2E8F0] p-6 rounded-xs shadow-xs">
               <div className="flex items-center justify-between mb-4 pb-3 border-b border-[#E2E8F0]">
                 <div>
-                  <h3 className="font-bold text-sm uppercase tracking-wider text-[#020617]">
+                  <h3 className="font-bold text-sm uppercase tracking-wider text-[#171717]">
                     Top Announcement Bar (Site-wide Banner)
                   </h3>
                   <p className="text-xs text-[#64748B]">
@@ -1146,9 +1146,9 @@ export default function AdminPage() {
                           },
                         })
                       }
-                      className="w-4 h-4 text-[#0055FF] rounded-xs"
+                      className="w-4 h-4 text-[#2878A5] rounded-xs"
                     />
-                    <label htmlFor="bannerEnabled" className="text-xs font-semibold text-[#020617] cursor-pointer">
+                    <label htmlFor="bannerEnabled" className="text-xs font-semibold text-[#171717] cursor-pointer">
                       Enable Top Announcement Bar on All Pages
                     </label>
                   </div>
@@ -1167,7 +1167,7 @@ export default function AdminPage() {
                         })
                       }
                       placeholder="SPECIAL OFFER: FREE OXYGEN PACKAGING ON ORDERS ABOVE INR 1,500"
-                      className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#0055FF]"
+                      className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#2878A5]"
                     />
                   </div>
 
@@ -1186,7 +1186,7 @@ export default function AdminPage() {
                           })
                         }
                         placeholder="/fish"
-                        className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#0055FF]"
+                        className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#2878A5]"
                       />
                     </div>
 
@@ -1197,7 +1197,7 @@ export default function AdminPage() {
                       <div className="flex items-center gap-2">
                         <input
                           type="color"
-                          value={storeSettings.topBanner.bgColor || "#0055FF"}
+                          value={storeSettings.topBanner.bgColor || "#2878A5"}
                           onChange={(e) =>
                             setStoreSettings({
                               ...storeSettings,
@@ -1208,7 +1208,7 @@ export default function AdminPage() {
                         />
                         <input
                           type="text"
-                          value={storeSettings.topBanner.bgColor || "#0055FF"}
+                          value={storeSettings.topBanner.bgColor || "#2878A5"}
                           onChange={(e) =>
                             setStoreSettings({
                               ...storeSettings,
@@ -1258,7 +1258,7 @@ export default function AdminPage() {
                     </span>
                     <div
                       style={{
-                        backgroundColor: storeSettings.topBanner.bgColor || "#0055FF",
+                        backgroundColor: storeSettings.topBanner.bgColor || "#2878A5",
                         color: storeSettings.topBanner.textColor || "#FFFFFF",
                       }}
                       className="py-2 px-4 text-xs font-semibold tracking-wider uppercase text-center rounded-xs shadow-xs"
@@ -1270,7 +1270,7 @@ export default function AdminPage() {
                   <div className="pt-2 flex justify-end">
                     <button
                       type="submit"
-                      className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#0055FF] hover:bg-blue-700 text-white text-xs font-semibold uppercase tracking-wider rounded-xs transition-colors shadow-xs"
+                      className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#2878A5] hover:bg-[#123B5D] text-white text-xs font-semibold uppercase tracking-wider rounded-xs transition-colors shadow-xs"
                     >
                       <Save className="w-3.5 h-3.5" />
                       <span>Update Announcement Bar</span>
@@ -1284,7 +1284,7 @@ export default function AdminPage() {
             <div className="bg-white border border-[#E2E8F0] p-6 rounded-xs shadow-xs">
               <div className="flex items-center justify-between mb-6 pb-3 border-b border-[#E2E8F0]">
                 <div>
-                  <h3 className="font-bold text-sm uppercase tracking-wider text-[#020617]">
+                  <h3 className="font-bold text-sm uppercase tracking-wider text-[#171717]">
                     Homepage Promotional Posters & Special Offers
                   </h3>
                   <p className="text-xs text-[#64748B]">
@@ -1293,7 +1293,7 @@ export default function AdminPage() {
                 </div>
                 <button
                   onClick={handleOpenPosterCreate}
-                  className="inline-flex items-center gap-2 px-4 py-2 bg-[#0055FF] hover:bg-blue-700 text-white text-xs font-semibold uppercase tracking-wider rounded-xs transition-colors shadow-xs"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-[#2878A5] hover:bg-[#123B5D] text-white text-xs font-semibold uppercase tracking-wider rounded-xs transition-colors shadow-xs"
                 >
                   <Plus className="w-4 h-4" />
                   <span>Add Offer Poster</span>
@@ -1314,7 +1314,7 @@ export default function AdminPage() {
                           className="w-full h-full object-cover filter brightness-[0.7]"
                         />
                         <div className="absolute top-3 left-3">
-                          <span className="px-2 py-0.5 bg-[#0055FF] text-white text-[10px] font-bold uppercase tracking-wider rounded-xs">
+                          <span className="px-2 py-0.5 bg-[#2878A5] text-white text-[10px] font-bold uppercase tracking-wider rounded-xs">
                             {poster.tag}
                           </span>
                         </div>
@@ -1334,12 +1334,12 @@ export default function AdminPage() {
 
                       <div className="p-4 flex-1 flex flex-col justify-between">
                         <div>
-                          <h4 className="font-bold text-sm text-[#020617]">{poster.title}</h4>
+                          <h4 className="font-bold text-sm text-[#171717]">{poster.title}</h4>
                           <p className="text-xs text-[#64748B] mt-1 line-clamp-2">
                             {poster.subtitle}
                           </p>
                           <div className="mt-3 flex items-center gap-2 text-[11px] text-[#64748B]">
-                            <span className="font-medium text-[#020617]">Link:</span>
+                            <span className="font-medium text-[#171717]">Link:</span>
                             <code className="bg-slate-100 px-1 py-0.5 rounded-xs font-mono">
                               {poster.link}
                             </code>
@@ -1353,7 +1353,7 @@ export default function AdminPage() {
                           <div className="flex items-center gap-2">
                             <button
                               onClick={() => handleOpenPosterEdit(poster)}
-                              className="p-1.5 text-slate-600 hover:text-[#0055FF] hover:bg-blue-50 rounded-xs"
+                              className="p-1.5 text-slate-600 hover:text-[#2878A5] hover:bg-[#E6F4FF] rounded-xs"
                               title="Edit Poster"
                             >
                               <Edit2 className="w-3.5 h-3.5" />
@@ -1388,7 +1388,7 @@ export default function AdminPage() {
             {/* Header & Filter */}
             <div className="bg-white border border-[#E2E8F0] p-4 rounded-xs shadow-xs flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
               <div>
-                <h3 className="font-bold text-sm uppercase tracking-wider text-[#020617]">
+                <h3 className="font-bold text-sm uppercase tracking-wider text-[#171717]">
                   Customer Checkout & Manifest Audits
                 </h3>
                 <p className="text-xs text-[#64748B]">
@@ -1401,7 +1401,7 @@ export default function AdminPage() {
                 <select
                   value={auditStatusFilter}
                   onChange={(e) => setAuditStatusFilter(e.target.value)}
-                  className="px-3 py-1.5 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#0055FF]"
+                  className="px-3 py-1.5 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#2878A5]"
                 >
                   <option value="all">All Audits ({orderAudits.length})</option>
                   <option value="Inquiry Sent">Inquiry Sent</option>
@@ -1436,11 +1436,11 @@ export default function AdminPage() {
                     >
                       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-[#E2E8F0]">
                         <div className="flex items-center gap-3">
-                          <span className="font-mono font-bold text-sm text-[#0055FF] bg-blue-50 px-2 py-1 rounded-xs border border-blue-200">
+                          <span className="font-mono font-bold text-sm text-[#2878A5] bg-[#E6F4FF] px-2 py-1 rounded-xs border border-blue-200">
                             #{audit.orderNumber}
                           </span>
                           <div>
-                            <span className="font-bold text-sm text-[#020617] block">
+                            <span className="font-bold text-sm text-[#171717] block">
                               {audit.customerName}
                             </span>
                             <span className="text-[11px] text-[#64748B]">
@@ -1457,7 +1457,7 @@ export default function AdminPage() {
                             <span className="text-[10px] uppercase font-bold text-[#64748B] block">
                               Estimated Total
                             </span>
-                            <span className="font-bold text-base text-[#020617]">
+                            <span className="font-bold text-base text-[#171717]">
                               {formatCurrency(audit.totalAmount)}
                             </span>
                           </div>
@@ -1475,7 +1475,7 @@ export default function AdminPage() {
                               audit.status === "Delivered"
                                 ? "bg-emerald-50 text-emerald-700 border-emerald-300"
                                 : audit.status === "Dispatched"
-                                ? "bg-blue-50 text-blue-700 border-blue-300"
+                                ? "bg-[#E6F4FF] text-blue-700 border-blue-300"
                                 : audit.status === "Confirmed"
                                 ? "bg-amber-50 text-amber-700 border-amber-300"
                                 : "bg-slate-100 text-slate-700 border-slate-300"
@@ -1535,7 +1535,7 @@ export default function AdminPage() {
                                 key={idx}
                                 className="flex items-center justify-between py-1 text-xs"
                               >
-                                <span className="font-medium text-[#020617]">
+                                <span className="font-medium text-[#171717]">
                                   {item.quantity} × {item.name}
                                 </span>
                                 <span className="font-semibold text-slate-700">
@@ -1576,7 +1576,7 @@ export default function AdminPage() {
           <div className="space-y-6">
             <div className="bg-white border border-[#E2E8F0] p-6 rounded-xs shadow-xs">
               <div className="mb-6 pb-3 border-b border-[#E2E8F0]">
-                <h3 className="font-bold text-sm uppercase tracking-wider text-[#020617]">
+                <h3 className="font-bold text-sm uppercase tracking-wider text-[#171717]">
                   Store Profile & WhatsApp Order Concierge
                 </h3>
                 <p className="text-xs text-[#64748B]">
@@ -1597,7 +1597,7 @@ export default function AdminPage() {
                         onChange={(e) =>
                           setStoreSettings({ ...storeSettings, siteName: e.target.value })
                         }
-                        className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#0055FF]"
+                        className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#2878A5]"
                       />
                     </div>
 
@@ -1611,7 +1611,7 @@ export default function AdminPage() {
                         onChange={(e) =>
                           setStoreSettings({ ...storeSettings, tagline: e.target.value })
                         }
-                        className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#0055FF]"
+                        className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#2878A5]"
                       />
                     </div>
                   </div>
@@ -1628,7 +1628,7 @@ export default function AdminPage() {
                           setStoreSettings({ ...storeSettings, ownerName: e.target.value })
                         }
                         placeholder="R. Sankar"
-                        className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#0055FF]"
+                        className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#2878A5]"
                       />
                     </div>
 
@@ -1643,7 +1643,7 @@ export default function AdminPage() {
                           setStoreSettings({ ...storeSettings, operatingYears: e.target.value })
                         }
                         placeholder="2 years"
-                        className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#0055FF]"
+                        className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#2878A5]"
                       />
                     </div>
                   </div>
@@ -1659,7 +1659,7 @@ export default function AdminPage() {
                         onChange={(e) =>
                           setStoreSettings({ ...storeSettings, whatsappNumber: e.target.value })
                         }
-                        className="w-full px-3 py-2 text-xs font-mono bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#0055FF]"
+                        className="w-full px-3 py-2 text-xs font-mono bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#2878A5]"
                         placeholder="918300738588"
                       />
                     </div>
@@ -1674,7 +1674,7 @@ export default function AdminPage() {
                         onChange={(e) =>
                           setStoreSettings({ ...storeSettings, whatsappDisplay: e.target.value })
                         }
-                        className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#0055FF]"
+                        className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#2878A5]"
                         placeholder="+91 83007 38588"
                       />
                     </div>
@@ -1691,7 +1691,7 @@ export default function AdminPage() {
                         onChange={(e) =>
                           setStoreSettings({ ...storeSettings, supportEmail: e.target.value })
                         }
-                        className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#0055FF]"
+                        className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#2878A5]"
                       />
                     </div>
 
@@ -1705,7 +1705,7 @@ export default function AdminPage() {
                         onChange={(e) =>
                           setStoreSettings({ ...storeSettings, hours: e.target.value })
                         }
-                        className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#0055FF]"
+                        className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#2878A5]"
                       />
                     </div>
                   </div>
@@ -1720,7 +1720,7 @@ export default function AdminPage() {
                       onChange={(e) =>
                         setStoreSettings({ ...storeSettings, address: e.target.value })
                       }
-                      className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#0055FF]"
+                      className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#2878A5]"
                     />
                   </div>
 
@@ -1734,14 +1734,14 @@ export default function AdminPage() {
                       onChange={(e) =>
                         setStoreSettings({ ...storeSettings, doaGuaranteeText: e.target.value })
                       }
-                      className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#0055FF]"
+                      className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#2878A5]"
                     />
                   </div>
 
                   <div className="pt-3 flex justify-end">
                     <button
                       type="submit"
-                      className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#0055FF] hover:bg-blue-700 text-white text-xs font-semibold uppercase tracking-wider rounded-xs transition-colors shadow-xs"
+                      className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#2878A5] hover:bg-[#123B5D] text-white text-xs font-semibold uppercase tracking-wider rounded-xs transition-colors shadow-xs"
                     >
                       <Save className="w-3.5 h-3.5" />
                       <span>Save Store Settings</span>
@@ -1778,7 +1778,7 @@ export default function AdminPage() {
         <div className="fixed inset-0 z-50 bg-black/60 flex items-center justify-center p-4 overflow-y-auto">
           <div className="bg-white border border-[#E2E8F0] rounded-xs max-w-2xl w-full p-6 shadow-xl my-8 max-h-[90vh] overflow-y-auto">
             <div className="flex items-center justify-between pb-4 border-b border-[#E2E8F0] mb-4">
-              <h3 className="font-bold text-sm uppercase tracking-wider text-[#020617]">
+              <h3 className="font-bold text-sm uppercase tracking-wider text-[#171717]">
                 {editingProduct ? `Edit Specimen: ${editingProduct.name}` : "Add New Live Specimen"}
               </h3>
               <button
@@ -1803,7 +1803,7 @@ export default function AdminPage() {
                       setProductFormData({ ...productFormData, name: e.target.value })
                     }
                     placeholder="e.g. Orinoco Altum Angelfish"
-                    className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#0055FF]"
+                    className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#2878A5]"
                   />
                 </div>
 
@@ -1816,7 +1816,7 @@ export default function AdminPage() {
                     onChange={(e) =>
                       setProductFormData({ ...productFormData, categoryId: e.target.value })
                     }
-                    className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#0055FF]"
+                    className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#2878A5]"
                   >
                     {categories
                       .filter((c) => c.slug !== "all")
@@ -1841,7 +1841,7 @@ export default function AdminPage() {
                       setProductFormData({ ...productFormData, scientificName: e.target.value })
                     }
                     placeholder="e.g. Pterophyllum altum"
-                    className="w-full px-3 py-2 text-xs italic bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#0055FF]"
+                    className="w-full px-3 py-2 text-xs italic bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#2878A5]"
                   />
                 </div>
 
@@ -1856,7 +1856,7 @@ export default function AdminPage() {
                       setProductFormData({ ...productFormData, size: e.target.value })
                     }
                     placeholder='e.g. 2.0" - 2.5"'
-                    className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#0055FF]"
+                    className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#2878A5]"
                   />
                 </div>
               </div>
@@ -1876,7 +1876,7 @@ export default function AdminPage() {
                         sellingPrice: Number(e.target.value),
                       })
                     }
-                    className="w-full px-3 py-2 text-xs font-bold bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#0055FF]"
+                    className="w-full px-3 py-2 text-xs font-bold bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#2878A5]"
                   />
                 </div>
 
@@ -1893,7 +1893,7 @@ export default function AdminPage() {
                         originalPrice: Number(e.target.value),
                       })
                     }
-                    className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#0055FF]"
+                    className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#2878A5]"
                   />
                 </div>
 
@@ -1928,7 +1928,7 @@ export default function AdminPage() {
                       onChange={(e) =>
                         setProductFormData({ ...productFormData, featured: e.target.checked })
                       }
-                      className="w-4 h-4 text-[#0055FF] rounded-xs"
+                      className="w-4 h-4 text-[#2878A5] rounded-xs"
                     />
                     <label htmlFor="featCheck" className="ml-2 text-xs text-slate-700 cursor-pointer">
                       Feature on Home
@@ -1952,7 +1952,7 @@ export default function AdminPage() {
                     })
                   }
                   placeholder="/images/fish/angels-altum-angel.webp"
-                  className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#0055FF]"
+                  className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#2878A5]"
                 />
               </div>
 
@@ -1966,7 +1966,7 @@ export default function AdminPage() {
                   onChange={(e) =>
                     setProductFormData({ ...productFormData, description: e.target.value })
                   }
-                  className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#0055FF]"
+                  className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#2878A5]"
                 />
               </div>
 
@@ -2040,7 +2040,7 @@ export default function AdminPage() {
                 </button>
                 <button
                   type="submit"
-                  className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#0055FF] hover:bg-blue-700 text-white text-xs font-semibold uppercase tracking-wider rounded-xs transition-colors shadow-xs"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#2878A5] hover:bg-[#123B5D] text-white text-xs font-semibold uppercase tracking-wider rounded-xs transition-colors shadow-xs"
                 >
                   <Save className="w-3.5 h-3.5" />
                   <span>Save Specimen</span>
@@ -2058,7 +2058,7 @@ export default function AdminPage() {
         <div className="fixed inset-0 z-50 bg-black/60 flex items-center justify-center p-4">
           <div className="bg-white border border-[#E2E8F0] rounded-xs max-w-md w-full p-6 shadow-xl">
             <div className="flex items-center justify-between pb-3 border-b border-[#E2E8F0] mb-4">
-              <h3 className="font-bold text-sm uppercase tracking-wider text-[#020617]">
+              <h3 className="font-bold text-sm uppercase tracking-wider text-[#171717]">
                 {editingCategory ? `Edit: ${editingCategory.name}` : "Add New Collection"}
               </h3>
               <button
@@ -2082,7 +2082,7 @@ export default function AdminPage() {
                     setCategoryFormData({ ...categoryFormData, name: e.target.value })
                   }
                   placeholder="e.g. Discus Strains"
-                  className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#0055FF]"
+                  className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#2878A5]"
                 />
               </div>
 
@@ -2097,7 +2097,7 @@ export default function AdminPage() {
                     setCategoryFormData({ ...categoryFormData, slug: e.target.value })
                   }
                   placeholder="discus-strains"
-                  className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#0055FF]"
+                  className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#2878A5]"
                 />
               </div>
 
@@ -2113,7 +2113,7 @@ export default function AdminPage() {
                     setCategoryFormData({ ...categoryFormData, image: e.target.value })
                   }
                   placeholder="/images/fish/angels-altum-angel.webp"
-                  className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#0055FF]"
+                  className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#2878A5]"
                 />
               </div>
 
@@ -2165,7 +2165,7 @@ export default function AdminPage() {
                 </button>
                 <button
                   type="submit"
-                  className="inline-flex items-center gap-2 px-5 py-2 bg-[#0055FF] hover:bg-blue-700 text-white text-xs font-semibold uppercase tracking-wider rounded-xs transition-colors shadow-xs"
+                  className="inline-flex items-center gap-2 px-5 py-2 bg-[#2878A5] hover:bg-[#123B5D] text-white text-xs font-semibold uppercase tracking-wider rounded-xs transition-colors shadow-xs"
                 >
                   <Save className="w-3.5 h-3.5" />
                   <span>Save Collection</span>
@@ -2183,7 +2183,7 @@ export default function AdminPage() {
         <div className="fixed inset-0 z-50 bg-black/60 flex items-center justify-center p-4">
           <div className="bg-white border border-[#E2E8F0] rounded-xs max-w-lg w-full p-6 shadow-xl">
             <div className="flex items-center justify-between pb-3 border-b border-[#E2E8F0] mb-4">
-              <h3 className="font-bold text-sm uppercase tracking-wider text-[#020617]">
+              <h3 className="font-bold text-sm uppercase tracking-wider text-[#171717]">
                 {editingPoster ? "Edit Promotional Poster" : "Create Special Offer Poster"}
               </h3>
               <button
@@ -2207,7 +2207,7 @@ export default function AdminPage() {
                     setPosterFormData({ ...posterFormData, title: e.target.value })
                   }
                   placeholder="e.g. Wild Orinoco Altum & Angelfish Pairs"
-                  className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#0055FF]"
+                  className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#2878A5]"
                 />
               </div>
 
@@ -2222,7 +2222,7 @@ export default function AdminPage() {
                     setPosterFormData({ ...posterFormData, tag: e.target.value })
                   }
                   placeholder="e.g. SPECIAL HARVEST or 30% OFF"
-                  className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#0055FF]"
+                  className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#2878A5]"
                 />
               </div>
 
@@ -2237,7 +2237,7 @@ export default function AdminPage() {
                     setPosterFormData({ ...posterFormData, subtitle: e.target.value })
                   }
                   placeholder="Quarantined and biologically conditioned for immediate train dispatch."
-                  className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#0055FF]"
+                  className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#2878A5]"
                 />
               </div>
 
@@ -2253,7 +2253,7 @@ export default function AdminPage() {
                     setPosterFormData({ ...posterFormData, imageUrl: e.target.value })
                   }
                   placeholder="/images/fish/angels-altum-angel.webp"
-                  className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#0055FF]"
+                  className="w-full px-3 py-2 text-xs bg-slate-50 border border-[#E2E8F0] rounded-xs focus:bg-white focus:outline-none focus:border-[#2878A5]"
                 />
               </div>
 
@@ -2335,7 +2335,7 @@ export default function AdminPage() {
                 </button>
                 <button
                   type="submit"
-                  className="inline-flex items-center gap-2 px-5 py-2 bg-[#0055FF] hover:bg-blue-700 text-white text-xs font-semibold uppercase tracking-wider rounded-xs transition-colors shadow-xs"
+                  className="inline-flex items-center gap-2 px-5 py-2 bg-[#2878A5] hover:bg-[#123B5D] text-white text-xs font-semibold uppercase tracking-wider rounded-xs transition-colors shadow-xs"
                 >
                   <Save className="w-3.5 h-3.5" />
                   <span>Save Poster</span>

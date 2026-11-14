@@ -17,25 +17,25 @@ export default async function FishCollectionPage() {
   const categories = await getCategories();
 
   return (
-    <div className="min-h-screen py-8 sm:py-12 bg-white text-[#020617]">
+    <div className="min-h-screen py-8 sm:py-12 bg-[#F5F3EE] text-[#171717]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumb Navigation */}
         <nav className="flex items-center gap-2 text-xs font-medium text-[#64748B] mb-6 uppercase tracking-wider">
-          <Link href="/" className="hover:text-[#020617] transition-colors">
+          <Link href="/" className="hover:text-[#171717] transition-colors">
             HOME
           </Link>
           <span className="text-gray-300 font-light">&gt;</span>
-          <span className="text-[#0055FF] font-semibold">FISH COLLECTION</span>
+          <span className="text-[#2878A5] font-semibold">FISH COLLECTION</span>
         </nav>
 
         {/* Collection Masthead */}
         <header className="bg-white border border-[#E2E8F0] rounded-none sm:rounded-[2px] p-6 sm:p-8 lg:p-10 mb-8">
           <div className="max-w-3xl space-y-3">
-            <div className="inline-block px-2.5 py-1 bg-[#EFF6FF] border border-[#0055FF]/20 text-[10px] font-semibold uppercase tracking-[0.2em] text-[#0055FF] rounded-[2px]">
+            <div className="inline-block px-2.5 py-1 bg-[#E6F4FF] border border-[#2878A5]/20 text-[10px] font-semibold uppercase tracking-[0.2em] text-[#2878A5] rounded-[2px]">
               Fourteen-Day Biosecure Quarantine
             </div>
 
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#020617] leading-[1.15]">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#171717] leading-[1.15]">
               Freshwater Fish Collection
             </h1>
 
@@ -46,11 +46,11 @@ export default async function FishCollectionPage() {
             {/* Factual Logistics and Biological Assurance Details */}
             <div className="pt-3 border-t border-[#E2E8F0] flex flex-wrap items-center gap-y-2 gap-x-6 text-xs text-[#64748B]">
               <div>
-                <strong className="text-[#020617] font-semibold">{products.length}</strong> Live Species Available
+                <strong className="text-[#171717] font-semibold">{products.length}</strong> Live Species Available
               </div>
               <span className="text-[#E2E8F0] hidden sm:inline">|</span>
               <div>
-                <strong className="text-[#020617] font-semibold">100%</strong> Live Arrival Guarantee (DOA)
+                <strong className="text-[#171717] font-semibold">100%</strong> Live Arrival Guarantee (DOA)
               </div>
               <span className="text-[#E2E8F0] hidden sm:inline">|</span>
               <div>

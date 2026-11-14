@@ -10,23 +10,23 @@ export const metadata: Metadata = {
 
 export default function PrivacyPolicyPage() {
   return (
-    <div className="min-h-screen bg-white py-10 sm:py-16 text-[#020617]">
+    <div className="min-h-screen bg-[#F5F3EE] py-10 sm:py-16 text-[#171717]">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Navigation Breadcrumb */}
         <nav className="flex items-center gap-2 text-xs text-[#64748B] mb-8 uppercase tracking-wider">
-          <Link href="/" className="hover:text-[#020617] transition-colors">
+          <Link href="/" className="hover:text-[#171717] transition-colors">
             HOME
           </Link>
           <span>&gt;</span>
-          <span className="text-[#0055FF] font-semibold">PRIVACY POLICY</span>
+          <span className="text-[#2878A5] font-semibold">PRIVACY POLICY</span>
         </nav>
 
         {/* Header */}
         <header className="border-b border-[#E2E8F0] pb-8 mb-10">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0055FF] mb-3">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#2878A5] mb-3">
             DATA PROTECTION & DISPATCH INTEGRITY
           </p>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#020617] mb-4">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#171717] mb-4">
             Privacy Policy
           </h1>
           <p className="text-sm text-[#64748B] max-w-2xl leading-relaxed">
@@ -35,29 +35,29 @@ export default function PrivacyPolicyPage() {
         </header>
 
         {/* Policy Sections */}
-        <article className="space-y-8 text-sm leading-relaxed text-[#020617]/85">
+        <article className="space-y-8 text-sm leading-relaxed text-[#171717]/85">
           <section className="bg-white border border-[#E2E8F0] p-6 sm:p-8 rounded-none sm:rounded-[2px] shadow-xs">
-            <h2 className="text-xl font-bold text-[#020617] mb-3">
+            <h2 className="text-xl font-bold text-[#171717] mb-3">
               1. Information We Collect
             </h2>
             <p className="mb-3 text-[#64748B]">
               To arrange live biological specimen freight and legal logistics documentation, we collect only necessary logistical identifiers:
             </p>
-            <div className="space-y-2 border-l-2 border-[#0055FF] pl-4 my-3 text-xs text-[#64748B]">
+            <div className="space-y-2 border-l-2 border-[#2878A5] pl-4 my-3 text-xs text-[#64748B]">
               <p>
-                <strong className="text-[#020617]">Logistical Details:</strong> Full legal consignee name, destination postal PIN code, and contact phone number.
+                <strong className="text-[#171717]">Logistical Details:</strong> Full legal consignee name, destination postal PIN code, and contact phone number.
               </p>
               <p>
-                <strong className="text-[#020617]">Order Specifications:</strong> Species items, preferred dispatch dates, and tank water parameter consultations requested over WhatsApp.
+                <strong className="text-[#171717]">Order Specifications:</strong> Species items, preferred dispatch dates, and tank water parameter consultations requested over WhatsApp.
               </p>
               <p>
-                <strong className="text-[#020617]">Verification Media:</strong> Unboxing videos submitted for the Live Arrival Guarantee (DOA) claims.
+                <strong className="text-[#171717]">Verification Media:</strong> Unboxing videos submitted for the Live Arrival Guarantee (DOA) claims.
               </p>
             </div>
           </section>
 
           <section className="bg-white border border-[#E2E8F0] p-6 sm:p-8 rounded-none sm:rounded-[2px] shadow-xs">
-            <h2 className="text-xl font-bold text-[#020617] mb-3">
+            <h2 className="text-xl font-bold text-[#171717] mb-3">
               2. Use of Information
             </h2>
             <p className="mb-3 text-[#64748B]">
@@ -74,7 +74,7 @@ export default function PrivacyPolicyPage() {
           </section>
 
           <section className="bg-white border border-[#E2E8F0] p-6 sm:p-8 rounded-none sm:rounded-[2px] shadow-xs">
-            <h2 className="text-xl font-bold text-[#020617] mb-3">
+            <h2 className="text-xl font-bold text-[#171717] mb-3">
               3. WhatsApp Communications
             </h2>
             <p className="text-[#64748B]">
@@ -86,7 +86,7 @@ export default function PrivacyPolicyPage() {
         {/* Footer contact link */}
         <div className="mt-12 pt-6 border-t border-[#E2E8F0] flex items-center justify-between text-xs text-[#64748B]">
           <span>{siteConfig.legalName}</span>
-          <Link href="/terms" className="text-[#0055FF] font-semibold hover:underline">
+          <Link href="/terms" className="text-[#2878A5] font-semibold hover:underline">
             View Terms of Service &rarr;
           </Link>
         </div>

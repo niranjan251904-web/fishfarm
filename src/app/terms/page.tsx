@@ -10,23 +10,23 @@ export const metadata: Metadata = {
 
 export default function TermsOfServicePage() {
   return (
-    <div className="min-h-screen bg-white py-10 sm:py-16 text-[#020617]">
+    <div className="min-h-screen bg-[#F5F3EE] py-10 sm:py-16 text-[#171717]">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Navigation Breadcrumb */}
         <nav className="flex items-center gap-2 text-xs text-[#64748B] mb-8 uppercase tracking-wider">
-          <Link href="/" className="hover:text-[#020617] transition-colors">
+          <Link href="/" className="hover:text-[#171717] transition-colors">
             HOME
           </Link>
           <span>&gt;</span>
-          <span className="text-[#0055FF] font-semibold">TERMS OF SERVICE</span>
+          <span className="text-[#2878A5] font-semibold">TERMS OF SERVICE</span>
         </nav>
 
         {/* Header */}
         <header className="border-b border-[#E2E8F0] pb-8 mb-10">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0055FF] mb-3">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#2878A5] mb-3">
             LEGAL AGREEMENT & DISPATCH PROTOCOL
           </p>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#020617] mb-4">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#171717] mb-4">
             Terms of Service
           </h1>
           <p className="text-sm text-[#64748B] max-w-2xl leading-relaxed">
@@ -35,9 +35,9 @@ export default function TermsOfServicePage() {
         </header>
 
         {/* Content sections */}
-        <article className="space-y-8 text-sm leading-relaxed text-[#020617]/85">
+        <article className="space-y-8 text-sm leading-relaxed text-[#171717]/85">
           <section className="bg-white border border-[#E2E8F0] p-6 sm:p-8 rounded-none sm:rounded-[2px] shadow-xs">
-            <h2 className="text-xl font-bold text-[#020617] mb-3">
+            <h2 className="text-xl font-bold text-[#171717] mb-3">
               1. Nature of Live Biological Specimens
             </h2>
             <p className="mb-3 text-[#64748B]">
@@ -49,7 +49,7 @@ export default function TermsOfServicePage() {
           </section>
 
           <section className="bg-white border border-[#E2E8F0] p-6 sm:p-8 rounded-none sm:rounded-[2px] shadow-xs">
-            <h2 className="text-xl font-bold text-[#020617] mb-3">
+            <h2 className="text-xl font-bold text-[#171717] mb-3">
               2. Strict 14-Day Quarantine Standards
             </h2>
             <p className="mb-3 text-[#64748B]">
@@ -61,20 +61,20 @@ export default function TermsOfServicePage() {
           </section>
 
           <section className="bg-white border border-[#E2E8F0] p-6 sm:p-8 rounded-none sm:rounded-[2px] shadow-xs">
-            <h2 className="text-xl font-bold text-[#020617] mb-3">
+            <h2 className="text-xl font-bold text-[#171717] mb-3">
               3. Live Arrival Guarantee (DOA) Protocol
             </h2>
             <p className="mb-3 text-[#64748B]">
               We provide a 100% Live Arrival Guarantee (DOA) on all train and bus consignments when the recipient adheres to the following verification procedure:
             </p>
-            <div className="space-y-2 border-l-2 border-[#0055FF] pl-4 my-4">
-              <p className="font-semibold text-[#020617]">
+            <div className="space-y-2 border-l-2 border-[#2878A5] pl-4 my-4">
+              <p className="font-semibold text-[#171717]">
                 Requirement A: Unbroken Unboxing Video
               </p>
               <p className="text-xs text-[#64748B]">
                 A continuous, unedited video recording showing the sealed courier shipping label, the outer EPS foam container being opened, and the fish bags prior to opening.
               </p>
-              <p className="font-semibold text-[#020617] mt-3">
+              <p className="font-semibold text-[#171717] mt-3">
                 Requirement B: 2-Hour Timeframe
               </p>
               <p className="text-xs text-[#64748B]">
@@ -87,7 +87,7 @@ export default function TermsOfServicePage() {
           </section>
 
           <section className="bg-white border border-[#E2E8F0] p-6 sm:p-8 rounded-none sm:rounded-[2px] shadow-xs">
-            <h2 className="text-xl font-bold text-[#020617] mb-3">
+            <h2 className="text-xl font-bold text-[#171717] mb-3">
               4. Packaging & Dispatch Logistics
             </h2>
             <p className="mb-3 text-[#64748B]">
@@ -102,7 +102,7 @@ export default function TermsOfServicePage() {
         {/* Footer contact link */}
         <div className="mt-12 pt-6 border-t border-[#E2E8F0] flex items-center justify-between text-xs text-[#64748B]">
           <span>{siteConfig.legalName}</span>
-          <Link href="/contact" className="text-[#0055FF] font-semibold hover:underline">
+          <Link href="/contact" className="text-[#2878A5] font-semibold hover:underline">
             Contact Support Desk &rarr;
           </Link>
         </div>

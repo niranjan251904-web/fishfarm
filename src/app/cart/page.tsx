@@ -51,28 +51,28 @@ export default function CartPage() {
   };
 
   return (
-    <div className="min-h-screen bg-white py-8 sm:py-14 text-[#020617]">
+    <div className="min-h-screen bg-[#F5F3EE] py-8 sm:py-14 text-[#171717]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Navigation Breadcrumb */}
         <nav className="flex items-center gap-2 text-xs font-medium text-[#64748B] mb-6 uppercase tracking-wider">
-          <Link href="/" className="hover:text-[#020617] transition-colors">
+          <Link href="/" className="hover:text-[#171717] transition-colors">
             HOME
           </Link>
           <span>&gt;</span>
-          <Link href="/fish" className="hover:text-[#020617] transition-colors">
+          <Link href="/fish" className="hover:text-[#171717] transition-colors">
             FISH COLLECTION
           </Link>
           <span>&gt;</span>
-          <span className="text-[#0055FF] font-semibold">SHOPPING CART</span>
+          <span className="text-[#2878A5] font-semibold">SHOPPING CART</span>
         </nav>
 
         {/* Header */}
         <div className="mb-8 flex flex-col sm:flex-row sm:items-end justify-between gap-4 pb-4 border-b border-[#E2E8F0]">
           <div>
-            <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#0055FF] block mb-1">
+            <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#2878A5] block mb-1">
               CONSIGNMENT COMPILATION
             </span>
-            <h1 className="text-2xl sm:text-3xl font-bold text-[#020617]">
+            <h1 className="text-2xl sm:text-3xl font-bold text-[#171717]">
               Selected Specimens & Invoice Summary
             </h1>
           </div>
@@ -90,11 +90,11 @@ export default function CartPage() {
         </div>
 
         {items.length === 0 ? (
-          <div className="py-20 text-center bg-gray-50 rounded-none sm:rounded-[2px] border border-[#E2E8F0] p-8 max-w-xl mx-auto space-y-3">
-            <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#0055FF] block">
+          <div className="py-20 text-center bg-white rounded-none sm:rounded-[2px] border border-[#E2E8F0] p-8 max-w-xl mx-auto space-y-3">
+            <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#2878A5] block">
               ZERO ITEMS SELECTED
             </span>
-            <h2 className="text-2xl font-bold text-[#020617]">
+            <h2 className="text-2xl font-bold text-[#171717]">
               Your Cart is Currently Empty
             </h2>
             <p className="text-xs sm:text-sm text-[#64748B] max-w-sm mx-auto leading-relaxed">
@@ -103,7 +103,7 @@ export default function CartPage() {
             <div className="pt-2">
               <Link
                 href="/fish"
-                className="inline-block px-6 py-2.5 rounded-[2px] bg-[#0055FF] text-white text-xs font-semibold uppercase tracking-wider hover:bg-[#0041CC] transition-colors shadow-xs"
+                className="inline-block px-6 py-2.5 rounded-[2px] bg-[#2878A5] text-white text-xs font-semibold uppercase tracking-wider hover:bg-[#123B5D] transition-colors shadow-xs"
               >
                 Browse Fish Collection
               </Link>
@@ -133,10 +133,10 @@ export default function CartPage() {
                       />
                     </div>
                     <div className="min-w-0">
-                      <span className="text-[9px] font-semibold uppercase tracking-wider text-[#0055FF] block">
+                      <span className="text-[9px] font-semibold uppercase tracking-wider text-[#2878A5] block">
                         {item.product.categoryName} · {item.product.size}
                       </span>
-                      <h3 className="font-semibold text-sm text-[#020617] truncate">
+                      <h3 className="font-semibold text-sm text-[#171717] truncate">
                         <Link href={`/fish/${item.product.slug}`} className="hover:underline">
                           {item.product.name}
                         </Link>
@@ -146,7 +146,7 @@ export default function CartPage() {
                           {item.product.scientificName}
                         </p>
                       )}
-                      <div className="text-xs font-semibold text-[#020617] mt-0.5">
+                      <div className="text-xs font-semibold text-[#171717] mt-0.5">
                         Unit: {formatCurrencyDecimals(item.product.sellingPrice)}
                       </div>
                     </div>
@@ -154,22 +154,22 @@ export default function CartPage() {
 
                   <div className="flex items-center justify-between sm:justify-end gap-4 w-full sm:w-auto pt-3 sm:pt-0 border-t sm:border-t-0 border-[#E2E8F0]">
                     {/* Quantity Picker */}
-                    <div className="flex items-center border border-[#E2E8F0] rounded-sm bg-gray-50 overflow-hidden">
+                    <div className="flex items-center border border-[#E2E8F0] rounded-sm bg-[#F5F3EE] overflow-hidden">
                       <button
                         type="button"
                         onClick={() => updateQuantity(item.product.productId, item.quantity - 1)}
-                        className="p-1.5 hover:bg-gray-200 text-[#020617] transition-colors"
+                        className="p-1.5 hover:bg-gray-200 text-[#171717] transition-colors"
                         aria-label="Decrease quantity"
                       >
                         <Minus className="w-3 h-3" />
                       </button>
-                      <span className="px-2.5 text-xs font-bold text-[#020617]">
+                      <span className="px-2.5 text-xs font-bold text-[#171717]">
                         {item.quantity}
                       </span>
                       <button
                         type="button"
                         onClick={() => updateQuantity(item.product.productId, item.quantity + 1)}
-                        className="p-1.5 hover:bg-gray-200 text-[#020617] transition-colors"
+                        className="p-1.5 hover:bg-gray-200 text-[#171717] transition-colors"
                         aria-label="Increase quantity"
                       >
                         <Plus className="w-3 h-3" />
@@ -177,7 +177,7 @@ export default function CartPage() {
                     </div>
 
                     <div className="text-right">
-                      <span className="font-bold text-sm text-[#020617] block">
+                      <span className="font-bold text-sm text-[#171717] block">
                         {formatCurrencyDecimals(item.product.sellingPrice * item.quantity)}
                       </span>
                     </div>
@@ -194,7 +194,7 @@ export default function CartPage() {
                 </div>
               ))}
 
-              <div className="p-3.5 bg-gray-50 border border-[#E2E8F0] rounded-sm text-xs text-[#64748B] flex flex-wrap items-center justify-between gap-3">
+              <div className="p-3.5 bg-white border border-[#E2E8F0] rounded-sm text-xs text-[#64748B] flex flex-wrap items-center justify-between gap-3">
                 <span><strong>Quarantine Verification:</strong> 14-day sequence complete</span>
                 <span>•</span>
                 <span><strong>Packaging:</strong> Pure medical oxygen & EPS box</span>
@@ -203,12 +203,12 @@ export default function CartPage() {
 
             {/* Right Column: Checkout Billing Form (5 cols) */}
             <div className="lg:col-span-5">
-              <div className="bg-white rounded-none sm:rounded-[2px] p-6 sm:p-7 border border-[#E2E8F0] sticky top-24 space-y-5 text-[#020617] shadow-xs">
+              <div className="bg-white rounded-none sm:rounded-[2px] p-6 sm:p-7 border border-[#E2E8F0] sticky top-24 space-y-5 text-[#171717] shadow-xs">
                 <div>
-                  <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#0055FF] block">
+                  <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#2878A5] block">
                     MANIFEST VERIFICATION
                   </span>
-                  <h2 className="text-xl font-bold text-[#020617]">
+                  <h2 className="text-xl font-bold text-[#171717]">
                     Consignee Order Summary
                   </h2>
                 </div>
@@ -222,7 +222,7 @@ export default function CartPage() {
                   )}
 
                   <div>
-                    <label className="text-[10px] font-semibold uppercase tracking-wider text-[#020617] block mb-1">
+                    <label className="text-[10px] font-semibold uppercase tracking-wider text-[#171717] block mb-1">
                       Full Legal Name *
                     </label>
                     <input
@@ -231,13 +231,13 @@ export default function CartPage() {
                       value={customer.name}
                       onChange={(e) => setCustomer({ ...customer, name: e.target.value })}
                       placeholder="e.g. Aditi Roy"
-                      className="w-full px-3 py-2 rounded-sm bg-gray-50 border border-[#E2E8F0] text-xs text-[#020617] focus:outline-none focus:border-[#0055FF]"
+                      className="w-full px-3 py-2 rounded-sm bg-white border border-[#E2E8F0] text-xs text-[#171717] focus:outline-none focus:border-[#2878A5]"
                     />
                   </div>
 
                   <div className="grid grid-cols-2 gap-2.5">
                     <div>
-                      <label className="text-[10px] font-semibold uppercase tracking-wider text-[#020617] block mb-1">
+                      <label className="text-[10px] font-semibold uppercase tracking-wider text-[#171717] block mb-1">
                         Destination PIN *
                       </label>
                       <input
@@ -246,12 +246,12 @@ export default function CartPage() {
                         value={customer.pinCode}
                         onChange={(e) => setCustomer({ ...customer, pinCode: e.target.value })}
                         placeholder="e.g. 700001"
-                        className="w-full px-3 py-2 rounded-sm bg-gray-50 border border-[#E2E8F0] text-xs text-[#020617] focus:outline-none focus:border-[#0055FF]"
+                        className="w-full px-3 py-2 rounded-sm bg-white border border-[#E2E8F0] text-xs text-[#171717] focus:outline-none focus:border-[#2878A5]"
                       />
                     </div>
 
                     <div>
-                      <label className="text-[10px] font-semibold uppercase tracking-wider text-[#020617] block mb-1">
+                      <label className="text-[10px] font-semibold uppercase tracking-wider text-[#171717] block mb-1">
                         City / State
                       </label>
                       <input
@@ -259,13 +259,13 @@ export default function CartPage() {
                         value={customer.city}
                         onChange={(e) => setCustomer({ ...customer, city: e.target.value })}
                         placeholder="e.g. Kolkata, WB"
-                        className="w-full px-3 py-2 rounded-sm bg-gray-50 border border-[#E2E8F0] text-xs text-[#020617] focus:outline-none focus:border-[#0055FF]"
+                        className="w-full px-3 py-2 rounded-sm bg-white border border-[#E2E8F0] text-xs text-[#171717] focus:outline-none focus:border-[#2878A5]"
                       />
                     </div>
                   </div>
 
                   <div>
-                    <label className="text-[10px] font-semibold uppercase tracking-wider text-[#020617] block mb-1">
+                    <label className="text-[10px] font-semibold uppercase tracking-wider text-[#171717] block mb-1">
                       Delivery / Packaging Notes (Optional)
                     </label>
                     <input
@@ -273,39 +273,39 @@ export default function CartPage() {
                       value={customer.notes}
                       onChange={(e) => setCustomer({ ...customer, notes: e.target.value })}
                       placeholder="e.g. Request station/bus counter parcel collection"
-                      className="w-full px-3 py-2 rounded-sm bg-gray-50 border border-[#E2E8F0] text-xs text-[#020617] focus:outline-none focus:border-[#0055FF]"
+                      className="w-full px-3 py-2 rounded-sm bg-white border border-[#E2E8F0] text-xs text-[#171717] focus:outline-none focus:border-[#2878A5]"
                     />
                   </div>
 
                   {/* Pricing Breakdown Card */}
                   <div className="pt-3 border-t border-[#E2E8F0] space-y-1.5 text-xs">
-                    <div className="flex items-center justify-between text-[#020617]">
+                    <div className="flex items-center justify-between text-[#171717]">
                       <span>Items Subtotal</span>
-                      <span className="font-bold text-[#020617]">{formatCurrencyDecimals(subtotal)}</span>
+                      <span className="font-bold text-[#171717]">{formatCurrencyDecimals(subtotal)}</span>
                     </div>
                     <div className="flex items-center justify-between text-[#64748B] text-[11px]">
                       <span>EPS Foam Container & Medical Oxygen</span>
-                      <span className="text-[#0055FF] font-semibold uppercase text-[10px]">
+                      <span className="text-[#2878A5] font-semibold uppercase text-[10px]">
                         Included
                       </span>
                     </div>
                     <div className="flex items-center justify-between text-[#64748B] text-[11px]">
                       <span>Live Arrival Guarantee (DOA)</span>
-                      <span className="text-[#0055FF] font-semibold uppercase text-[10px]">
+                      <span className="text-[#2878A5] font-semibold uppercase text-[10px]">
                         Included
                       </span>
                     </div>
 
                     <div className="pt-2.5 border-t border-[#E2E8F0] flex items-baseline justify-between">
                       <div>
-                        <span className="font-bold text-sm text-[#020617] block">
+                        <span className="font-bold text-sm text-[#171717] block">
                           Total Specimen Value
                         </span>
                         <span className="text-[10px] text-[#64748B]">
                           + Dispatch details on WhatsApp
                         </span>
                       </div>
-                      <span className="font-bold text-xl text-[#0055FF]">
+                      <span className="font-bold text-xl text-[#2878A5]">
                         {formatCurrencyDecimals(subtotal)}
                       </span>
                     </div>
@@ -314,7 +314,7 @@ export default function CartPage() {
                   <div className="pt-2">
                     <button
                       type="submit"
-                      className="w-full py-3 px-4 rounded-sm bg-[#0055FF] hover:bg-[#0041CC] text-white text-xs font-semibold uppercase tracking-wider transition-colors text-center shadow-xs"
+                      className="w-full py-3 px-4 rounded-sm bg-[#2878A5] hover:bg-[#123B5D] text-white text-xs font-semibold uppercase tracking-wider transition-colors text-center shadow-xs"
                     >
                       Send Order Bill via WhatsApp
                     </button>

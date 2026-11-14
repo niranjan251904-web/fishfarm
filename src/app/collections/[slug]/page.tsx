@@ -120,12 +120,12 @@ export default async function CollectionCampaignPage({
   );
 
   return (
-    <div className="min-h-screen bg-white text-[#020617]">
+    <div className="min-h-screen bg-[#F5F3EE] text-[#171717]">
       {/* Campaign Hero Header */}
-      <section className="bg-[#020617] text-white py-12 sm:py-16 border-b border-[#0F172A]">
+      <section className="bg-[#123B5D] text-white py-12 sm:py-16 border-b border-[#123B5D]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Breadcrumb */}
-          <nav className="flex items-center gap-2 text-xs font-medium text-[#64748B] mb-6 uppercase tracking-wider">
+          <nav className="flex items-center gap-2 text-xs font-medium text-[#E6F4FF]/70 mb-6 uppercase tracking-wider">
             <Link href="/" className="hover:text-white transition-colors">
               HOME
             </Link>
@@ -134,12 +134,12 @@ export default async function CollectionCampaignPage({
               FISH COLLECTION
             </Link>
             <span>&gt;</span>
-            <span className="text-[#0055FF] font-semibold">{campaign.title}</span>
+            <span className="text-[#E6F4FF] font-semibold">{campaign.title}</span>
           </nav>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             <div className="lg:col-span-7 space-y-4">
-              <span className="inline-block px-2.5 py-1 rounded-[2px] bg-[#0F172A] border border-[#0055FF]/30 text-[#0055FF] text-[10px] font-semibold uppercase tracking-[0.2em]">
+              <span className="inline-block px-2.5 py-1 rounded-[2px] bg-white/10 border border-[#A67C52] text-[#A67C52] text-[10px] font-semibold uppercase tracking-[0.2em]">
                 {campaign.badge}
               </span>
 
@@ -147,11 +147,11 @@ export default async function CollectionCampaignPage({
                 {campaign.title}
               </h1>
 
-              <p className="text-sm sm:text-base text-[#E2E8F0] font-normal">
+              <p className="text-sm sm:text-base text-[#E6F4FF]/90 font-normal">
                 {campaign.subtitle}
               </p>
 
-              <p className="text-xs sm:text-sm text-[#64748B] leading-relaxed max-w-xl">
+              <p className="text-xs sm:text-sm text-[#E6F4FF]/70 leading-relaxed max-w-xl">
                 {campaign.description}
               </p>
 
@@ -174,7 +174,7 @@ export default async function CollectionCampaignPage({
                 </Link>
               </div>
 
-              <div className="pt-4 border-t border-[#0F172A] flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-[#64748B]">
+              <div className="pt-4 border-t border-white/10 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-[#E6F4FF]/70">
                 <span>100% Live Arrival Guarantee</span>
                 <span>•</span>
                 <span>Fourteen-Day Prophylactic Hold</span>
@@ -184,7 +184,7 @@ export default async function CollectionCampaignPage({
             </div>
 
             <div className="lg:col-span-5">
-              <div className="relative aspect-[4/3] rounded-sm overflow-hidden bg-[#0F172A] border border-[#1E293B]">
+              <div className="relative aspect-[4/3] rounded-sm overflow-hidden bg-black/20 border border-white/10">
                 <Image
                   src={campaign.heroImage}
                   alt={campaign.title}
@@ -202,10 +202,10 @@ export default async function CollectionCampaignPage({
       <section className="py-12 sm:py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 pb-3 border-b border-[#E2E8F0]">
           <div>
-            <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#0055FF] block mb-1">
+            <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#2878A5] block mb-1">
               CONSIGNMENT SELECTION
             </span>
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#020617]">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#171717]">
               Available Species in this Batch
             </h2>
           </div>

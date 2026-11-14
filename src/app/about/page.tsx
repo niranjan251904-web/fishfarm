@@ -12,23 +12,23 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-white py-10 sm:py-16 text-[#020617]">
+    <div className="min-h-screen bg-[#F5F3EE] py-10 sm:py-16 text-[#171717]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Navigation Breadcrumb */}
         <nav className="flex items-center gap-2 text-xs font-medium text-[#64748B] mb-8 uppercase tracking-wider">
-          <Link href="/" className="hover:text-[#020617] transition-colors">
+          <Link href="/" className="hover:text-[#171717] transition-colors">
             HOME
           </Link>
           <span>&gt;</span>
-          <span className="text-[#0055FF] font-semibold">ABOUT & BIOSECURITY</span>
+          <span className="text-[#2878A5] font-semibold">ABOUT & BIOSECURITY</span>
         </nav>
 
         {/* Header Hero */}
         <div className="max-w-3xl mb-12">
-          <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#0055FF] block mb-1">
+          <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#2878A5] block mb-1">
             ABOUT SRM FISH FARM
           </span>
-          <h1 className="text-3xl sm:text-5xl font-bold text-[#020617] leading-[1.15]">
+          <h1 className="text-3xl sm:text-5xl font-bold text-[#171717] leading-[1.15]">
             2 Years of Farm-Direct Breeding Excellence in Madurai.
           </h1>
           <p className="mt-4 text-sm sm:text-base text-[#64748B] leading-relaxed">
@@ -48,11 +48,11 @@ export default function AboutPage() {
           </div>
 
           <div className="space-y-4">
-            <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#0055FF] block">
+            <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#2878A5] block">
               OUR CORE ADVANTAGE
             </span>
 
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#020617]">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#171717]">
               Why Choose SRM Fish Farm?
             </h2>
 
@@ -60,21 +60,21 @@ export default function AboutPage() {
               Unlike third-party traders who resell unconditioned imports, SRM Fish Farm operates direct breeding tanks and comprehensive on-site maintenance services:
             </p>
 
-            <div className="space-y-2.5 pt-2 text-xs text-[#020617]">
-              <div className="p-3 bg-gray-50 rounded-sm border border-[#E2E8F0]">
-                <strong className="block text-[#020617] font-semibold mb-0.5">
+            <div className="space-y-2.5 pt-2 text-xs text-[#171717]">
+              <div className="p-3 bg-[#F5F3EE] rounded-sm border border-[#E2E8F0]">
+                <strong className="block text-[#171717] font-semibold mb-0.5">
                   1. Direct Farm Breeding & Wholesale Rates
                 </strong>
                 <span className="text-[#64748B]">Healthy, captive-bred strains conditioned in natural Madurai water parameters. True wholesale rates for hobbyists and bulk commercial orders with zero middleman markup.</span>
               </div>
-              <div className="p-3 bg-gray-50 rounded-sm border border-[#E2E8F0]">
-                <strong className="block text-[#020617] font-semibold mb-0.5">
+              <div className="p-3 bg-[#F5F3EE] rounded-sm border border-[#E2E8F0]">
+                <strong className="block text-[#171717] font-semibold mb-0.5">
                   2. Professional Aquascaping & Maintenance
                 </strong>
                 <span className="text-[#64748B]">Personalized planted aquarium design, rockwork hardscape setup, and periodic biotope cleaning and health maintenance.</span>
               </div>
-              <div className="p-3 bg-gray-50 rounded-sm border border-[#E2E8F0]">
-                <strong className="block text-[#020617] font-semibold mb-0.5">
+              <div className="p-3 bg-[#F5F3EE] rounded-sm border border-[#E2E8F0]">
+                <strong className="block text-[#171717] font-semibold mb-0.5">
                   3. Rigorous Conditioning & 100% Live Arrival Guarantee
                 </strong>
                 <span className="text-[#64748B]">Every dispatch is fasted, double-oxygenated in heavy gauge poly-bags, and insulated in EPS thermal boxing for train and bus transport.</span>
@@ -86,10 +86,10 @@ export default function AboutPage() {
         {/* 4 Protocol Steps */}
         <div className="mb-16">
           <div className="max-w-2xl mb-8 pb-3 border-b border-[#E2E8F0]">
-            <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#0055FF] block mb-1">
+            <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#2878A5] block mb-1">
               LOGISTICS SEQUENCE
             </span>
-            <h3 className="text-2xl sm:text-3xl font-bold text-[#020617]">
+            <h3 className="text-2xl sm:text-3xl font-bold text-[#171717]">
               Four-Stage Dispatch Protocol
             </h3>
           </div>
@@ -122,10 +122,10 @@ export default function AboutPage() {
                 className="bg-white p-6 flex flex-col justify-between space-y-3"
               >
                 <div>
-                  <span className="text-[10px] font-mono font-semibold uppercase tracking-wider text-[#0055FF] block mb-2">
+                  <span className="text-[10px] font-mono font-semibold uppercase tracking-wider text-[#2878A5] block mb-2">
                     {s.step}
                   </span>
-                  <h4 className="font-bold text-base text-[#020617] mb-1">
+                  <h4 className="font-bold text-base text-[#171717] mb-1">
                     {s.title}
                   </h4>
                   <p className="text-xs text-[#64748B] leading-relaxed">
@@ -138,11 +138,11 @@ export default function AboutPage() {
         </div>
 
         {/* Call to action */}
-        <div className="bg-[#020617] text-white rounded-none sm:rounded-[2px] p-8 sm:p-10 border border-[#0F172A] text-center max-w-2xl mx-auto space-y-4 shadow-sm">
+        <div className="bg-[#123B5D] text-white rounded-none sm:rounded-[2px] p-8 sm:p-10 border border-[#123B5D] text-center max-w-2xl mx-auto space-y-4 shadow-sm">
           <h3 className="text-2xl font-bold text-white">
             Speak Directly With Our Live Desk
           </h3>
-          <p className="text-xs text-[#E2E8F0] leading-relaxed max-w-md mx-auto">
+          <p className="text-xs text-[#E6F4FF]/90 leading-relaxed max-w-md mx-auto">
             Have questions about tank water compatibility, community stocking density, or dispatch schedules? Connect with us on WhatsApp.
           </p>
           <div className="pt-2">

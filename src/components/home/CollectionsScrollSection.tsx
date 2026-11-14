@@ -65,7 +65,7 @@ export function CollectionsScrollSection({ categories }: CollectionsScrollSectio
         {/* Section Header Matching Reference Image */}
         <div className="flex items-center justify-between mb-4 sm:mb-6">
           <div>
-            <span className="text-[11px] sm:text-xs font-semibold uppercase tracking-[0.2em] text-[#0055FF] block">
+            <span className="text-[11px] sm:text-xs font-semibold uppercase tracking-[0.2em] text-[#2878A5] block">
               COLLECTIONS
             </span>
           </div>
@@ -75,7 +75,7 @@ export function CollectionsScrollSection({ categories }: CollectionsScrollSectio
             <button
               type="button"
               onClick={() => manualScroll("left")}
-              className="p-1.5 rounded-full border border-[#E2E8F0] hover:border-[#0055FF] text-[#64748B] hover:text-[#0055FF] transition-colors bg-white shadow-xs"
+              className="p-1.5 rounded-full border border-[#E2E8F0] hover:border-[#2878A5] text-[#64748B] hover:text-[#2878A5] transition-colors bg-white shadow-xs"
               aria-label="Scroll left"
             >
               <ChevronLeft className="w-4 h-4" />
@@ -83,7 +83,7 @@ export function CollectionsScrollSection({ categories }: CollectionsScrollSectio
             <button
               type="button"
               onClick={() => manualScroll("right")}
-              className="p-1.5 rounded-full border border-[#E2E8F0] hover:border-[#0055FF] text-[#64748B] hover:text-[#0055FF] transition-colors bg-white shadow-xs"
+              className="p-1.5 rounded-full border border-[#E2E8F0] hover:border-[#2878A5] text-[#64748B] hover:text-[#2878A5] transition-colors bg-white shadow-xs"
               aria-label="Scroll right"
             >
               <ChevronRight className="w-4 h-4" />
@@ -125,7 +125,7 @@ export function CollectionsScrollSection({ categories }: CollectionsScrollSectio
 
               {/* Bottom-Left Overlay Copy (Matching Reference Image) */}
               <div className="absolute bottom-3 left-3 sm:bottom-4 sm:left-4 z-10 text-left pointer-events-none">
-                <h3 className="text-white text-base sm:text-lg font-bold tracking-tight leading-tight drop-shadow-sm group-hover:text-[#EFF6FF] transition-colors">
+                <h3 className="text-white text-base sm:text-lg font-bold tracking-tight leading-tight drop-shadow-sm group-hover:text-[#E6F4FF] transition-colors">
                   {col.name}
                 </h3>
                 <span className="text-white/85 text-xs font-normal tracking-wide mt-0.5 inline-block group-hover:underline">

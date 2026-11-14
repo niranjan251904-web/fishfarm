@@ -28,7 +28,7 @@ export function FishCard({ product, priority = false }: FishCardProps) {
     : "FISH";
 
   return (
-    <article className="group relative flex flex-col bg-white rounded-none sm:rounded-[2px] border border-[#E2E8F0] hover:border-[#0055FF] transition-all duration-200 overflow-hidden">
+    <article className="group relative flex flex-col bg-white rounded-none sm:rounded-[2px] border border-[#E2E8F0] hover:border-[#2878A5] transition-all duration-200 overflow-hidden">
       {/* Product Image Container Matching Image 4 */}
       <div className="relative aspect-square w-full overflow-hidden bg-gray-50">
         <Link href={`/fish/${product.slug}`} className="block w-full h-full">
@@ -46,7 +46,7 @@ export function FishCard({ product, priority = false }: FishCardProps) {
 
         {/* Top-Left Category Badge (e.g. ANGELS) Matching Image 4 */}
         <div className="absolute top-2 left-2 pointer-events-none z-10">
-          <span className="px-1.5 py-0.5 text-[9px] sm:text-[10px] font-semibold uppercase tracking-wider bg-white/95 text-gray-800 rounded-[1px] shadow-xs border border-gray-100">
+          <span className="px-1.5 py-0.5 text-[9px] sm:text-[10px] font-semibold uppercase tracking-wider bg-white/95 text-[#123B5D] rounded-[1px] shadow-xs border border-gray-100">
             {categoryBadge}
           </span>
         </div>
@@ -65,7 +65,7 @@ export function FishCard({ product, priority = false }: FishCardProps) {
       <div className="p-2.5 sm:p-3.5 flex-1 flex flex-col justify-between bg-white">
         <div>
           {/* Title */}
-          <h3 className="text-xs sm:text-sm font-medium text-gray-900 leading-snug line-clamp-2 hover:text-[#0055FF] transition-colors">
+          <h3 className="text-xs sm:text-sm font-medium text-[#171717] leading-snug line-clamp-2 hover:text-[#2878A5] transition-colors">
             <Link href={`/fish/${product.slug}`}>{product.name}</Link>
           </h3>
 
@@ -76,12 +76,12 @@ export function FishCard({ product, priority = false }: FishCardProps) {
                 <span className="text-[11px] sm:text-xs text-gray-400 line-through font-normal">
                   {formatCurrencyDecimals(product.originalPrice)}
                 </span>
-                <span className="text-xs sm:text-sm font-bold text-gray-900">
+                <span className="text-xs sm:text-sm font-bold text-[#171717]">
                   {formatCurrencyDecimals(product.sellingPrice)}
                 </span>
               </>
             ) : (
-              <span className="text-xs sm:text-sm font-bold text-gray-900">
+              <span className="text-xs sm:text-sm font-bold text-[#171717]">
                 {formatCurrencyDecimals(product.sellingPrice)}
               </span>
             )}
@@ -94,7 +94,7 @@ export function FishCard({ product, priority = false }: FishCardProps) {
             <button
               type="button"
               onClick={() => addToCart(product, 1)}
-              className="w-full py-1 px-2 text-[11px] font-semibold uppercase tracking-wider text-gray-700 hover:text-white bg-gray-50 hover:bg-[#0055FF] rounded-[1px] transition-colors text-center"
+              className="w-full py-1 px-2 text-[11px] font-semibold uppercase tracking-wider text-gray-700 hover:text-white bg-gray-50 hover:bg-[#2878A5] rounded-[1px] transition-colors text-center"
             >
               Add to Cart
             </button>

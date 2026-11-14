@@ -4,19 +4,19 @@ import { siteConfig, buildWhatsAppUrl } from "@/config/site";
 
 export function Footer() {
   return (
-    <footer className="bg-[#020617] text-[#E2E8F0] pt-14 pb-12 border-t border-[#0F172A]">
+    <footer className="bg-[#123B5D] text-[#E2E8F0] pt-14 pb-12 border-t border-[#123B5D]/60">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Logistics and Biosecurity Header Bar */}
-        <div className="pb-10 border-b border-[#0F172A] grid grid-cols-1 lg:grid-cols-12 gap-6 items-baseline">
+        <div className="pb-10 border-b border-white/10 grid grid-cols-1 lg:grid-cols-12 gap-6 items-baseline">
           <div className="lg:col-span-4">
-            <span className="text-[11px] uppercase tracking-[0.2em] text-[#0055FF] font-semibold block mb-1">
+            <span className="text-[11px] uppercase tracking-[0.2em] text-[#A67C52] font-semibold block mb-1">
               Aquaculture Protocol
             </span>
             <p className="text-lg font-bold text-white">
               Fourteen-Day Prophylactic Quarantine
             </p>
           </div>
-          <div className="lg:col-span-8 text-xs text-[#64748B] leading-relaxed">
+          <div className="lg:col-span-8 text-xs text-slate-300 leading-relaxed">
             All livestock is held in segregated holding systems under therapeutic observation. Consignments are packed in high-density expanded polystyrene containers with pure industrial medical oxygen and transit climate buffers before train, bus, and flight cargo dispatch across India.
           </div>
         </div>
@@ -26,7 +26,7 @@ export function Footer() {
           {/* Col 1 & 2: Brand Information */}
           <div className="lg:col-span-2 space-y-4">
             <BrandLogo variant="light" />
-            <p className="text-xs sm:text-sm text-[#64748B] max-w-sm leading-relaxed mt-2">
+            <p className="text-xs sm:text-sm text-slate-300 max-w-sm leading-relaxed mt-2">
               SRM Fish Farm, managed by R. Sankar in Palamedu, Madurai. 2 years of farm fish breeding excellence, wholesale supply, specialized aquascaping, and nature aquarium maintenance.
             </p>
             <div className="pt-2">
@@ -36,7 +36,7 @@ export function Footer() {
                 })}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block px-4 py-2 bg-[#0F172A] text-white text-xs font-semibold rounded-[2px] border border-[#1E293B] hover:bg-[#0055FF] hover:border-[#0055FF] transition-colors"
+                className="inline-block px-4 py-2 bg-[#171717] text-white text-xs font-semibold rounded-[2px] border border-white/10 hover:bg-[#2878A5] hover:border-[#2878A5] transition-colors"
               >
                 WhatsApp: {siteConfig.whatsapp.displayNumber}
               </a>
@@ -121,15 +121,15 @@ export function Footer() {
               <p>Proprietor: R. Sankar</p>
               <p>Operating Hours: All Days: 9:00 AM – 4:00 PM</p>
               <p>Services: Wholesale · Fish Breeding · Aquascaping & Maintenance</p>
-              <p className="text-[#0055FF] font-medium">+91 83007 38588</p>
+              <p className="text-[#2878A5] font-semibold text-sm">+91 83007 38588</p>
             </div>
           </div>
         </div>
 
         {/* Bottom Copyright & Legal Links */}
-        <div className="pt-8 mt-4 border-t border-[#0F172A] text-xs text-[#64748B] flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="pt-8 mt-4 border-t border-white/10 text-xs text-[#E6F4FF]/70 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p>© {new Date().getFullYear()} {siteConfig.name}. All rights reserved.</p>
-          <div className="flex items-center space-x-6 text-xs text-[#64748B]">
+          <div className="flex items-center space-x-6 text-xs text-[#E6F4FF]/70">
             <Link href="/terms" className="hover:text-white transition-colors">
               Terms of Service
             </Link>

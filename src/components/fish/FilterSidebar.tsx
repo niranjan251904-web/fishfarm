@@ -34,10 +34,10 @@ export function FilterSidebar({
       {/* Header Bar */}
       <div className="flex items-center justify-between pb-3.5 border-b border-[#E2E8F0]">
         <div>
-          <span className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#0055FF] block">
+          <span className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#2878A5] block">
             Filter System
           </span>
-          <h3 className="font-sans font-bold text-base text-[#020617]">
+          <h3 className="font-sans font-bold text-base text-[#171717]">
             Refine Catalog
           </h3>
         </div>
@@ -45,7 +45,7 @@ export function FilterSidebar({
         <button
           type="button"
           onClick={onReset}
-          className="text-[11px] font-semibold text-[#64748B] hover:text-[#0055FF] transition-colors uppercase tracking-wider underline underline-offset-2"
+          className="text-[11px] font-semibold text-[#64748B] hover:text-[#2878A5] transition-colors uppercase tracking-wider underline underline-offset-2"
         >
           Clear All
         </button>
@@ -53,7 +53,7 @@ export function FilterSidebar({
 
       {/* Filter 1: Sort Options */}
       <div className="space-y-2">
-        <label className="text-[11px] font-semibold uppercase tracking-wider text-[#020617] block">
+        <label className="text-[11px] font-semibold uppercase tracking-wider text-[#171717] block">
           Sort Order
         </label>
         <select
@@ -63,7 +63,7 @@ export function FilterSidebar({
               sortBy: e.target.value as "newest" | "price_asc" | "price_desc",
             })
           }
-          className="w-full text-xs bg-gray-50 border border-[#E2E8F0] rounded-sm py-2 px-3 text-[#020617] focus:outline-none focus:border-[#0055FF]"
+          className="w-full text-xs bg-[#F5F3EE] border border-[#E2E8F0] rounded-sm py-2 px-3 text-[#171717] focus:outline-none focus:border-[#2878A5]"
         >
           <option value="newest">Featured & Newest Arrivals</option>
           <option value="price_asc">Price: Low to High</option>
@@ -74,7 +74,7 @@ export function FilterSidebar({
       {/* Filter 2: Categories */}
       <div className="space-y-2.5">
         <div className="flex items-center justify-between">
-          <label className="text-[11px] font-semibold uppercase tracking-wider text-[#020617]">
+          <label className="text-[11px] font-semibold uppercase tracking-wider text-[#171717]">
             Fish Categories
           </label>
           <span className="text-[10px] text-[#64748B]">
@@ -93,8 +93,8 @@ export function FilterSidebar({
                 onClick={() => onFilterChange({ categoryId: cat.slug })}
                 className={`w-full text-left px-2.5 py-1.5 text-xs rounded-sm transition-colors flex items-center justify-between ${
                   isSelected
-                    ? "bg-[#EFF6FF] text-[#0055FF] font-semibold border border-[#0055FF]/20"
-                    : "text-[#64748B] hover:text-[#020617] hover:bg-gray-50"
+                    ? "bg-[#E6F4FF] text-[#2878A5] font-semibold border border-[#2878A5]/20"
+                    : "text-[#64748B] hover:text-[#171717] hover:bg-[#F5F3EE]"
                 }`}
               >
                 <span>{cat.name}</span>
@@ -107,17 +107,17 @@ export function FilterSidebar({
 
       {/* Filter 3: Availability */}
       <div className="space-y-2">
-        <label className="text-[11px] font-semibold uppercase tracking-wider text-[#020617] block">
+        <label className="text-[11px] font-semibold uppercase tracking-wider text-[#171717] block">
           Stock Availability
         </label>
-        <div className="grid grid-cols-3 gap-1 bg-gray-50 p-1 rounded-sm border border-[#E2E8F0] text-center text-xs">
+        <div className="grid grid-cols-3 gap-1 bg-[#F5F3EE] p-1 rounded-sm border border-[#E2E8F0] text-center text-xs">
           <button
             type="button"
             onClick={() => onFilterChange({ availability: "all" })}
             className={`py-1 rounded-[2px] transition-colors ${
               filters.availability === "all"
-                ? "bg-white text-[#0055FF] font-semibold shadow-xs"
-                : "text-[#64748B] hover:text-[#020617]"
+                ? "bg-white text-[#2878A5] font-semibold shadow-xs"
+                : "text-[#64748B] hover:text-[#171717]"
             }`}
           >
             All
@@ -127,8 +127,8 @@ export function FilterSidebar({
             onClick={() => onFilterChange({ availability: "in_stock" })}
             className={`py-1 rounded-[2px] transition-colors ${
               filters.availability === "in_stock"
-                ? "bg-white text-[#0055FF] font-semibold shadow-xs"
-                : "text-[#64748B] hover:text-[#020617]"
+                ? "bg-white text-[#2878A5] font-semibold shadow-xs"
+                : "text-[#64748B] hover:text-[#171717]"
             }`}
           >
             In Stock
@@ -138,8 +138,8 @@ export function FilterSidebar({
             onClick={() => onFilterChange({ availability: "out_of_stock" })}
             className={`py-1 rounded-[2px] transition-colors ${
               filters.availability === "out_of_stock"
-                ? "bg-white text-[#0055FF] font-semibold shadow-xs"
-                : "text-[#64748B] hover:text-[#020617]"
+                ? "bg-white text-[#2878A5] font-semibold shadow-xs"
+                : "text-[#64748B] hover:text-[#171717]"
             }`}
           >
             Waitlist
@@ -149,17 +149,17 @@ export function FilterSidebar({
 
       {/* Filter 4: Water Type / Biotope */}
       <div className="space-y-2">
-        <label className="text-[11px] font-semibold uppercase tracking-wider text-[#020617] block">
+        <label className="text-[11px] font-semibold uppercase tracking-wider text-[#171717] block">
           Water Habitat
         </label>
-        <div className="grid grid-cols-2 gap-1 bg-gray-50 p-1 rounded-sm border border-[#E2E8F0] text-center text-xs">
+        <div className="grid grid-cols-2 gap-1 bg-[#F5F3EE] p-1 rounded-sm border border-[#E2E8F0] text-center text-xs">
           <button
             type="button"
             onClick={() => onFilterChange({ waterType: "all" })}
             className={`py-1 rounded-[2px] transition-colors ${
               filters.waterType === "all"
-                ? "bg-white text-[#0055FF] font-semibold shadow-xs"
-                : "text-[#64748B] hover:text-[#020617]"
+                ? "bg-white text-[#2878A5] font-semibold shadow-xs"
+                : "text-[#64748B] hover:text-[#171717]"
             }`}
           >
             All Types
@@ -169,8 +169,8 @@ export function FilterSidebar({
             onClick={() => onFilterChange({ waterType: "freshwater" })}
             className={`py-1 rounded-[2px] transition-colors ${
               filters.waterType === "freshwater"
-                ? "bg-white text-[#0055FF] font-semibold shadow-xs"
-                : "text-[#64748B] hover:text-[#020617]"
+                ? "bg-white text-[#2878A5] font-semibold shadow-xs"
+                : "text-[#64748B] hover:text-[#171717]"
             }`}
           >
             Freshwater
@@ -184,7 +184,7 @@ export function FilterSidebar({
           <button
             type="button"
             onClick={onCloseMobileDrawer}
-            className="w-full py-2.5 bg-[#0055FF] text-white text-xs font-semibold uppercase tracking-wider rounded-sm text-center"
+            className="w-full py-2.5 bg-[#2878A5] hover:bg-[#123B5D] text-white text-xs font-semibold uppercase tracking-wider rounded-sm text-center"
           >
             Show {totalFilteredCount} Results
           </button>

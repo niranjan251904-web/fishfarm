@@ -31,7 +31,7 @@ export function Navbar() {
       {showBanner && (
         <div
           style={{
-            backgroundColor: settings.topBanner.bgColor || "#0055FF",
+            backgroundColor: settings.topBanner.bgColor || "#2878A5",
             color: settings.topBanner.textColor || "#FFFFFF",
           }}
           className="relative text-center py-2 px-4 text-xs font-semibold tracking-wider uppercase transition-all z-50 flex items-center justify-center shadow-xs"
@@ -60,7 +60,7 @@ export function Navbar() {
       )}
 
       {/* Main Header */}
-      <header className="sticky top-0 z-40 w-full bg-white border-b border-[#E2E8F0] py-3 text-[#020617] shadow-xs">
+      <header className="sticky top-0 z-40 w-full bg-white/95 backdrop-blur-xs border-b border-[#E2E8F0] py-3 text-[#171717] shadow-xs">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Left: Brand Logo */}
@@ -78,8 +78,8 @@ export function Navbar() {
                     href={link.href}
                     className={`text-xs font-semibold uppercase tracking-widest transition-colors py-1 ${
                       isActive
-                        ? "text-[#0055FF]"
-                        : "text-[#64748B] hover:text-[#020617]"
+                        ? "text-[#2878A5]"
+                        : "text-[#64748B] hover:text-[#123B5D]"
                     }`}
                   >
                     {link.label}
@@ -95,7 +95,7 @@ export function Navbar() {
                 type="button"
                 onClick={() => setSearchOpen(true)}
                 aria-label="Search collection"
-                className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-widest text-[#020617] hover:text-[#0055FF] transition-colors"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-widest text-[#171717] hover:text-[#2878A5] transition-colors"
               >
                 <Search className="w-3.5 h-3.5" />
                 <span className="hidden sm:inline">Search</span>
@@ -111,7 +111,7 @@ export function Navbar() {
                 type="button"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 aria-label="Toggle navigation menu"
-                className="lg:hidden p-1.5 text-[#020617] rounded-sm hover:bg-gray-100 transition-colors"
+                className="lg:hidden p-1.5 text-[#171717] rounded-sm hover:bg-gray-100 transition-colors"
               >
                 {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
               </button>
@@ -124,7 +124,7 @@ export function Navbar() {
       {mobileMenuOpen && (
         <div className="fixed inset-0 top-[60px] z-50 lg:hidden bg-white border-t border-[#E2E8F0] flex flex-col justify-between p-6 overflow-y-auto">
           <div className="space-y-4">
-            <p className="text-[10px] font-bold uppercase tracking-widest text-[#0055FF] mb-2">
+            <p className="text-[10px] font-bold uppercase tracking-widest text-[#2878A5] mb-2">
               Fish Collections & Menu
             </p>
             <div className="flex flex-col space-y-3">
@@ -136,7 +136,7 @@ export function Navbar() {
                     href={link.href}
                     onClick={() => setMobileMenuOpen(false)}
                     className={`text-base font-medium transition-colors py-2 border-b border-gray-100 flex items-center justify-between ${
-                      isActive ? "text-[#0055FF] font-semibold" : "text-gray-900"
+                      isActive ? "text-[#2878A5] font-semibold" : "text-gray-900"
                     }`}
                   >
                     <span>{link.label}</span>
@@ -149,7 +149,7 @@ export function Navbar() {
 
           <div className="pt-6 border-t border-[#E2E8F0] space-y-3">
             <div className="text-xs text-[#64748B]">
-              <p className="font-semibold text-[#020617]">SRM Fish Farm Live Desk</p>
+              <p className="font-semibold text-[#123B5D]">SRM Fish Farm Live Desk</p>
               <p>WhatsApp: {siteConfig.whatsapp.displayNumber}</p>
             </div>
           </div>

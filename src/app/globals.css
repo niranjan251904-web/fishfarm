@@ -5,16 +5,23 @@
 @tailwind utilities;
 
 :root {
-  --background: #FFFFFF;
-  --foreground: #020617;
+  --background: #F5F3EE;
+  --foreground: #171717;
   --card: #FFFFFF;
   --card-border: #E2E8F0;
-  --brand-blue: #0055FF;
+  --brand-navy: #123B5D;
+  --brand-ocean: #2878A5;
+  --brand-brown: #654321;
+  --brand-sand: #A67C52;
+  --brand-cream: #F5F3EE;
+  --brand-charcoal: #171717;
+  --brand-ice: #E6F4FF;
+  --brand-blue: #2878A5;
 }
 
 body {
-  color: #020617;
-  background-color: #FFFFFF;
+  color: #171717;
+  background-color: #F5F3EE;
   font-family: 'General Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   font-weight: 400;
   overflow-x: hidden;

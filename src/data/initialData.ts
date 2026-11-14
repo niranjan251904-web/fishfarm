@@ -1366,7 +1366,7 @@ export const initialStoreSettings: StoreSettings = {
   topBanner: {
     enabled: false,
     text: "SPECIAL OFFER: WHOLESALE RATES ON BULK LIVESTOCK & DIRECT FARM DISPATCH",
-    bgColor: "#0055FF",
+    bgColor: "#2878A5",
     textColor: "#FFFFFF",
     link: "/fish",
     dismissible: true,

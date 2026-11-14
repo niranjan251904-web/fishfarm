@@ -18,15 +18,15 @@ export function FishGallerySection() {
     : initialGallery.filter((item) => item.category === activeTab);
 
   return (
-    <section className="py-12 sm:py-16 bg-white text-[#020617] border-b border-[#E2E8F0]">
+    <section className="py-12 sm:py-16 bg-[#F5F3EE] text-[#171717] border-b border-[#E2E8F0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 pb-4 border-b border-[#E2E8F0]">
           <div>
-            <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#0055FF] block mb-1">
+            <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#2878A5] block mb-1">
               SPECIMEN PHOTOGRAPHY
             </span>
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#020617]">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#171717]">
               Sanctuary Photographic Records
             </h2>
             <p className="text-xs sm:text-sm text-[#64748B] mt-1 max-w-xl">
@@ -36,7 +36,7 @@ export function FishGallerySection() {
 
           <Link
             href="/gallery"
-            className="mt-3 sm:mt-0 text-xs font-semibold uppercase tracking-wider text-[#0055FF] hover:underline"
+            className="mt-3 sm:mt-0 text-xs font-semibold uppercase tracking-wider text-[#2878A5] hover:underline"
           >
             View Full Archive &rarr;
           </Link>
@@ -51,8 +51,8 @@ export function FishGallerySection() {
               onClick={() => setActiveTab(cat)}
               className={`px-3 py-1.5 rounded-[2px] text-xs font-semibold tracking-wider uppercase transition-colors whitespace-nowrap border ${
                 activeTab === cat
-                  ? "bg-[#0055FF] text-white border-[#0055FF]"
-                  : "bg-white text-[#64748B] hover:text-[#020617] hover:bg-gray-50 border-[#E2E8F0]"
+                  ? "bg-[#2878A5] text-white border-[#2878A5]"
+                  : "bg-white text-[#64748B] hover:text-[#171717] hover:bg-[#F5F3EE] border-[#E2E8F0]"
               }`}
             >
               {cat}
@@ -66,7 +66,7 @@ export function FishGallerySection() {
             <div
               key={item.id}
               onClick={() => setSelectedItem(item)}
-              className="group relative aspect-[4/3] rounded-none sm:rounded-[2px] overflow-hidden bg-gray-100 cursor-pointer border border-[#E2E8F0] hover:border-[#0055FF] transition-all"
+              className="group relative aspect-[4/3] rounded-none sm:rounded-[2px] overflow-hidden bg-gray-100 cursor-pointer border border-[#E2E8F0] hover:border-[#2878A5] transition-all"
             >
               <Image
                 src={item.imageUrl}
@@ -76,7 +76,7 @@ export function FishGallerySection() {
                 className="object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-3 sm:p-4 text-white">
-                <span className="text-[9px] uppercase tracking-wider text-[#0055FF] font-semibold">
+                <span className="text-[9px] uppercase tracking-wider text-[#E6F4FF] font-semibold">
                   {item.category}
                 </span>
                 <h4 className="font-bold text-xs sm:text-sm mt-0.5 truncate">
@@ -100,7 +100,7 @@ export function FishGallerySection() {
           onClick={() => setSelectedItem(null)}
         >
           <div
-            className="relative max-w-3xl w-full bg-white rounded-none sm:rounded-[2px] overflow-hidden border border-[#E2E8F0] text-[#020617] shadow-2xl"
+            className="relative max-w-3xl w-full bg-white rounded-none sm:rounded-[2px] overflow-hidden border border-[#E2E8F0] text-[#171717] shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -123,10 +123,10 @@ export function FishGallerySection() {
             </div>
 
             <div className="p-4 sm:p-5 bg-white border-t border-[#E2E8F0]">
-              <span className="text-[10px] uppercase tracking-wider text-[#0055FF] font-semibold">
+              <span className="text-[10px] uppercase tracking-wider text-[#2878A5] font-semibold">
                 {selectedItem.category}
               </span>
-              <h3 className="text-lg font-bold text-[#020617] mt-0.5">
+              <h3 className="text-lg font-bold text-[#171717] mt-0.5">
                 {selectedItem.title}
               </h3>
               <p className="text-xs text-[#64748B] mt-1 leading-relaxed">

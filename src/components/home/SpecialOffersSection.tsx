@@ -16,14 +16,14 @@ export function SpecialOffersSection() {
   }
 
   return (
-    <section className="py-12 sm:py-16 bg-[#FAFBFC] border-y border-[#E2E8F0]">
+    <section className="py-12 sm:py-16 bg-[#F5F3EE] border-y border-[#E2E8F0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between mb-8">
           <div>
-            <span className="text-[11px] font-bold uppercase tracking-widest text-[#0055FF] block mb-1">
+            <span className="text-[11px] font-bold uppercase tracking-widest text-[#2878A5] block mb-1">
               Curated Releases
             </span>
-            <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-[#020617]">
+            <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-[#171717]">
               Special Offers & Featured Harvests
             </h2>
           </div>
@@ -48,7 +48,7 @@ export function SpecialOffersSection() {
               {/* Card Content */}
               <div className="relative z-10 max-w-lg">
                 {poster.tag && (
-                  <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-xs bg-[#0055FF] text-white text-[10px] font-bold tracking-widest uppercase mb-3 shadow-xs">
+                  <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-xs bg-[#2878A5] text-white text-[10px] font-bold tracking-widest uppercase mb-3 shadow-xs">
                     <Tag className="w-3 h-3" />
                     <span>{poster.tag}</span>
                   </div>

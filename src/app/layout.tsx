@@ -6,7 +6,7 @@ import { SettingsProvider } from "@/context/SettingsContext";
 import { siteConfig } from "@/config/site";
 
 export const viewport: Viewport = {
-  themeColor: "#0055FF",
+  themeColor: "#2878A5",
   width: "device-width",
   initialScale: 1,
 };
@@ -75,7 +75,7 @@ export default function RootLayout({
           href="https://api.fontshare.com/v2/css?f[]=general-sans@400,450,500,600,700&display=swap"
         />
       </head>
-      <body className="min-h-screen flex flex-col bg-white text-[#020617] font-sans selection:bg-[#0055FF] selection:text-white">
+      <body className="min-h-screen flex flex-col bg-[#F5F3EE] text-[#171717] font-sans selection:bg-[#2878A5] selection:text-white">
         <SettingsProvider>
           <CartProvider>
             <StoreLayoutShell>{children}</StoreLayoutShell>

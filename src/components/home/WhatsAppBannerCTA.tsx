@@ -3,9 +3,9 @@ import { siteConfig, buildWhatsAppUrl } from "@/config/site";
 
 export function WhatsAppBannerCTA() {
   return (
-    <section className="py-14 sm:py-18 bg-[#020617] text-white border-t border-[#0F172A]">
+    <section className="py-14 sm:py-18 bg-[#123B5D] text-white border-t border-[#123B5D]/80">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-        <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0055FF] block">
+        <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#A67C52] block">
           AQUACULTURE CONCIERGE
         </span>
 
@@ -32,7 +32,7 @@ export function WhatsAppBannerCTA() {
           </a>
         </div>
 
-        <div className="pt-5 border-t border-[#0F172A] flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-[#64748B]">
+        <div className="pt-5 border-t border-white/10 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-[#E6F4FF]/70">
           <span>DOA Guarantee on Train & Bus</span>
           <span>•</span>
           <span>Dispatch Within 48 Hours</span>
